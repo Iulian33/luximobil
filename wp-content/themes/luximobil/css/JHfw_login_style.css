@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+.login-action-login,.login-action-lostpassword{
+	background: url("../images/Login_bg.jpg");
+	background-size: cover ;
+	background-attachment: fixed;
+}
+.login{
+	font-family: Roboto, sans-serif;
+	color: #fff;
+
+}
+*{
+	font-weight: 300 !important;
+}
+
+.logo_insign img{
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+}
+#login{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background: hsla(0, 0%, 0%, 0.75);
+}
+#login > h1{
+	display: none;
+}
+#login h1.logo_insign{
+	display: block;
+	text-align: left;
+	margin: 10px auto;
+	line-height: normal;
+	position: relative;
+	width: 380px;
+}
+#loginform,
+#lostpasswordform{
+	width: 100%;
+	max-width: 380px;
+	padding: 10px 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#loginform label,#lostpasswordform label{
+	color: #fff;
+}
+.login form .input,
+.login input[type=text]{
+	background-color: #fff;
+	height: 56px;
+	margin: 10px 0 10px;
+	border: solid 3px #fff !important;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	font-size: 22px;
+	padding-left: 20px;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-ms-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+
+}
+.login form{
+	background: transparent;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+.login form .input:focus,
+.login input[type=text]:focus{
+	border: solid 3px #00BFA5 !important;
+	box-shadow: none !important;
+
+}
+.forgetmenot{
+	display: none !important;
+}
+
+.login #backtoblog a,
+.login #nav a{
+	color: #fff;
+}
+.login label{
+	font-size: 18px;
+}
+#login form p.submit{
+	clear: both;
+	display: block;
+}
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large{
+	height: 58px;
+	width: 100%;
+	background-color: #00BFA5;
+	border: 0;
+	border-radius: 3px;
+	text-shadow: none;
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 0 45px;
+	float: left;
+	box-shadow: none !important;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-ms-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+}
+
+.wp-core-ui .button-group.button-large .button:hover,
+.wp-core-ui .button.button-large:hover{
+	background: #009688;
+}
+
+.login #nav{
+	padding-left: 0;
+	display: block;
+	width: 357px;
+	margin: 0 auto;
+}
+#backtoblog{
+	display: none;
+}
+
+#login form p.forgetmenot{
+	margin-bottom: 30px;
+	display: block;
+}
+
+.login #login_error {
+	border-left-color: #f03e3e;
+	background-color: #f03e3e;
+	border-radius: 3px;
+	color: white;
+}
+.login #login_error a{
+	color: #fff;
+	opacity: 0.7;
+}
+
+.login #login_error, .login .message{
+	width: 100%;
+	max-width: 350px;
+	display: block;
+	margin: 20px auto;
+	color: #000;
+}
+
+@media all and (max-width: 768px) {
+	.loginContentLeft{
+		display: none;
+	}
+	#login{
+		width: 100%;
+		padding: 0 20px;
+	}
+	#loginform,
+	#lostpasswordform{
+		margin: 0 auto;
+	}
+	#login h1.logo_insign,
+	.login #nav{
+		text-align: center;
+	}
+	.login #login_error, .login .message{
+		margin: 0 auto;
+	}
+}
+

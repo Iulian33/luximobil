@@ -1,0 +1,324 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JH_framework\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-09 22:55+0000\n"
+"PO-Revision-Date: 2017-08-09 23:20+0000\n"
+"Last-Translator: JH_user <wordpress@gmail.com>\n"
+"Language-Team: Romanian\n"
+"Language: ro-RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
+"=0)))? 2 : 1))\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: inc/template-tags.php:148
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:150
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:152
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:155
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Asides"
+
+#. 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:178
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Se pare că nimici nu sa găsit la această locație. Poate încerci  câtevai din "
+"linkurile următoare sau căutarea ?"
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "O parere referitor la &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s păreri referitoare la &ldquo;%2$s&rdquo;"
+
+#: comments.php:35 comments.php:56
+msgid "Comment navigation"
+msgstr "Bara de Comentarii"
+
+#: comments.php:38 comments.php:59
+msgid "Older Comments"
+msgstr "Comentariu vechi"
+
+#: comments.php:39 comments.php:60
+msgid "Newer Comments"
+msgstr "Comentariu nou"
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nimic găsit"
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ești gata să publici primul tău post? <a href=\"%1$s\">Poți începe aici</a>."
+"\n"
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ne pare rău, dar nu sunt rezultate  cautate de dvs. Te rog încearcă din nou "
+"cu cuvinte chei diferite."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Se pare că nu putem găsi pagina pe care tocmai ați accesto. Poate căutarea "
+"vă va ajuta."
+
+#: content-page.php:18 content-single.php:20 content.php:29
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: content-page.php:25 inc/template-tags.php:125
+msgid "Edit"
+msgstr "Editează"
+
+#: content.php:22
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Citește în continuarie %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: functions.php:54
+msgid "Footer Menu"
+msgstr "Footer Menu"
+
+#: functions.php:84
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:265
+msgid "Read more"
+msgstr "Citește mai mult"
+
+#: functions.php:510
+msgid "Development by Julian Hook"
+msgstr "Dezvoltat de Julian Hook"
+
+#. Base ID
+#: functions.php:577
+msgid "Google map"
+msgstr "Google map"
+
+#: functions.php:578
+msgid "Google map widget by Julian Hook"
+msgstr "Google map widget de Julian Hook"
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Rezultate găsite pentru:% s"
+
+#. Name of the template
+msgid "Contact pagina"
+msgstr "Pagină Contact"
+
+#. Name of the template
+msgid "Home"
+msgstr "Acasă"
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Pagină %s"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+"\n"
+"Mesaje de navigare"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Postări mai vechi"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Postări mai noi"
+
+#: inc/template-tags.php:55
+msgid "Post navigation"
+msgstr "Afișați navigația"
+
+#: inc/template-tags.php:85
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Postat pe %s"
+
+#: inc/template-tags.php:90
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "de %s"
+
+#. used between list items, there is a space after the comma
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:107 inc/template-tags.php:113
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:109
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postat în %1$s"
+
+#: inc/template-tags.php:115
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Etichetat %1$s"
+
+#: inc/template-tags.php:121
+msgid "Leave a comment"
+msgstr "Lasă un comentariu"
+
+#: inc/template-tags.php:121
+msgid "1 Comment"
+msgstr "1 Comentariu"
+
+#: inc/template-tags.php:121
+msgid "% Comments"
+msgstr "% Comentarii"
+
+#: inc/template-tags.php:142
+#, php-format
+msgid "Category: %s"
+msgstr "Categorie: %s"
+
+#: inc/template-tags.php:144
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:146
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: inc/template-tags.php:148
+#, php-format
+msgid "Year: %s"
+msgstr "An: %s"
+
+#: inc/template-tags.php:150
+#, php-format
+msgid "Month: %s"
+msgstr "Lună: %s"
+
+#: inc/template-tags.php:152
+#, php-format
+msgid "Day: %s"
+msgstr "Ziuă: %s"
+
+#: inc/template-tags.php:157
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerii"
+
+#: inc/template-tags.php:159
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Imagini"
+
+#: inc/template-tags.php:161
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Videouri"
+
+#: inc/template-tags.php:163
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Ghilimele"
+
+#: inc/template-tags.php:165
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Linkuri"
+
+#: inc/template-tags.php:167
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Statutusuri"
+
+#: inc/template-tags.php:169
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags.php:171
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Measje"
+
+#: inc/template-tags.php:174
+#, php-format
+msgid "Archives: %s"
+msgstr "Arhive: %s"
+
+#: inc/template-tags.php:180
+msgid "Archives"
+msgstr "Arhivă"
+
+#. Widget name will appear in UI
+#: inc/templates/widgets/acf-repeater-widget.php:12
+msgid "Repeater Widget"
+msgstr "Repeater Widget"
+
+#: inc/templates/widgets/acf-repeater-widget.php:15
+msgid ""
+"Repeater widget based on ACF. Go to theme folder/inc/templates/widgets/acf-"
+"repeater-widget.php to edit the looks of it."
+msgstr ""
+"Repeater widget bazat pe ACF. Navigheaza mapa din tema "
+"/inc/templates/widgets/acf-repeater-widget.php pentru a edita modul in care "
+"arata"
+
+#: inc/templates/widgets/acf-repeater-widget.php:50
+msgid "New title"
+msgstr "Titlu Nou"
+
+#. Author of the theme
+msgid "Anonim"
+msgstr "Anonim"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Esti prost nu caut si trebu "

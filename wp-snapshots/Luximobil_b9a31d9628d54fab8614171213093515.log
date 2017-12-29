@@ -1,0 +1,79 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: December 13, 2017 9:35 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.30
+WORDPRESS:	4.9.1
+PHP INFO:	5.6.31 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 53.75MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:55 | filtered:0 | create:55 
+FILTERED: [] 
+SQL CREATED: Luximobil_b9a31d9628d54fab8614171213093515_database.sql 
+SQL FILE SIZE: 1.15MB (1203568) 
+SQL FILE TIME: 2017-12-13 09:35:26 
+SQL RUNTIME: 1.95 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Applications/MAMP/htdocs/luximobil 
+ARCHIVE FILE: Luximobil_b9a31d9628d54fab8614171213093515_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	94.6MB 
+STATS:	Dirs 1,127 | Files 5,401 
+SQL ADDED: Luximobil_b9a31d9628d54fab8614171213093515_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 6528
+    [filename] => /Applications/MAMP/htdocs/luximobil/wp-snapshots/tmp/Luximobil_b9a31d9628d54fab8614171213093515_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 43.37MB 
+ARCHIVE RUNTIME: 21.05 sec. 
+MEMORY STACK: 56.25MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/Applications/MAMP/htdocs/luximobil/wp-snapshots/tmp/Luximobil_b9a31d9628d54fab8614171213093515_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.15MB 
+Installer File: 443.29KB 
+Archive File: 43.37MB  
+
+********************************************************************************
+RECORD ID:[86]
+TOTAL PROCESS RUNTIME: 25.08 sec.
+PEAK PHP MEMORY USED: 58.25MB
+DONE PROCESSING => Luximobil December 13, 2017 9:35 am
+ 
