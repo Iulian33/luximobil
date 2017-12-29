@@ -1,18 +1,15 @@
-# Project Title
+# Lux Imobil MD
 
-One Paragraph of project description goes here
+This website is a kind of e-comerce website
 
-## Getting Started
+## Getting Started Instalation proccess
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
+To make this project work on your local machine you have to folow these steps
 ```
-Give examples
+1. Give examples
 ```
+
+
 
 ### Installing
 
