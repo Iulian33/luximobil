@@ -2,84 +2,20 @@
 
 This website is a kind of e-comerce website
 
-## Getting Started Instalation proccess
+## Getting Started Instalation Proccess
 
 To make this project work on your local machine you have to folow these steps
 ```
-1. Give examples
+1. Clone these project on your local machine : git clone https://github.com/Iulian33/luximobil.git
+2. You need to create localy an branch : git branch NewBranchName
+3. To add changes in stacj write : git add .
+4. If you want to make an commit  use : git commit -m "your message"
+5. In order to making your local branche to link to a new branch on server write : git push origin NewBranchName
 ```
 
 
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+## Progect Adress
 
 ```
-Give the example
+[SemVer](http://luximobil.julianhook.com/) 
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
