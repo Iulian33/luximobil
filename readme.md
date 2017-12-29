@@ -18,4 +18,4 @@ To make this project work on your local machine you have to folow these steps
 
 Project Link:
 
-[SemVer](http://luximobil.julianhook.com/) 
+[luximobil.julianhook.com](http://luximobil.julianhook.com/) 
