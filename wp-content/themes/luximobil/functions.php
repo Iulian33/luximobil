@@ -588,6 +588,8 @@ function remove_default_post_type() {
 
 // Include eCommerce Module hand writen
 include('eCommerce/general-post-type.php');
+include('Blog/blog-post-type.php');
+
 
 add_image_size('post-size',280,380,true);
 
