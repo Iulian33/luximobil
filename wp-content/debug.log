@@ -560,3 +560,5 @@
 [24-Dec-2017 08:56:28 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/special-ofert.php on line 95
 [24-Dec-2017 08:57:13 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/special-ofert.php on line 95
 [24-Dec-2017 08:57:15 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/special-ofert.php on line 95
+[02-Jan-2018 16:56:58 UTC] PHP Notice:  Undefined index: exists in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[02-Jan-2018 16:56:58 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
