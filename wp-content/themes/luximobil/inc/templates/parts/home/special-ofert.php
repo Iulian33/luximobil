@@ -25,6 +25,12 @@ $products = $WPproducts->posts;
                         foreach ($products as $product) {
                             $productId = $product->ID;
                             @$special_ofert_ckecbox = get_field('special_ofert', $productId);
+                            $sectorsTerms = wp_get_post_terms($productId, 'sectors_imobil');
+                            $regionTerms = wp_get_post_terms($productId, 'regions_imobil');
+                            $typeOrdersTerms = wp_get_post_terms($productId, 'type_imobil');
+                            $region = @$regionTerms[0]->name;
+                            $sector = @$sectorsTerms[0]->name;
+                            $typeOrder = @$typeOrdersTerms[0]->name;
                             if (@$special_ofert_ckecbox[0] == 'enable_special_ofert') {
                                 // List with all Specs
                                 include ('addons/specs-list.php');
@@ -95,7 +101,7 @@ $products = $WPproducts->posts;
                                         <div class="description-product-ofert">
                                             <?php echo $productContent; ?>
                                         </div>
-                                        <a href="<?php the_permalink(); ?>" class="button">
+                                        <a href="<?php the_permalink($productId); ?>" class="button">
                                             <?php _e('Vezi Detalii'); ?>
                                         </a>
                                     </div>

@@ -11,6 +11,7 @@ get_header(); ?>
     include ('inc/templates/parts/home/categories-section.php');
     include ('inc/templates/parts/home/apartaments-carousel.php');
     include ('inc/templates/parts/home/special-ofert.php');
+    include ('inc/templates/parts/home/homes-carousel.php');
     include ('inc/templates/parts/home/servicii.php');
     ?>
 
