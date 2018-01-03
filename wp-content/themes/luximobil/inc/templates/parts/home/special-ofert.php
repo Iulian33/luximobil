@@ -16,7 +16,7 @@ $products = $WPproducts->posts;
     <div class="container">
         <div class="content-inner">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-md-5 col-sm-12">
                     <ul class="list-specs">
 
 
@@ -40,9 +40,8 @@ $products = $WPproducts->posts;
                         ?>
                     </ul>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-7 col-sm-12">
                     <div class="product-container">
-
                         <div class="row content-prod">
                             <?php
                             foreach ($products as $product ) {
@@ -61,7 +60,7 @@ $products = $WPproducts->posts;
                                              style="background-image: url(<?php echo $productThumbnail; ?>);">
                                         </div>
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-7 info-product-side">
 
                                         <h1 class="title-product-ofert">
                                             <?php if ($region && $sector) {
