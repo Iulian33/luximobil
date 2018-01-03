@@ -838,3 +838,38 @@ div#n2-ss-2 {
 }
 
 
+/***************** ARCHIVE PAGE *********************/
+
+.post-type-archive-blog {
+  .article-block {
+    padding-top: 20px;
+    width: 32%;
+    @include transition();
+    position: relative;
+    background: $color-white;
+    border-radius: 6px;
+    margin: 30px  5px 0 5px;
+    &:nth-of-type(4) {
+      clear: left;
+    }
+    &:hover{
+      transform: translateY(-5px);
+      -webkit-box-shadow: 1px 1px 40px $gray-light;
+      -moz-box-shadow: 1px 1px 40px $gray-light;
+      box-shadow: 1px 1px 40px $gray-light;
+    }
+
+    .text-content {
+      padding: 15px;
+      clear: both;
+    }
+    .blog-image {
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+        border-radius: 6px;
+      }
+    }
+  }
+}

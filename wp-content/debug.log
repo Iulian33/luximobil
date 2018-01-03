@@ -562,3 +562,9 @@
 [24-Dec-2017 08:57:15 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/special-ofert.php on line 95
 [02-Jan-2018 16:56:58 UTC] PHP Notice:  Undefined index: exists in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
 [02-Jan-2018 16:56:58 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[02-Jan-2018 21:12:55 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\luximobil\wp-admin\includes\class-wp-list-table-compat.php on line 15
+[03-Jan-2018 19:17:49 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\luximobil\wp-content\plugins\nextend-smart-slider3-pro\nextend\library\applications\system\backend\helpers\controllers\VisualManager.php on line 3
+[03-Jan-2018 19:18:29 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1538
+[03-Jan-2018 19:18:32 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1538
