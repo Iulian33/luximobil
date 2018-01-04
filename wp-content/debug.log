@@ -568,3 +568,6 @@
  in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1538
 [03-Jan-2018 19:18:32 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
  in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1538
+[04-Jan-2018 22:21:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
+[04-Jan-2018 22:21:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
+[04-Jan-2018 22:21:36 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
