@@ -15,6 +15,7 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <article class="col-md-4 col-sm-6 col-xs-12 article-block" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
                         <div class="col-sm-12 blog-image">
                             <?php the_post_thumbnail(); ?>
                         </div>
