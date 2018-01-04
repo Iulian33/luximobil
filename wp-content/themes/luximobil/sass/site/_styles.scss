@@ -841,6 +841,7 @@ div#n2-ss-2 {
 /***************** ARCHIVE PAGE *********************/
 
 .post-type-archive-blog {
+  background-color : #F1F1F1;
   .article-block {
     padding-top: 20px;
     width: 32%;
@@ -849,6 +850,9 @@ div#n2-ss-2 {
     background: $color-white;
     border-radius: 6px;
     margin: 30px  5px 0 5px;
+    -webkit-box-shadow: 1px 1px 10px $gray-light;
+    -moz-box-shadow: 1px 1px 10px $gray-light;
+    box-shadow: 1px 1px 10px $gray-light;
     &:nth-of-type(4) {
       clear: left;
     }
@@ -862,6 +866,12 @@ div#n2-ss-2 {
     .text-content {
       padding: 15px;
       clear: both;
+      a {
+        color: $dark-text-color;
+      }
+      h1 {
+        margin-top: 0;
+      }
     }
     .blog-image {
       img {
