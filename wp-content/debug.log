@@ -579,3 +579,6 @@
 [05-Jan-2018 22:13:29 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\inc\templates\parts\top-slider-image.php on line 5
 [05-Jan-2018 22:13:29 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\inc\templates\parts\top-slider-image.php on line 5
 [05-Jan-2018 22:35:53 UTC] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\luximobil\wp-includes\class-wp-query.php on line 3063
+[05-Jan-2018 23:34:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
+[05-Jan-2018 23:34:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
+[05-Jan-2018 23:34:06 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
