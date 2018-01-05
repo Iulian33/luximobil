@@ -36,19 +36,6 @@
                             $regular_price = get_field('regular_price');
                             $sale_check = get_field('enable_sale_price');
                             $sale_price = get_field('sale_price');
-                            ?>
-
-                            <?php if ($sale_price && $sale_check) { ?>
-                                <?php echo $sale_price; ?>
-                            <?php } else { ?>
-                                <?php echo $regular_price; ?>
-                            <?php } ?>
-                        </div>
-                        <div class="price-product">
-                            <?php
-                            $regular_price = get_field('regular_price');
-                            $sale_check = get_field('enable_sale_price');
-                            $sale_price = get_field('sale_price');
                             if ($sale_price) {
                                 $sale_price = number_format($sale_price, 0, '.', ' ');
                             } else {
@@ -105,6 +92,7 @@
                     </a>
                 </div>
             <?php endwhile;
+            wp_reset_postdata();
             } ?>
         </div>
     </div>

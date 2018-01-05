@@ -31,7 +31,7 @@ get_header(); ?>
                     <div class="text-content">
 
                         <header class="entry-header">
-                            <?php the_title(sprintf('<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h1>'); ?>
+                            <h1 class="entry-title"><?php the_title(); ?></h1>
                         </header><!-- .entry-header -->
                         <div class="entry-summary">
                             <?php the_excerpt(); ?>

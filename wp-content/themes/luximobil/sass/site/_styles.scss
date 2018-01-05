@@ -216,9 +216,11 @@ div#n2-ss-2 {
       float: left;
       margin: 0;
       padding: 50px 20px 0 ;
+      width: 115%;
       li {
         list-style: none;
         text-transform: uppercase;
+        white-space: nowrap;
       }
       & > li {
         position: relative;
@@ -763,15 +765,19 @@ div#n2-ss-2 {
   .content-inner{
     padding: 100px 0;
     .list-specs{
-      padding-top: 60px;
+      padding-top: 45px;
+      display: inline-block;
+      padding-left: 0;
+      width: 100%;
+      margin: 0;
       li{
         float: left;
         list-style-type: none;
-        width: 30%;
+        width: 33.33%;
         text-align: center;
         padding-top: 20px;
         i{
-          font-size: 25px;
+          font-size: 36px;
         }
       }
     }
@@ -809,6 +815,46 @@ div#n2-ss-2 {
         }
       }
     }
+    .info-product-side{
+      padding-left: 55px;
+      padding-right: 45px;
+      .title-product-ofert{
+        color: $color-black;
+        font-family: $bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 80px;
+      }
+      .adresss-product-ofert{
+        font-family: $bold;
+        position: relative;
+        top: -8px;
+      }
+      .price-ofert{
+        position: absolute;
+        top: 35px;
+        right: 0;
+        background: $color-red;
+        padding: 5px 20px;
+        margin-right: 15px;
+        color: $color-white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        font-family: $bold;
+      }
+      .description-product-ofert{
+        color: #a5a0a0;
+        padding-top: 20px;
+      }
+      .button{
+        width: 150px;
+        margin-top: 50px;
+        position: relative;
+        left: 50%;
+        margin-left: -75px;
+      }
+    }
   }
 }
 
@@ -838,12 +884,12 @@ div#n2-ss-2 {
 }
 
 
-/***************** ARCHIVE PAGE *********************/
+/***************** Blog Archive *********************/
 
 .post-type-archive-blog {
   background-color : #F1F1F1;
   .article-block {
-    padding-top: 20px;
+    padding: 0;
     width: 32%;
     @include transition();
     position: relative;
@@ -866,11 +912,11 @@ div#n2-ss-2 {
     .text-content {
       padding: 15px;
       clear: both;
-      a {
+      .entry-title {
         color: $dark-text-color;
-      }
-      h1 {
         margin-top: 0;
+        text-transform: uppercase;
+        font-family: $bold;
       }
     }
     .blog-picture {
@@ -879,6 +925,7 @@ div#n2-ss-2 {
       background-position: center;
     }
     .blog-image {
+      padding: 0;
       img {
         width: 100%;
         height: auto;
@@ -886,5 +933,52 @@ div#n2-ss-2 {
         border-radius: 6px;
       }
     }
+  }
+}
+
+.servicii-section{
+  .servicii-content{
+    background: $color-lightgray;
+    .service-container{
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 30px 0;
+      padding-top: 50px;
+    }
+  }
+}
+
+.service-container{
+  .container-icon{
+    box-shadow: 0 3px 17.28px 0.72px rgba(7, 135, 234, 0.33);
+    background: #0787ea;
+    width: 125px;
+    cursor: pointer;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid transparent;
+    @include transition();
+    i{
+      @include transition();
+      color: $color-white;
+      font-size: 50px;
+      padding-top: 32px;
+      display: block;
+    }
+    &:hover{
+      background: $color-white;
+      border: 4px solid #0787ea;
+      i{
+        color: #0787ea;
+      }
+    }
+  }
+  .title-service{
+    color: $color-black;
+    font-family: $bold;
+    text-transform: uppercase;
+    font-size: 16px;
   }
 }

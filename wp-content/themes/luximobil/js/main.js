@@ -20,17 +20,37 @@ $(document).ready(function($) {
     };
 
     $(".apartaments-carousel").owlCarousel({
-        items: 4,
         margin: 25,
         loop: true,
-        autoplay: true
+        autoplay: true,
+        responsive : {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1025: {
+                items: 4
+            }
+        }
     });
 
     $(".homes-carousel").owlCarousel({
-        items: 4,
         margin: 25,
         loop: true,
-        autoplay: true
+        autoplay: true,
+        responsive : {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1025: {
+                items: 4
+            }
+        }
     });
 
     // mobilemenu Code

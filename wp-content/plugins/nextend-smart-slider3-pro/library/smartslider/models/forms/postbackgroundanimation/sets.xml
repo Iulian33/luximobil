@@ -1,5 +1,0 @@
-<root>
-    <params name="post-background-animation-sets" label="Ken Burns effect sets" type="naked">
-        <param type="list" name="sets" default=""/>
-    </params>
-</root>
