@@ -7,32 +7,48 @@
  * @package Site Theme
  */
 ?>
+<?php $footer_bg_img = get_field('footer_background_image','option'); ?>
 
-
-<footer class="mainFooter">
-    <div class="upperFooter">
-        <div class="container">
-            Upper Footer
-        </div>
-    </div>
-    <div class="lowerFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 copyright">
-                    <?php the_field('copyright', 'option'); ?>
-                    <?php echo date("Y"); ?>
-                    <?php wp_nav_menu(array("theme_location" => 'footer', 'menu_class' => 'footerMenu', 'container' => '')); ?>
-                </div>
-                <div class="col-sm-6 credits">
-                    <?php JHCredits(); ?>
+<footer class="mainFooter" style="background-image: url(<?php echo $footer_bg_img['url'];?>);">
+    <div class="footer-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-widget">
+                <div class="bg-contacts"></div>
+                <div class="contacts-contaner">
+                    Contacts
                 </div>
             </div>
+            <div class="col-sm-3 col-widget">Menu Rapid</div>
+            <div class="col-sm-3 col-widget">Menu Rapid</div>
+            <div class="col-sm-3 col-widget">About Us</div>
         </div>
     </div>
+
+
+
+<!--    <div class="lowerFooter">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6 copyright">-->
+<!--                    --><?php //the_field('copyright', 'option'); ?>
+<!--                    --><?php //echo date("Y"); ?>
+<!--                    --><?php //wp_nav_menu(array("theme_location" => 'footer', 'menu_class' => 'footerMenu', 'container' => '')); ?>
+<!--                </div>-->
+<!--                <div class="col-sm-6 credits">-->
+<!--                    --><?php //JHCredits(); ?>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </footer>
 </div>
-<div id="mobilemenu" class="displayNone"></div>
 
+
+
+
+
+<div id="mobilemenu" class="displayNone"></div>
 <?php wp_footer(); ?>
 
 </body>

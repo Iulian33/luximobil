@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div class="mainContent">
-    <div class="container">
+    <div class="container blog-content-archive">
 
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
