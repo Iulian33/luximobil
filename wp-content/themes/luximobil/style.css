@@ -2294,7 +2294,8 @@ div#n2-ss-2 .n2-ss-slide {
   padding: 20px 0; }
   .prefooter-section .category-heading {
     color: #000;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; }
   .prefooter-section .post-item-container {
     position: relative;
     overflow: hidden;

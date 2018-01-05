@@ -1,6 +1,7 @@
 <!-- Loturi de Teren Products -->
 <?php $args = array(
     'post_type' => 'imobil',
+    'posts_per_page' => 2,
     'tax_query' => array(
         array(
             'taxonomy' => 'categorie_imobil',
