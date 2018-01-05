@@ -572,9 +572,3 @@
 [04-Jan-2018 22:21:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
 [04-Jan-2018 22:21:36 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
 [05-Jan-2018 21:20:23 UTC] PHP Warning:  Illegal string offset 'url' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\archive-blog.php on line 25
-[05-Jan-2018 21:29:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
-[05-Jan-2018 21:29:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
-[05-Jan-2018 21:29:47 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
-[05-Jan-2018 21:30:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
-[05-Jan-2018 21:30:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
-[05-Jan-2018 21:30:48 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
