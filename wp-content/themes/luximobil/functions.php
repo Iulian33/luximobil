@@ -593,6 +593,7 @@ include('Blog/blog-post-type.php');
 
 add_image_size('post-size',280,380,true);
 add_image_size( 'blog-thumbnail', 350, 240, true);
+add_image_size( 'wide-thumbnail', 500, 250, true);
 
 
 // removes Home default editor in admin

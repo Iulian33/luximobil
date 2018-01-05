@@ -1459,7 +1459,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #ff0000; }
+  color: #000; }
   a:hover {
     color: midnightblue; }
 
@@ -2214,7 +2214,7 @@ div#n2-ss-2 .n2-ss-slide {
     position: relative;
     background: #fff;
     border-radius: 6px;
-    margin: 30px  5px 0 5px;
+    margin: 30px 5px 0 5px;
     -webkit-box-shadow: 1px 1px 10px #777777;
     -moz-box-shadow: 1px 1px 10px #777777;
     box-shadow: 1px 1px 10px #777777; }
@@ -2289,6 +2289,25 @@ div#n2-ss-2 .n2-ss-slide {
   font-family: ProximaNovaBold;
   text-transform: uppercase;
   font-size: 16px; }
+
+.prefooter-section {
+  padding: 20px 0; }
+  .prefooter-section .category-heading {
+    color: #000;
+    text-transform: uppercase; }
+  .prefooter-section .post-item-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .prefooter-section .post-item-container .post-thumbnail {
+      width: 100%; }
+    .prefooter-section .post-item-container .info-container {
+      margin-bottom: -50px; }
+      .prefooter-section .post-item-container .info-container .go-to-product {
+        width: 150px;
+        margin: 5px 0 20px; }
+    .prefooter-section .post-item-container:hover .info-container {
+      margin-bottom: 0 !important; }
 
 .dk-select,
 .dk-select *,

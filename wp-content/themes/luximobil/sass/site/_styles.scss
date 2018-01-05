@@ -53,31 +53,31 @@ body {
 // slider
 div#n2-ss-2 {
   .n2-ss-slide {
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
   }
 }
 
 /*************** HEADER *****************/
-.headerImage{
+.headerImage {
   min-height: 200px;
   overflow: hidden;
   padding-top: 165px;
-  .pageImage{
+  .pageImage {
     height: 250px;
     width: 100%;
-    img{
+    img {
       width: 100%;
     }
   }
 }
 
-.home{
-  .headerImage{
+.home {
+  .headerImage {
     min-height: auto;
   }
 }
 
-.main-header{
+.main-header {
   position: absolute;
   z-index: 999;
   background: $color-white;
@@ -98,14 +98,14 @@ div#n2-ss-2 {
     }
   }
 
-  .search-container{
+  .search-container {
     padding-top: 45px;
-    .search-form{
+    .search-form {
       position: relative;
-      label{
+      label {
         float: left;
         width: 80%;
-        .search-field{
+        .search-field {
           width: 100%;
           outline: 0;
           border-top-left-radius: 50px;
@@ -113,7 +113,7 @@ div#n2-ss-2 {
           border: 1px solid $color-blue;
         }
       }
-      .search-submit{
+      .search-submit {
         width: 15%;
         height: $button__height + 10px;
         line-height: $button__height + 10px;
@@ -125,7 +125,7 @@ div#n2-ss-2 {
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 0;
         outline: 0 !important;
-        i{
+        i {
           font-size: 22px;
           position: relative;
           top: 1px;
@@ -134,61 +134,61 @@ div#n2-ss-2 {
     }
   }
 
-  .upper-options-header{
+  .upper-options-header {
     padding: 40px 0 0;
     margin: 0;
     float: right;
     font-family: $bold;
     font-size: 16px;
-    > li{
-      i{
+    > li {
+      i {
         font-size: 26px;
         position: relative;
         top: 7px;
         padding-right: 4px;
       }
-      a{
+      a {
         color: $color-black;
         text-decoration: none;
-        &:hover{
+        &:hover {
           color: $color-blue;
         }
       }
       list-style-type: none;
       display: inline-block;
-      &:after{
+      &:after {
         content: '|';
         padding-left: 10px;
         padding-right: 5px;
       }
-      &:last-of-type{
-        &:after{
+      &:last-of-type {
+        &:after {
           content: none;
         }
       }
     }
   }
 
-  .header-language-switcher{
+  .header-language-switcher {
     text-transform: uppercase;
     font-family: $bold;
-    .dk-selected{
+    .dk-selected {
       border: none;
       height: 25px;
       line-height: 25px;
-      &:after{
+      &:after {
         border: none;
       }
     }
-    .dk-select-options{
+    .dk-select-options {
       border: none;
       padding-left: 7px;
       padding-top: 0;
-      li{
-        &.dk-option-selected{
+      li {
+        &.dk-option-selected {
           display: none;
         }
-        &.dk-option-highlight{
+        &.dk-option-highlight {
           background: transparent !important;
           color: inherit !important;
         }
@@ -197,7 +197,7 @@ div#n2-ss-2 {
     }
   }
 
-  .store-shedulare{
+  .store-shedulare {
     display: block;
     width: 100%;
     text-align: right;
@@ -215,7 +215,7 @@ div#n2-ss-2 {
       position: relative;
       float: left;
       margin: 0;
-      padding: 50px 20px 0 ;
+      padding: 50px 20px 0;
       width: 115%;
       li {
         list-style: none;
@@ -227,13 +227,13 @@ div#n2-ss-2 {
         float: left;
         margin: 0;
         padding: 0 20px;
-        &:first-child{
+        &:first-child {
           padding-left: 0;
         }
         &:hover {
           > ul.sub-menu {
             display: block;
-            > li{
+            > li {
               &:hover {
                 > ul.sub-menu {
                   display: block;
@@ -247,7 +247,7 @@ div#n2-ss-2 {
           color: $color-black;
           font-family: $bold;
           text-decoration: none;
-          &:hover{
+          &:hover {
             color: $color-blue;
           }
         }
@@ -300,7 +300,6 @@ div#n2-ss-2 {
     }
   }
 
-
   .mobileLink {
     display: none;
     a {
@@ -308,38 +307,38 @@ div#n2-ss-2 {
     }
   }
 
-  &.sticky{
+  &.sticky {
     position: fixed;
     top: 0;
     box-shadow: 1px 6px 20px 0 rgba(0, 0, 0, 0.21);
     .store-shedulare,
-    .search-container{
+    .search-container {
       opacity: 0;
       height: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    .siteLogo{
-      a{
-        img{
+    .siteLogo {
+      a {
+        img {
           height: 0;
           opacity: 0;
         }
       }
     }
 
-    .mainMenu{
-      ul{
+    .mainMenu {
+      ul {
         padding: 17px 22px;
       }
     }
-    .upper-options-header{
+    .upper-options-header {
       padding: 10px 0;
     }
-    .dropdown-menu-container{
-      .dropdown-menu{
-        .label-dropdown{
+    .dropdown-menu-container {
+      .dropdown-menu {
+        .label-dropdown {
           padding: 19px 20px 16px;
           border-radius: 0;
         }
@@ -347,9 +346,6 @@ div#n2-ss-2 {
     }
   }
 }
-
-
-
 
 //mobile menu font weight
 #menu-main-menu {
@@ -369,12 +365,11 @@ div#n2-ss-2 {
   position: relative;
 }
 
-
-
 /******************* GRAVITY FORMS STYLES *****************/
-.validation_error{
+.validation_error {
   color: $color__border_input_error;
 }
+
 .gform_wrapper {
   .gform_validation_container {
     display: none;
@@ -440,9 +435,9 @@ div#n2-ss-2 {
         .validation_message {
           display: none;
         }
-        &.gfield_error{ /* if field has validation error */
+        &.gfield_error { /* if field has validation error */
           input, select, textarea,
-          .dk-selected{
+          .dk-selected {
             border: solid 1px $color__border_input_error;
           }
         }
@@ -460,8 +455,8 @@ div#n2-ss-2 {
     }
   }
 }
-/**************** END GRAVITY FORMS STYLES *************/
 
+/**************** END GRAVITY FORMS STYLES *************/
 
 /***************** FOOTER *********************/
 
@@ -512,7 +507,7 @@ div#n2-ss-2 {
       border-top: 5px solid $color__background-button;
     }
   }
-  a{
+  a {
     &:hover {
       border-top: 5px solid $color__background-button;
       color: #2B2B2B;
@@ -524,10 +519,9 @@ div#n2-ss-2 {
   color: #2B2B2B;
 }
 
-
 /****************** ACF GOOGLE MAP ************************/
 
-.page-template-tpl-contact  {
+.page-template-tpl-contact {
   .acf-map {
     width: 100%;
     height: 400px;
@@ -539,18 +533,17 @@ div#n2-ss-2 {
   }
 }
 
-
 // Custom Styles Website
-.dropdown-menu-container{
+.dropdown-menu-container {
   display: block;
   position: relative;
   padding-bottom: 32px;
   clear: both;
-  .dropdown-menu{
+  .dropdown-menu {
     position: absolute;
     z-index: 99;
     width: 100%;
-    .label-dropdown{
+    .label-dropdown {
       text-transform: uppercase;
       background: $color-blue;
       padding: 8px 20px 6px;
@@ -558,11 +551,11 @@ div#n2-ss-2 {
       cursor: pointer;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
-      i{
+      i {
         padding-right: 5px;
       }
     }
-    #menu-category{
+    #menu-category {
       margin: 0;
       background: $color-white;
       max-height: 0;
@@ -570,26 +563,26 @@ div#n2-ss-2 {
       padding: 0 40px;
       box-shadow: 0 6px 20px 1px rgba(29, 29, 29, 0.38);
       @include transition();
-      li{
+      li {
         padding: 8px 0;
         font-family: $light;
         list-style-type: none;
         border-bottom: 1px solid $color-gray;
-        a{
+        a {
           color: $color-darkgray;
           font-size: 15px;
           text-decoration: none;
-          &:hover{
+          &:hover {
             color: $color-blue + 70%;
           }
         }
-        &:last-of-type{
+        &:last-of-type {
           border-bottom: none;
         }
       }
     }
-    &:hover{
-      #menu-category{
+    &:hover {
+      #menu-category {
         max-height: 800px;
         padding: 15px 40px 30px;
       }
@@ -604,7 +597,7 @@ div#n2-ss-2 {
   text-transform: uppercase;
   clear: both;
   margin-bottom: 20px;
-  h1{
+  h1 {
     display: inline-block;
     font-size: 36px;
     font-family: $bold;
@@ -615,49 +608,49 @@ div#n2-ss-2 {
   }
 }
 
-.section{
+.section {
   clear: both;
   display: inline-block;
   width: 100%;
 }
 
-.categories-section{
-  .category-box{
+.categories-section {
+  .category-box {
     display: block;
     float: left;
     width: 25%;
     background-color: $color-blue;
     background-size: cover;
     background-position: center center;
-    .mask-block{
+    .mask-block {
       display: block;
       width: 100%;
       overflow: hidden;
       position: relative;
       height: 100%;
       text-align: center;
-      background: rgba(0,0,0,.6);
+      background: rgba(0, 0, 0, .6);
       opacity: 0;
       @include transition();
-      &:hover{
+      &:hover {
         opacity: 1;
       }
-      h2{
+      h2 {
         line-height: 750px;
         color: $color-white;
         text-transform: uppercase;
         font-size: 20px;
         font-family: $bold;
       }
-      .buttons-options{
+      .buttons-options {
         bottom: 80px;
         position: absolute;
         padding: 0;
         width: 100%;
         margin: 0;
-        li{
+        li {
           display: block;
-          .button{
+          .button {
             width: 140px;
             text-decoration: none;
             text-transform: uppercase;
@@ -667,48 +660,49 @@ div#n2-ss-2 {
     }
   }
 }
-.apartaments-section{
+
+.apartaments-section {
   padding-top: 30px;
 }
 
-.posts-carousel{
+.posts-carousel {
   margin-bottom: 60px;
 }
 
-.post-item-container{
-  .info-container{
-    background: rgba(0,0,0,.68);
+.post-item-container {
+  .info-container {
+    background: rgba(0, 0, 0, .68);
     position: absolute;
     bottom: 0;
     margin-bottom: -60px;
     overflow: hidden;
     @include transition(all, .4s, ease);
     width: 100%;
-    .title-post{
+    .title-post {
       display: block;
       padding: 10px 0 0 15px;
       font-size: 13px;
       color: $color-white;
     }
-    .adresss-product{
+    .adresss-product {
       color: $color-white;
       padding: 0 0 10px 15px;
       font-family: $bold;
       font-size: 15px;
       text-transform: uppercase;
     }
-    .specs-product{
-      background: rgba(0,0,0,.7);
-      .col-xs-4{
+    .specs-product {
+      background: rgba(0, 0, 0, .7);
+      .col-xs-4 {
         border-right: 1px solid $color-white;
         text-align: center;
         color: $color-white;
         font-size: 15px;
         margin-top: 10px;
       }
-      .col-xs-12{
+      .col-xs-12 {
         padding: 20px 0;
-        .button{
+        .button {
           margin: 0 auto;
           display: block;
           position: relative;
@@ -720,19 +714,19 @@ div#n2-ss-2 {
       }
     }
   }
-  &:hover{
-    .info-container{
+  &:hover {
+    .info-container {
       margin-bottom: 0;
-      .specs-product{
-        .col-xs-12{
-          .button{
+      .specs-product {
+        .col-xs-12 {
+          .button {
             opacity: 1;
           }
         }
       }
     }
   }
-  .price-product{
+  .price-product {
     position: absolute;
     top: 50px;
     right: 0;
@@ -745,11 +739,11 @@ div#n2-ss-2 {
   }
 }
 
-.logo_col{
+.logo_col {
   padding-left: 0;
 }
 
-.section-special-ofert{
+.section-special-ofert {
   background: $color-gray;
   min-height: 400px;
   position: relative;
@@ -757,40 +751,40 @@ div#n2-ss-2 {
   background-size: cover;
   background-position: center center;
   color: $color-white;
-  .overlay-section{
+  .overlay-section {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  .content-inner{
+  .content-inner {
     padding: 100px 0;
-    .list-specs{
+    .list-specs {
       padding-top: 45px;
       display: inline-block;
       padding-left: 0;
       width: 100%;
       margin: 0;
-      li{
+      li {
         float: left;
         list-style-type: none;
         width: 33.33%;
         text-align: center;
         padding-top: 20px;
-        i{
+        i {
           font-size: 36px;
         }
       }
     }
-    .product-container{
+    .product-container {
       background: $color-white;
       width: 100%;
       min-height: 400px;
       color: $color-black;
-      .content-prod{
+      .content-prod {
         position: absolute;
         width: 100%;
         height: 100%;
-        &:after{
+        &:after {
           content: '';
           position: absolute;
           top: 0;
@@ -802,10 +796,10 @@ div#n2-ss-2 {
           border-top: 35px solid $color-blue;
           border-bottom: 35px solid transparent;
         }
-        .col-sm-5{
+        .col-sm-5 {
           position: relative;
           height: 100%;
-          .image-container{
+          .image-container {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -815,10 +809,10 @@ div#n2-ss-2 {
         }
       }
     }
-    .info-product-side{
+    .info-product-side {
       padding-left: 55px;
       padding-right: 45px;
-      .title-product-ofert{
+      .title-product-ofert {
         color: $color-black;
         font-family: $bold;
         font-size: 22px;
@@ -826,12 +820,12 @@ div#n2-ss-2 {
         margin: 0;
         padding-top: 80px;
       }
-      .adresss-product-ofert{
+      .adresss-product-ofert {
         font-family: $bold;
         position: relative;
         top: -8px;
       }
-      .price-ofert{
+      .price-ofert {
         position: absolute;
         top: 35px;
         right: 0;
@@ -843,11 +837,11 @@ div#n2-ss-2 {
         border-bottom-left-radius: 50px;
         font-family: $bold;
       }
-      .description-product-ofert{
+      .description-product-ofert {
         color: #a5a0a0;
         padding-top: 20px;
       }
-      .button{
+      .button {
         width: 150px;
         margin-top: 50px;
         position: relative;
@@ -858,18 +852,16 @@ div#n2-ss-2 {
   }
 }
 
-
-
-.homes-section{
+.homes-section {
   padding-top: 30px;
 }
 
-.servicii-section{
-  .section-title{
-    h1{
+.servicii-section {
+  .section-title {
+    h1 {
       position: relative;
-      border:none;
-      &:after{
+      border: none;
+      &:after {
         content: '';
         width: 74%;
         height: 1px;
@@ -883,11 +875,10 @@ div#n2-ss-2 {
   }
 }
 
-
 /***************** Blog Archive *********************/
 
 .post-type-archive-blog {
-  background-color : #F1F1F1;
+  background-color: #F1F1F1;
   .article-block {
     padding: 0;
     width: 32%;
@@ -895,14 +886,14 @@ div#n2-ss-2 {
     position: relative;
     background: $color-white;
     border-radius: 6px;
-    margin: 30px  5px 0 5px;
+    margin: 30px 5px 0 5px;
     -webkit-box-shadow: 1px 1px 10px $gray-light;
     -moz-box-shadow: 1px 1px 10px $gray-light;
     box-shadow: 1px 1px 10px $gray-light;
     &:nth-of-type(4) {
       clear: left;
     }
-    &:hover{
+    &:hover {
       transform: translateY(-5px);
       -webkit-box-shadow: 1px 1px 40px $gray-light;
       -moz-box-shadow: 1px 1px 40px $gray-light;
@@ -936,10 +927,10 @@ div#n2-ss-2 {
   }
 }
 
-.servicii-section{
-  .servicii-content{
+.servicii-section {
+  .servicii-content {
     background: $color-lightgray;
-    .service-container{
+    .service-container {
       float: left;
       width: 20%;
       text-align: center;
@@ -949,8 +940,8 @@ div#n2-ss-2 {
   }
 }
 
-.service-container{
-  .container-icon{
+.service-container {
+  .container-icon {
     box-shadow: 0 3px 17.28px 0.72px rgba(7, 135, 234, 0.33);
     background: #0787ea;
     width: 125px;
@@ -960,25 +951,53 @@ div#n2-ss-2 {
     margin: 0 auto;
     border: 4px solid transparent;
     @include transition();
-    i{
+    i {
       @include transition();
       color: $color-white;
       font-size: 50px;
       padding-top: 32px;
       display: block;
     }
-    &:hover{
+    &:hover {
       background: $color-white;
       border: 4px solid #0787ea;
-      i{
+      i {
         color: #0787ea;
       }
     }
   }
-  .title-service{
+  .title-service {
     color: $color-black;
     font-family: $bold;
     text-transform: uppercase;
     font-size: 16px;
+  }
+}
+
+.prefooter-section {
+  padding: 20px 0;
+  .category-heading{
+    color: $color-black;
+    text-transform: uppercase;
+  }
+  .post-item-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    .post-thumbnail {
+      width: 100%;
+    }
+    .info-container{
+      margin-bottom: -50px;
+      .go-to-product{
+        width: 150px;
+        margin: 5px 0 20px;
+      }
+    }
+    &:hover {
+      .info-container {
+        margin-bottom: 0 !important;
+      }
+    }
   }
 }
