@@ -889,7 +889,7 @@ div#n2-ss-2 {
 .post-type-archive-blog {
   background-color : #F1F1F1;
   .article-block {
-    padding-top: 20px;
+    padding: 0;
     width: 32%;
     @include transition();
     position: relative;
@@ -912,11 +912,11 @@ div#n2-ss-2 {
     .text-content {
       padding: 15px;
       clear: both;
-      a {
+      .entry-title {
         color: $dark-text-color;
-      }
-      h1 {
         margin-top: 0;
+        text-transform: uppercase;
+        font-family: $bold;
       }
     }
     .blog-picture {
@@ -925,6 +925,7 @@ div#n2-ss-2 {
       background-position: center;
     }
     .blog-image {
+      padding: 0;
       img {
         width: 100%;
         height: auto;

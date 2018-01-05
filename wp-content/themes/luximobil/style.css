@@ -2204,7 +2204,7 @@ div#n2-ss-2 .n2-ss-slide {
 .post-type-archive-blog {
   background-color: #F1F1F1; }
   .post-type-archive-blog .article-block {
-    padding-top: 20px;
+    padding: 0;
     width: 32%;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
@@ -2228,19 +2228,22 @@ div#n2-ss-2 .n2-ss-slide {
     .post-type-archive-blog .article-block .text-content {
       padding: 15px;
       clear: both; }
-      .post-type-archive-blog .article-block .text-content a {
-        color: #232323; }
-      .post-type-archive-blog .article-block .text-content h1 {
-        margin-top: 0; }
+      .post-type-archive-blog .article-block .text-content .entry-title {
+        color: #232323;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-family: ProximaNovaBold; }
     .post-type-archive-blog .article-block .blog-picture {
       height: 209px;
       background-size: cover;
       background-position: center; }
-    .post-type-archive-blog .article-block .blog-image img {
-      width: 100%;
-      height: auto;
-      vertical-align: top;
-      border-radius: 6px; }
+    .post-type-archive-blog .article-block .blog-image {
+      padding: 0; }
+      .post-type-archive-blog .article-block .blog-image img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+        border-radius: 6px; }
 
 .servicii-section .servicii-content {
   background: #f8f8f8; }
