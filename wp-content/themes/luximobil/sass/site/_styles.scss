@@ -881,23 +881,23 @@ div#n2-ss-2 {
   background-color: #F1F1F1;
   .article-block {
     padding: 0;
-    width: 32%;
+    width: 100%;
     @include transition();
     position: relative;
     background: $color-white;
     border-radius: 6px;
     margin: 30px 5px 0 5px;
-    -webkit-box-shadow: 1px 1px 10px $gray-light;
-    -moz-box-shadow: 1px 1px 10px $gray-light;
-    box-shadow: 1px 1px 10px $gray-light;
+    -webkit-box-shadow: 3px 1px 23px rgba(0,0,0, .2);;
+    -moz-box-shadow: 3px 1px 23px rgba(0,0,0, .2);;
+    box-shadow: 3px 1px 23px rgba(0,0,0, .2);;
     &:nth-of-type(4) {
       clear: left;
     }
     &:hover {
       transform: translateY(-5px);
-      -webkit-box-shadow: 1px 1px 40px $gray-light;
-      -moz-box-shadow: 1px 1px 40px $gray-light;
-      box-shadow: 1px 1px 40px $gray-light;
+      -webkit-box-shadow: 0 0 45px $gray-light;
+      -moz-box-shadow: 0 0 45px $gray-light;
+      box-shadow: 0 0 45px $gray-light;
     }
 
     .text-content {
@@ -911,7 +911,7 @@ div#n2-ss-2 {
       }
     }
     .blog-picture {
-      height: 209px;
+      height: 250px;
       background-size: cover;
       background-position: center;
     }
@@ -926,6 +926,11 @@ div#n2-ss-2 {
     }
   }
 }
+
+
+
+
+// SERVICES
 
 .servicii-section {
   .servicii-content {

@@ -69,6 +69,31 @@ $(document).ready(function($) {
 	});
 
 
+    (function($, window) {
+        function autoheight() {
+            var max = 0;
+
+            $ls = $('.article-block');
+
+            $ls.each(function() {
+                $t = $(this);
+                $t.css('height','');
+                max = Math.max(max, $t.height());
+            });
+            $ls.height(max);
+
+        }
+
+        $(function() {
+            // the inline-block selector
+            autoheight(); // first time
+            $(window).load(autoheight); // when all content finishes loading
+            $(window).resize(autoheight); // when the window size changes
+            $(document).on('sf:ajaxfinish', '.searchandfilter', autoheight);
+        });
+    })(jQuery, window);
+
+
  });
 
 jQuery(document).bind('gform_page_loaded', function(event, form_id, current_page){
