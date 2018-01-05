@@ -23,7 +23,8 @@ if ($products->have_posts()) {
                 $product_id = $products->posts[$i]->ID;
                 $i++;
                 ?>
-                <?php the_post_thumbnail('post-size'); ?>
+                <img class="post-thumbnail" src="<?php echo get_the_post_thumbnail_url(null, 'wide-thumbnail'); ?>"
+                     alt="pos-thumbnail">
                 <div class="price-product">
                     <?php
                     $regular_price = get_field('regular_price');
@@ -42,7 +43,7 @@ if ($products->have_posts()) {
                         <?php echo $regular_price . ' €'; ?>
                     <?php } ?>
                 </div>
-                <div class="info-container-prf">
+                <div class="info-container">
                                     <span class="title-post">
                                         <?php if ($region && $sector) {
                                             echo $region . ' , ';
@@ -55,8 +56,14 @@ if ($products->have_posts()) {
                                     </span>
                     <?php if (have_rows('imobil_specifications', $product_id)):
                         while (have_rows('imobil_specifications', $product_id)): the_row(); ?>
-                            <div class="adresss-product-prf">
+                            <div class="adresss-product">
                                 <?php the_sub_field('adresa_imobil'); ?>
+                            </div>
+                            <div class="col-xs-12">
+                                <a href="<?php the_permalink($product_id); ?>"
+                                   class="button go-to-product">
+                                    <?php _e('Vezi Detalii', 'jhfw'); ?>
+                                </a>
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
