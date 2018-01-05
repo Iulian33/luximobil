@@ -30,7 +30,7 @@
         </li>
         <li>
             <i class="icon-suprafata"></i>
-            <p><?php the_sub_field('suprafata_totala'); ?></p>
+            <p><?php the_sub_field('suprafata_totala'); ?> m<sup>2</sup></p>
         </li>
         <li>
             <i class="icon-tip-oferta"></i>

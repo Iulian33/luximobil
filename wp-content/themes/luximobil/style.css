@@ -1696,10 +1696,12 @@ div#n2-ss-2 .n2-ss-slide {
     position: relative;
     float: left;
     margin: 0;
-    padding: 50px 20px 0; }
+    padding: 50px 20px 0;
+    width: 115%; }
     .main-header .mainMenu > ul li {
       list-style: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      white-space: nowrap; }
     .main-header .mainMenu > ul > li {
       position: relative;
       float: left;
@@ -2240,6 +2242,51 @@ div#n2-ss-2 .n2-ss-slide {
       vertical-align: top;
       border-radius: 6px; }
 
+.servicii-section .servicii-content {
+  background: #f8f8f8; }
+  .servicii-section .servicii-content .service-container {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 30px 0;
+    padding-top: 50px; }
+
+.service-container .container-icon {
+  box-shadow: 0 3px 17.28px 0.72px rgba(7, 135, 234, 0.33);
+  background: #0787ea;
+  width: 125px;
+  cursor: pointer;
+  height: 125px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid transparent;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  .service-container .container-icon i {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 32px;
+    display: block; }
+  .service-container .container-icon:hover {
+    background: #fff;
+    border: 4px solid #0787ea; }
+    .service-container .container-icon:hover i {
+      color: #0787ea; }
+
+.service-container .title-service {
+  color: #000;
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  font-size: 16px; }
+
 .dk-select,
 .dk-select *,
 .dk-select *:before,
@@ -2597,4 +2644,6 @@ select[data-dkcacheid] {
     .section-special-ofert .content-inner .info-product-side .title-product-ofert {
       padding-top: 48px; }
     .section-special-ofert .content-inner .info-product-side .price-ofert {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .servicii-section .servicii-content .service-container {
+    width: 100%; } }

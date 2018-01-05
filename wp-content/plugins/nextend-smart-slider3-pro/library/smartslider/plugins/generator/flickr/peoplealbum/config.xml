@@ -1,5 +1,0 @@
-<root>
-    <params name="filter" label="Filter">
-        <param name="peoplephotoset" label="Album" type="flickralbums" default=""/>
-    </params>
-</root>

@@ -216,9 +216,11 @@ div#n2-ss-2 {
       float: left;
       margin: 0;
       padding: 50px 20px 0 ;
+      width: 115%;
       li {
         list-style: none;
         text-transform: uppercase;
+        white-space: nowrap;
       }
       & > li {
         position: relative;
@@ -930,5 +932,52 @@ div#n2-ss-2 {
         border-radius: 6px;
       }
     }
+  }
+}
+
+.servicii-section{
+  .servicii-content{
+    background: $color-lightgray;
+    .service-container{
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 30px 0;
+      padding-top: 50px;
+    }
+  }
+}
+
+.service-container{
+  .container-icon{
+    box-shadow: 0 3px 17.28px 0.72px rgba(7, 135, 234, 0.33);
+    background: #0787ea;
+    width: 125px;
+    cursor: pointer;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid transparent;
+    @include transition();
+    i{
+      @include transition();
+      color: $color-white;
+      font-size: 50px;
+      padding-top: 32px;
+      display: block;
+    }
+    &:hover{
+      background: $color-white;
+      border: 4px solid #0787ea;
+      i{
+        color: #0787ea;
+      }
+    }
+  }
+  .title-service{
+    color: $color-black;
+    font-family: $bold;
+    text-transform: uppercase;
+    font-size: 16px;
   }
 }
