@@ -6,7 +6,7 @@
                 <?php include('prefooter-items/loturi-teren.php'); ?>
             </div>
             <div class="col-sm-6 spatii-comerciale">
-                <h4 class="category-heading"><?php _e('Spatii Comerciale', 'jhfw'); ?></h4>
+                <h4 class="category-heading"><?php _e('Spații  Comerciale', 'jhfw'); ?></h4>
                 <?php include('prefooter-items/spatii-comerciale.php'); ?>
             </div>
         </div>
