@@ -13,22 +13,25 @@ get_header(); ?>
         <div class="row">
             <div class="col-xs-12">
                 <main id="main" class="site-main" role="main">
-                    <?php JH_check_sidebar(); ?>
                     <?php while (have_posts()) : the_post(); ?>
+                        <div class="blog-text-block">
+                            <div class="row">
+                                <h1 class="blog-heading col-sm-4 col-md-4">
+                                    <?php the_title(); ?>
+                                </h1>
+                                <article class="main-text col-sm-8 col-md-8">
+                                    <?php the_content(); ?>
+                                </article>
+                            </div>
+                            <div class="row">
+                                <div class="video col-sm-12">
+                                    <?php the_field('page_video'); ?>
+                                </div>
+                            </div>
+                        </div>
 
-                        <?php get_template_part('content', 'single'); ?>
-
-                        <?php the_post_navigation(); ?>
-
-                        <?php
-                        // If comments are open or we have at least one comment, load up the comment template
-                        if (comments_open() || get_comments_number()) :
-                            comments_template();
-                        endif;
-                        ?>
 
                     <?php endwhile; // end of the loop. ?>
-                    <?php JH_check_sidebar("end"); ?>
                 </main><!-- #main -->
             </div>
         </div>

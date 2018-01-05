@@ -11,6 +11,10 @@ get_header(); ?>
 <div class="mainContent">
     <div class="container">
 
+        <h1 class="main-blog-heading">
+            <?php _e('Blog', 'jhfw'); ?>
+        </h1>
+
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <article class="col-md-4 col-sm-6 col-xs-12"
@@ -23,7 +27,7 @@ get_header(); ?>
                                 <?php the_post_thumbnail('blog-thumbnail'); ?>
                             <?php } else { ?>
                                 <?php $default_blog_image = get_template_directory_uri().'/images/default-img.png'?>
-                                <div class="blog-picture"
+                                <div class="default-blog-picture"
                                      style="background-image: url('<?php echo $default_blog_image; ?>' );"></div>
                             <?php } ?>
                         </div>
