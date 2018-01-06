@@ -16,12 +16,18 @@
             <div class="col-sm-3 col-widget">
                 <div class="bg-contacts"></div>
                 <div class="contacts-contaner">
-                    Contacts
+                    <?php dynamic_sidebar( 'footer-contacts' ); ?>
                 </div>
             </div>
-            <div class="col-sm-3 col-widget">Menu Rapid</div>
-            <div class="col-sm-3 col-widget">Menu Rapid</div>
-            <div class="col-sm-3 col-widget">About Us</div>
+            <div class="col-sm-3 col-widget">
+                <?php dynamic_sidebar( 'footer-menu-1' ); ?>
+            </div>
+            <div class="col-sm-3 col-widget">
+                <?php dynamic_sidebar( 'footer-menu-2' ); ?>
+            </div>
+            <div class="col-sm-3 col-widget">
+                <?php dynamic_sidebar('footer-about'); ?>
+            </div>
         </div>
     </div>
 

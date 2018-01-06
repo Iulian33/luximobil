@@ -81,7 +81,7 @@ add_action( 'after_setup_theme', 'JH_setup' );
  */
 function JH_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'jhfw' ),
+		'name'          => __( 'Contact Sidebar', 'jhfw' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -92,6 +92,43 @@ function JH_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'Language Sidebar', 'jhfw' ),
         'id'            => 'language-area',
+        'description'   => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<div class="widget-title">',
+        'after_title'   => '</div>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer Contacts', 'jhfw' ),
+        'id'            => 'footer-contacts',
+        'description'   => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<div class="widget-title">',
+        'after_title'   => '</div>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Menu 1', 'jhfw' ),
+        'id'            => 'footer-menu-1',
+        'description'   => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<div class="widget-title">',
+        'after_title'   => '</div>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Menu 2', 'jhfw' ),
+        'id'            => 'footer-menu-2',
+        'description'   => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<div class="widget-title">',
+        'after_title'   => '</div>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer About', 'jhfw' ),
+        'id'            => 'footer-about',
         'description'   => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
@@ -586,8 +623,8 @@ function remove_default_post_type() {
 }
 
 // Include eCommerce Module hand writen
-include('eCommerce/general-post-type.php');
-include('Blog/blog-post-type.php');
+include('e-commerce/general-post-type.php');
+include('blog/blog-post-type.php');
 
 
 add_image_size('post-size',280,380,true);

@@ -1870,11 +1870,6 @@ div#n2-ss-2 .n2-ss-slide {
   position: relative; }
   .mainFooter .col-widget:first-child {
     padding-left: 0; }
-  .mainFooter .footer-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.77); }
   .mainFooter .bg-contacts {
     position: absolute;
     display: block;
