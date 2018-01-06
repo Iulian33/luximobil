@@ -11,6 +11,7 @@
     ),
 );
 $products = new WP_Query($args);
+$default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post-wide.jpg';
 if ($products->have_posts()) {
     $i = 0;
     while ($products->have_posts()) : $products->the_post(); ?>
@@ -23,9 +24,17 @@ if ($products->have_posts()) {
                 $sector = @$sectorsTerms[0]->name;
                 $product_id = $products->posts[$i]->ID;
                 $i++;
-                ?>
-                <img class="post-thumbnail" src="<?php echo get_the_post_thumbnail_url(null, 'wide-thumbnail'); ?>"
-                     alt="pos-thumbnail">
+
+                if (get_the_post_thumbnail()) { ?>
+                    <img class="post-thumbnail" src="<?php echo get_the_post_thumbnail_url(null, 'wide-thumbnail'); ?>"
+                         alt="pos-thumbnail">
+                <?php } else { ?>
+                <img class="default-post-img-wide" src="<?php echo $default_post_thumbnail; ?>"
+                     alt="default-post image">
+                <?php } ?>
+
+
+
                 <div class="price-product">
                     <?php
                     $regular_price = get_field('regular_price');

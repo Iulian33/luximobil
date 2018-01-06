@@ -2363,8 +2363,10 @@ div#n2-ss-2 .n2-ss-slide {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px; }
-    .prefooter-section .post-item-container .post-thumbnail {
-      width: 100%; }
+    .prefooter-section .post-item-container .post-thumbnail,
+    .prefooter-section .post-item-container .default-post-img-wide {
+      width: 100%;
+      height: 100%; }
     .prefooter-section .post-item-container .info-container {
       margin-bottom: -50px; }
       .prefooter-section .post-item-container .info-container .go-to-product {

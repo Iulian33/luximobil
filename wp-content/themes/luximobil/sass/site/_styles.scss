@@ -1067,8 +1067,10 @@ div#n2-ss-2 {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-    .post-thumbnail {
+    .post-thumbnail,
+    .default-post-img-wide{
       width: 100%;
+      height: 100%;
     }
     .info-container{
       margin-bottom: -50px;
