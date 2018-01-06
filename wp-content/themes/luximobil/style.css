@@ -2254,20 +2254,18 @@ div#n2-ss-2 .n2-ss-slide {
         color: #232323;
         margin-top: 0;
         text-transform: uppercase;
-        font-family: ProximaNovaBold;
-        font-size: 24px; }
-    .post-type-archive-blog a .article-block .default-blog-picture {
+        font-family: ProximaNovaBold; }
+    .post-type-archive-blog a .article-block .blog-picture {
       height: 250px;
       background-size: cover;
-      background-position: center;
-      border-radius: 6px 6px 0 0; }
+      background-position: center; }
     .post-type-archive-blog a .article-block .blog-image {
       padding: 0; }
       .post-type-archive-blog a .article-block .blog-image img {
         width: 100%;
         height: auto;
         vertical-align: top;
-        border-radius: 6px 6px 0 0; }
+        border-radius: 6px; }
 
 /***************** SINGLE POST *********************/
 .blog-template-default .blog-text-block {
@@ -2279,18 +2277,7 @@ div#n2-ss-2 .n2-ss-slide {
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 60px; }
-  .blog-template-default .blog-text-block .main-text {
-    color: #232323;
-    font-size: 18px; }
-  .blog-template-default .blog-text-block .video {
-    margin-top: 60px; }
-    .blog-template-default .blog-text-block .video iframe {
-      width: 64%;
-      height: 500px;
-      float: right;
-      margin-right: 25px; }
 
-/***************** SERVICII *********************/
 .servicii-section .servicii-content {
   background: #f8f8f8; }
   .servicii-section .servicii-content .service-container {
