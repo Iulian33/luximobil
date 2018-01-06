@@ -2044,7 +2044,6 @@ div#n2-ss-2 .n2-ss-slide {
 .post-item-container {
   overflow: hidden; }
   .post-item-container img {
-    width: auto !important;
     height: 100%; }
   .post-item-container .info-container {
     background: rgba(0, 0, 0, 0.68);
@@ -2678,9 +2677,7 @@ select[data-dkcacheid] {
   .blog-template-default .blog-text-block .video iframe {
     width: 100%;
     clear: both;
-    margin: 0; }
-  .post-item-container img {
-    margin-left: -24px; } }
+    margin: 0; } }
 
 @media all and (max-width: 767px) {
   /****************BUTTONS STYLES*****************/
@@ -2748,8 +2745,4 @@ select[data-dkcacheid] {
   .blog-template-default .blog-text-block .video {
     margin-top: 30px; }
     .blog-template-default .blog-text-block .video iframe {
-      height: 300px; }
-  .post-item-container img {
-    margin-left: 0;
-    height: auto;
-    width: 100% !important; } }
+      height: 300px; } }
