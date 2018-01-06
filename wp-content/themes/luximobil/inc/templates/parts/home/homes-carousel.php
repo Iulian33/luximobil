@@ -82,7 +82,11 @@
                                         </div>
                                         <div class="col-xs-4">
                                             <i class="fa fa-bath" aria-hidden="true"></i>
-                                            <?php the_sub_field('grup_sanitar'); ?>
+                                            <?php
+                                            $grup_snitar = get_sub_field('grup_sanitar');
+                                            $grup_snitar = preg_replace('/[^0-9.]+/', '', $grup_snitar);
+                                            echo $grup_snitar;
+                                            ?>
                                         </div>
                                         <div class="col-xs-12">
                                             <a href="<?php the_permalink($product_id); ?>"

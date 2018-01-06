@@ -1,6 +1,4 @@
-<?php global $post ?>
-
-<?php var_dump(wp_get_attachment_image($post->ID)); ?>
+<?php global $post; ?>
 <div class="headerImage">
     <?php if (get_field('header_type') != 'None') { ?>
         <?php $pageImage = get_field('header_image', get_the_ID());

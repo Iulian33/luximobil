@@ -578,3 +578,8 @@
 [06-Jan-2018 00:08:19 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
 [06-Jan-2018 00:08:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
 [06-Jan-2018 00:08:19 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
+[06-Jan-2018 20:08:25 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
+[06-Jan-2018 20:08:30 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
+[06-Jan-2018 20:10:27 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
+[06-Jan-2018 20:10:43 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
+[06-Jan-2018 20:12:03 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
