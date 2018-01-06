@@ -71,7 +71,7 @@ div#n2-ss-2 {
 
 .home {
   .headerImage {
-    min-height: auto;
+   display: none;
   }
 }
 
@@ -924,28 +924,29 @@ div#n2-ss-2 {
         box-shadow: 7px 11px 50px $gray-light;
       }
 
-    .text-content {
-      padding: 15px;
-      clear: both;
-      .entry-title {
-        color: $dark-text-color;
-        margin-top: 0;
-        text-transform: uppercase;
-        font-family: $bold;
+      .text-content {
+        padding: 15px;
+        clear: both;
+        .entry-title {
+          color: $dark-text-color;
+          margin-top: 0;
+          text-transform: uppercase;
+          font-family: $bold;
+        }
       }
-    }
-    .blog-picture {
-      height: 250px;
-      background-size: cover;
-      background-position: center;
-    }
-    .blog-image {
-      padding: 0;
-      img {
-        width: 100%;
-        height: auto;
-        vertical-align: top;
-        border-radius: 6px;
+      .blog-picture {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+      }
+      .blog-image {
+        padding: 0;
+        img {
+          width: 100%;
+          height: auto;
+          vertical-align: top;
+          border-radius: 6px;
+        }
       }
     }
   }
