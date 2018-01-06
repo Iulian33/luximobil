@@ -2254,19 +2254,43 @@ div#n2-ss-2 .n2-ss-slide {
         color: #232323;
         margin-top: 0;
         text-transform: uppercase;
-        font-family: ProximaNovaBold; }
-    .post-type-archive-blog a .article-block .blog-picture {
+        font-family: ProximaNovaBold;
+        font-size: 24px; }
+    .post-type-archive-blog a .article-block .default-blog-picture {
       height: 250px;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      border-radius: 6px 6px 0 0; }
     .post-type-archive-blog a .article-block .blog-image {
       padding: 0; }
       .post-type-archive-blog a .article-block .blog-image img {
         width: 100%;
         height: auto;
         vertical-align: top;
-        border-radius: 6px; }
+        border-radius: 6px 6px 0 0; }
 
+/***************** SINGLE POST *********************/
+.blog-template-default .blog-text-block {
+  margin: 60px 0; }
+  .blog-template-default .blog-text-block .blog-heading {
+    color: #232323;
+    font-size: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 60px; }
+  .blog-template-default .blog-text-block .main-text {
+    color: #232323;
+    font-size: 18px; }
+  .blog-template-default .blog-text-block .video {
+    margin-top: 60px; }
+    .blog-template-default .blog-text-block .video iframe {
+      width: 64%;
+      height: 500px;
+      float: right;
+      margin-right: 25px; }
+
+/***************** SERVICII *********************/
 .servicii-section .servicii-content {
   background: #f8f8f8; }
   .servicii-section .servicii-content .service-container {
@@ -2629,6 +2653,9 @@ select[data-dkcacheid] {
     padding-left: 15px; }
   .section-special-ofert .content-inner .list-specs {
     padding-bottom: 45px; }
+  .blog-template-default .blog-text-block .blog-heading {
+    margin-top: 14px;
+    line-height: 55px; }
   .blog-template-default .blog-text-block .video iframe {
     width: 100%;
     clear: both;
