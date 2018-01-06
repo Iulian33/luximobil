@@ -681,6 +681,11 @@ div#n2-ss-2 {
 }
 
 .post-item-container {
+  overflow: hidden;
+  img{
+    width: auto !important;
+    height: 100%;
+  }
   .info-container {
     background: rgba(0, 0, 0, .68);
     position: absolute;
