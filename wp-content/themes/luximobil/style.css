@@ -1578,11 +1578,11 @@ div#n2-ss-2 .n2-ss-slide {
 
 /*************** HEADER *****************/
 .headerImage {
-  min-height: 450px;
+  min-height: 350px;
   overflow: hidden;
-  padding-top: 165px; }
+  padding-top: 145px; }
   .headerImage .pageImage {
-    min-height: 450px;
+    min-height: 350px;
     background-size: cover;
     background-position: 50% 65%; }
 
@@ -1991,47 +1991,49 @@ div#n2-ss-2 .n2-ss-slide {
   display: inline-block;
   width: 100%; }
 
-.categories-section .category-box {
-  display: block;
-  float: left;
-  width: 25%;
-  background-color: #3876b3;
-  background-size: cover;
-  background-position: center center; }
-  .categories-section .category-box .mask-block {
+.categories-section {
+  margin-top: 145px; }
+  .categories-section .category-box {
     display: block;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
-    .categories-section .category-box .mask-block:hover {
-      opacity: 1; }
-    .categories-section .category-box .mask-block h2 {
-      line-height: 750px;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 20px;
-      font-family: ProximaNovaBold; }
-    .categories-section .category-box .mask-block .buttons-options {
-      bottom: 80px;
-      position: absolute;
-      padding: 0;
+    float: left;
+    width: 25%;
+    background-color: #3876b3;
+    background-size: cover;
+    background-position: center center; }
+    .categories-section .category-box .mask-block {
+      display: block;
       width: 100%;
-      margin: 0; }
-      .categories-section .category-box .mask-block .buttons-options li {
-        display: block; }
-        .categories-section .category-box .mask-block .buttons-options li .button, .categories-section .category-box .mask-block .buttons-options li .button-alt {
-          width: 140px;
-          text-decoration: none;
-          text-transform: uppercase; }
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      .categories-section .category-box .mask-block:hover {
+        opacity: 1; }
+      .categories-section .category-box .mask-block h2 {
+        line-height: 750px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: ProximaNovaBold; }
+      .categories-section .category-box .mask-block .buttons-options {
+        bottom: 80px;
+        position: absolute;
+        padding: 0;
+        width: 100%;
+        margin: 0; }
+        .categories-section .category-box .mask-block .buttons-options li {
+          display: block; }
+          .categories-section .category-box .mask-block .buttons-options li .button, .categories-section .category-box .mask-block .buttons-options li .button-alt {
+            width: 140px;
+            text-decoration: none;
+            text-transform: uppercase; }
 
 .apartaments-section {
   padding-top: 30px; }
@@ -2247,6 +2249,11 @@ div#n2-ss-2 .n2-ss-slide {
       -webkit-box-shadow: 7px 11px 50px #777777;
       -moz-box-shadow: 7px 11px 50px #777777;
       box-shadow: 7px 11px 50px #777777; }
+    .post-type-archive-blog a .article-block .default-blog-picture {
+      height: 240px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px 6px 0 0; }
     .post-type-archive-blog a .article-block .text-content {
       padding: 15px;
       clear: both; }
@@ -2254,7 +2261,8 @@ div#n2-ss-2 .n2-ss-slide {
         color: #232323;
         margin-top: 0;
         text-transform: uppercase;
-        font-family: ProximaNovaBold; }
+        font-family: ProximaNovaBold;
+        font-size: 24px; }
     .post-type-archive-blog a .article-block .blog-picture {
       height: 250px;
       background-size: cover;
