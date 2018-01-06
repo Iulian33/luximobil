@@ -462,7 +462,8 @@ div#n2-ss-2 {
   min-height: 350px;
   overflow: hidden;
   background-size: cover;
-  background-position: 50% 65%;
+  background-position: 50% 70%;
+  //background-attachment: fixed;
   position: relative;
   .col-widget {
     &:first-child {

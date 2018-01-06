@@ -15,6 +15,7 @@
         );
 
         $products = new WP_Query($args);
+        $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg';
         if ($products->have_posts()) { ?>
         <!-- Set up your HTML -->
         <div class="owl-carousel posts-carousel homes-carousel">
@@ -29,8 +30,12 @@
                         $sector = @$sectorsTerms[0]->name;
                         $product_id = $products->posts[$i]->ID;
                         $i++;
-                        ?>
-                        <?php the_post_thumbnail('post-size'); ?>
+                        if (get_the_post_thumbnail()) {
+                            the_post_thumbnail('post-size');
+                        } else { ?>
+                            <img class="default-post-img" src="<?php echo $default_post_thumbnail; ?>"
+                                 alt="default-post image">
+                        <?php } ?>
                         <div class="price-product">
                             <?php
                             $regular_price = get_field('regular_price');

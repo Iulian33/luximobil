@@ -15,11 +15,13 @@
         );
 
         $products = new WP_Query($args);
+        $default_post_thumbnail = get_template_directory_uri().'/images/default-img.png';
         if ($products->have_posts()) { ?>
             <!-- Set up your HTML -->
             <div class="owl-carousel posts-carousel apartaments-carousel">
                 <?php $i = 0; ?>
                 <?php while ($products->have_posts()) : $products->the_post(); ?>
+                    <?php if (get_the_post_thumbnail()) { ?>
                     <div class="post-item-container">
                         <a class="post-item-imobil" href="<?php the_permalink(); ?>">
                             <?php
@@ -29,8 +31,11 @@
                             $sector = @$sectorsTerms[0]->name;
                             $product_id = $products->posts[$i]->ID;
                             $i++;
-                            ?>
-                            <?php the_post_thumbnail('post-size'); ?>
+                            if (get_the_post_thumbnail()){
+                                the_post_thumbnail('post-size');
+                            } else { ?>
+                                Default post image
+                            <?php } ?>
                             <div class="price-product">
                                 <?php
                                 $regular_price = get_field('regular_price');
@@ -91,6 +96,7 @@
                             </div>
                         </a>
                     </div>
+                <?php } ?>
                 <?php endwhile; ?>
             </div>
         <?php }

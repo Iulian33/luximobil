@@ -26,7 +26,7 @@ get_header(); ?>
                             <?php if (has_post_thumbnail()) { ?>
                                 <?php the_post_thumbnail('blog-thumbnail'); ?>
                             <?php } else { ?>
-                                <?php $default_blog_image = get_template_directory_uri().'/images/default-img.png'?>
+                                <?php $default_blog_image = get_template_directory_uri().'/images/default-img.png'; ?>
                                 <div class="default-blog-picture"
                                      style="background-image: url('<?php echo $default_blog_image; ?>' );"></div>
                             <?php } ?>
