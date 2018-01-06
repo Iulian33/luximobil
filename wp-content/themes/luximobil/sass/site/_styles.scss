@@ -965,6 +965,20 @@ div#n2-ss-2 {
       letter-spacing: 3px;
       line-height: 60px;
     }
+    .main-text {
+      color: $dark-text-color;
+      font-size: 18px;
+    }
+    .video {
+      margin-top: 60px;
+
+      iframe {
+        width: 64%;
+        height: 500px;
+        float: right;
+        margin-right: 25px;
+      }
+    }
   }
 }
 

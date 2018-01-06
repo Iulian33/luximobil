@@ -2277,6 +2277,16 @@ div#n2-ss-2 .n2-ss-slide {
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 60px; }
+  .blog-template-default .blog-text-block .main-text {
+    color: #232323;
+    font-size: 18px; }
+  .blog-template-default .blog-text-block .video {
+    margin-top: 60px; }
+    .blog-template-default .blog-text-block .video iframe {
+      width: 64%;
+      height: 500px;
+      float: right;
+      margin-right: 25px; }
 
 .servicii-section .servicii-content {
   background: #f8f8f8; }
