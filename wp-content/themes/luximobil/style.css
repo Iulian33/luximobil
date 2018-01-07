@@ -1868,13 +1868,64 @@ div#n2-ss-2 .n2-ss-slide {
   background-size: cover;
   background-position: 50% 70%;
   position: relative; }
+  .mainFooter .container {
+    position: relative; }
+  .mainFooter .widget-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: ProximaNovaBold;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 28px;
+    padding-left: 25px; }
+    .mainFooter .widget-title:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      left: 25px;
+      width: 30%;
+      border-bottom: 3px solid #ff0000; }
+  .mainFooter .widget_nav_menu .menu {
+    padding-left: 25px;
+    margin: 0; }
+    .mainFooter .widget_nav_menu .menu li {
+      list-style-type: none;
+      line-height: 33px;
+      font-size: 18px;
+      font-family: ProximaNovaLight; }
+      .mainFooter .widget_nav_menu .menu li a {
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .mainFooter .widget_nav_menu .menu li a:hover {
+          color: #ff0000; }
   .mainFooter .col-widget:first-child {
     padding-left: 0; }
+  .mainFooter .col-widget.menu-1, .mainFooter .col-widget.menu-2 {
+    margin-left: 42px; }
+  .mainFooter .col-widget.menu-2 {
+    margin-left: 22px; }
+  .mainFooter .footer-about {
+    position: absolute;
+    right: 0;
+    width: 42%; }
+    .mainFooter .footer-about .textwidget {
+      padding-left: 25px;
+      color: #fff;
+      font-size: 13px;
+      text-align: justify; }
   .mainFooter .bg-contacts {
     position: absolute;
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background: #000;
     background-color: rgba(255, 0, 0, 0.65); }
   .mainFooter .contacts-contaner {

@@ -508,7 +508,7 @@ function add_property_attribute($link, $handle) {
 }
 
 function JHCredits() {
-    $creditsText = '<a href="#JHSite" target="_blank">'.__('Development by Julian Hook', 'jhfw').'</a>';
+    $creditsText = '<a href="http://julianhook.com/" target="_blank">'.__('Development by Julian Hook', 'jhfw').'</a>';
     echo $creditsText;
 }
 
