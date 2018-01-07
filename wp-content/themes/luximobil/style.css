@@ -2674,7 +2674,23 @@ select[data-dkcacheid] {
   .blog-template-default .blog-text-block .video iframe {
     width: 100%;
     clear: both;
-    margin: 0; } }
+    margin: 0; }
+  .categories-section {
+    margin-top: 60px; }
+  .post-item-container .info-container {
+    margin-bottom: -60px !important; }
+    .post-item-container .info-container .specs-product .col-xs-4 {
+      font-size: 12px; }
+  .mm-listview > li:not(.mm-divider):after {
+    left: 0; }
+  #mobilemenu {
+    box-shadow: 0 0 200px 0 #000; }
+    #mobilemenu .mm-navbar {
+      background: #3876b3; }
+      #mobilemenu .mm-navbar a {
+        color: #fff; }
+    #mobilemenu .current-menu-item, #mobilemenu .current-menu-parent {
+      background: #fff; } }
 
 @media all and (max-width: 767px) {
   /****************BUTTONS STYLES*****************/
@@ -2742,4 +2758,6 @@ select[data-dkcacheid] {
   .blog-template-default .blog-text-block .video {
     margin-top: 30px; }
     .blog-template-default .blog-text-block .video iframe {
-      height: 300px; } }
+      height: 300px; }
+  .categories-section {
+    padding-top: 0; } }

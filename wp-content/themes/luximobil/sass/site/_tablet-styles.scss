@@ -83,3 +83,32 @@
     }
   }
 }
+.categories-section {
+  margin-top: 60px;
+}
+.post-item-container{
+  .info-container {
+    margin-bottom: -60px !important;
+    .specs-product{
+      .col-xs-4{
+        font-size: 12px;
+      }
+    }
+  }
+}
+.mm-listview > li:not(.mm-divider):after{
+  left: 0;
+}
+//Style Tablet & Mobile Menu
+#mobilemenu {
+  box-shadow: 0 0 200px 0 $color-black;
+  .mm-navbar {
+    background: $color-blue;
+    a {
+      color: $color-white;
+    }
+  }
+  .current-menu-item, .current-menu-parent {
+    background: $color-white;
+  }
+}
