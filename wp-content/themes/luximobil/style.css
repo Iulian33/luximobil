@@ -2370,6 +2370,9 @@ div#n2-ss-2 .n2-ss-slide {
     .prefooter-section .post-item-container:hover .info-container {
       margin-bottom: 0 !important; }
 
+* {
+  display: none; }
+
 .dk-select,
 .dk-select *,
 .dk-select *:before,
