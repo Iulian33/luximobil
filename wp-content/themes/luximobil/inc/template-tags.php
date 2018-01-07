@@ -11,7 +11,6 @@ if ( ! function_exists( 'the_posts_navigation' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
  *
- * @todo Remove this function when WordPress 4.3 is released.
  */
 function the_posts_navigation() {
 	// Don't print empty markup if there's only one page.
@@ -40,7 +39,6 @@ if ( ! function_exists( 'the_post_navigation' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  *
- * @todo Remove this function when WordPress 4.3 is released.
  */
 function the_post_navigation() {
 	// Don't print empty markup if there's nowhere to navigate.
@@ -132,7 +130,6 @@ if ( ! function_exists( 'the_archive_title' ) ) :
  *
  * Display the archive title based on the queried object.
  *
- * @todo Remove this function when WordPress 4.3 is released.
  *
  * @param string $before Optional. Content to prepend to the title. Default empty.
  * @param string $after  Optional. Content to append to the title. Default empty.
@@ -199,7 +196,6 @@ if ( ! function_exists( 'the_archive_description' ) ) :
  *
  * Display category, tag, or term description.
  *
- * @todo Remove this function when WordPress 4.3 is released.
  *
  * @param string $before Optional. Content to prepend to the description. Default empty.
  * @param string $after  Optional. Content to append to the description. Default empty.
