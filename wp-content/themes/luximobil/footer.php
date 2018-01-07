@@ -29,27 +29,19 @@
                     <div class="col-sm-8 col-widget footer-about">
                         <?php dynamic_sidebar('footer-about'); ?>
                     </div>
+                    <div class="col-sm-12 credits-bttom-footer">
+                        <span class="copy-right-text">
+                            <?php _e('© Copyright')?>
+                            <?php echo date("Y"); ?>
+                        </span>
+                        <span class="credits-link">
+                            <?php JHCredits(); ?>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-<!--    <div class="lowerFooter">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-sm-6 copyright">-->
-<!--                    --><?php //the_field('copyright', 'option'); ?>
-<!--                    --><?php //echo date("Y"); ?>
-<!--                    --><?php //wp_nav_menu(array("theme_location" => 'footer', 'menu_class' => 'footerMenu', 'container' => '')); ?>
-<!--                </div>-->
-<!--                <div class="col-sm-6 credits">-->
-<!--                    --><?php //JHCredits(); ?>
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 </footer>
 </div>
 

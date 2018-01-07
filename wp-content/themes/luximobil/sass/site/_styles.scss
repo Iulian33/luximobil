@@ -544,6 +544,25 @@ div#n2-ss-2 {
     width: 100%;
     height: 100%;
   }
+  .credits-bttom-footer{
+    padding-top: 55px;
+    padding-left: 65px;
+    .copy-right-text{
+      color: $color-white;
+      font-size: 12px;
+    }
+    .credits-link{
+      float: right;
+      a{
+        color: $color-white;
+        text-decoration: none;
+        font-size: 12px;
+        &:hover{
+          color: $color-classic-red;
+        }
+      }
+    }
+  }
 }
 
 /************** PAGINATION STYLES ****************/
@@ -1101,7 +1120,7 @@ div#n2-ss-2 {
 }
 
 .prefooter-section {
-  padding: 25px 0;
+  padding: 25px 0 45px;
   .category-heading {
     display: inline-block;
     font-family: $bold;

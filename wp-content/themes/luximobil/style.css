@@ -1932,6 +1932,20 @@ div#n2-ss-2 .n2-ss-slide {
     position: relative;
     width: 100%;
     height: 100%; }
+  .mainFooter .credits-bttom-footer {
+    padding-top: 55px;
+    padding-left: 65px; }
+    .mainFooter .credits-bttom-footer .copy-right-text {
+      color: #fff;
+      font-size: 12px; }
+    .mainFooter .credits-bttom-footer .credits-link {
+      float: right; }
+      .mainFooter .credits-bttom-footer .credits-link a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px; }
+        .mainFooter .credits-bttom-footer .credits-link a:hover {
+          color: #ff0000; }
 
 /************** PAGINATION STYLES ****************/
 .screen-reader-text {
@@ -2390,7 +2404,7 @@ div#n2-ss-2 .n2-ss-slide {
   font-size: 16px; }
 
 .prefooter-section {
-  padding: 25px 0; }
+  padding: 25px 0 45px; }
   .prefooter-section .category-heading {
     display: inline-block;
     font-family: ProximaNovaBold;
