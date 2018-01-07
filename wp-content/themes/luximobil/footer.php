@@ -7,6 +7,7 @@
  * @package Site Theme
  */
 ?>
+
 <?php $footer_bg_img = get_field('footer_background_image','option'); ?>
 
 <footer class="mainFooter" style="background-image: url(<?php echo $footer_bg_img['url'];?>);">
@@ -44,10 +45,6 @@
     </div>
 </footer>
 </div>
-
-
-
-
 
 <div id="mobilemenu" class="displayNone"></div>
 <?php wp_footer(); ?>

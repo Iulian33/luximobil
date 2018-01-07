@@ -1868,6 +1868,33 @@ div#n2-ss-2 .n2-ss-slide {
   background-size: cover;
   background-position: 50% 70%;
   position: relative; }
+  .mainFooter .contacts-list {
+    padding-left: 5px; }
+    .mainFooter .contacts-list li {
+      list-style-type: none;
+      color: #fff;
+      padding-bottom: 25px;
+      padding-left: 25px; }
+      .mainFooter .contacts-list li.address:before, .mainFooter .contacts-list li.phones:before, .mainFooter .contacts-list li.mails:before {
+        font-family: FontAwesome;
+        position: absolute;
+        margin-left: -25px;
+        padding-top: 8px;
+        font-size: 20px; }
+      .mainFooter .contacts-list li.address:before {
+        content: '\f041'; }
+      .mainFooter .contacts-list li.phones:before {
+        content: '\f10b';
+        font-size: 25px;
+        margin-top: -2px; }
+      .mainFooter .contacts-list li.mails:before {
+        content: '\f0e0';
+        font-size: 15px;
+        padding-top: 11px; }
+      .mainFooter .contacts-list li a {
+        display: inline-block;
+        color: #fff;
+        width: 90%; }
   .mainFooter .container {
     position: relative; }
   .mainFooter .widget-title {
@@ -1875,7 +1902,7 @@ div#n2-ss-2 .n2-ss-slide {
     color: #fff;
     font-family: ProximaNovaBold;
     position: relative;
-    padding-top: 20px;
+    padding-top: 35px;
     padding-bottom: 12px;
     font-size: 18px;
     margin-bottom: 28px;
@@ -1933,7 +1960,7 @@ div#n2-ss-2 .n2-ss-slide {
     width: 100%;
     height: 100%; }
   .mainFooter .credits-bttom-footer {
-    padding-top: 55px;
+    padding-top: 40px;
     padding-left: 65px; }
     .mainFooter .credits-bttom-footer .copy-right-text {
       color: #fff;
