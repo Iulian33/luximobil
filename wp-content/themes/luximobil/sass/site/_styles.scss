@@ -893,6 +893,11 @@ div#n2-ss-2 {
 /***************** Blog Archive *********************/
 
 .post-type-archive-blog {
+  article {
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
 
   .main-blog-heading {
     text-transform: uppercase;
@@ -957,7 +962,7 @@ div#n2-ss-2 {
           width: 100%;
           height: auto;
           vertical-align: top;
-          border-radius: 6px;
+          border-radius: 6px 6px 0 0;
         }
       }
     }

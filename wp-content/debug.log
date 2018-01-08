@@ -584,3 +584,4 @@
 [06-Jan-2018 20:10:43 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
 [06-Jan-2018 20:12:03 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/top-slider-image.php on line 3
 [06-Jan-2018 21:10:44 UTC] PHP Parse error:  syntax error, unexpected '}' in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/prefooter-items/loturi-teren.php on line 31
+[06-Jan-2018 23:13:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'luximobil_us'@'localhost' (using password: YES) in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1538
