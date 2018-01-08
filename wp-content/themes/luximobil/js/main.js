@@ -25,7 +25,8 @@ $(document).ready(function($) {
         autoplay: true,
         responsive : {
             0: {
-                items: 1
+                items: 1,
+                stagePadding: 60
             },
             768: {
                 items: 3
@@ -42,7 +43,8 @@ $(document).ready(function($) {
         autoplay: true,
         responsive : {
             0: {
-                items: 1
+                items: 1,
+                stagePadding: 60
             },
             768: {
                 items: 3

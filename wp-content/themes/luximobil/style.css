@@ -2846,12 +2846,18 @@ select[data-dkcacheid] {
     .section-special-ofert .content-inner .info-product-side .price-ofert {
       margin-right: 0; }
   .servicii-section .servicii-content .service-container {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
+    .servicii-section .servicii-content .service-container:first-child {
+      padding-top: 30px; }
   .blog-template-default .blog-text-block .blog-heading {
     margin-top: 10px; }
   .blog-template-default .blog-text-block .video {
     margin-top: 30px; }
     .blog-template-default .blog-text-block .video iframe {
       height: 300px; }
+  .apartaments-section .container,
+  .homes-section .container {
+    padding: 0; }
   .categories-section {
     padding-top: 0; } }

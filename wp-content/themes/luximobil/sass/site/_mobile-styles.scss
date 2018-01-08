@@ -96,6 +96,10 @@
   .servicii-content {
     .service-container {
       width: 100%;
+      padding: 0;
+      &:first-child{
+        padding-top: 30px;
+      }
     }
   }
 }
@@ -111,6 +115,12 @@
        height: 300px;
       }
     }
+  }
+}
+.apartaments-section,
+.homes-section{
+  .container{
+    padding: 0;
   }
 }
 .categories-section{
