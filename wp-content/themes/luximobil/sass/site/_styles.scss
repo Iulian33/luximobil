@@ -457,7 +457,7 @@ div#n2-ss-2 {
 /**************** END GRAVITY FORMS STYLES *************/
 
 /***************** FOOTER *********************/
-
+// @todo To make responsive on footer
 .mainFooter {
   min-height: 350px;
   overflow: hidden;
@@ -1210,5 +1210,13 @@ div#n2-ss-2 {
   }
 }
 
-// @todo To make responsive on footer
+.archive-imobil{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .products-results{
+    .post-item-container{
+      margin-bottom: 30px;
+    }
+  }
+}
 

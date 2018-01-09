@@ -591,3 +591,51 @@
 [08-Jan-2018 21:27:29 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1538
 [08-Jan-2018 21:27:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
 [08-Jan-2018 21:27:29 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/luximobil/wp-includes/wp-db.php on line 1569
+[09-Jan-2018 17:39:30 UTC] PHP Notice:  Undefined variable: args in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 18
+[09-Jan-2018 17:43:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 40
+[09-Jan-2018 17:43:51 UTC] PHP Notice:  Undefined variable: i in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 29
+[09-Jan-2018 17:43:51 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:43:51 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:43:51 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:44:43 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:44:43 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:44:43 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:45:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:45:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:45:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:27 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:27 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:27 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:42 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:42 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:46:42 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:09 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 25
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 25
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 25
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 25
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 26
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 26
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:29 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:48 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:49 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:47:49 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 33
+[09-Jan-2018 17:48:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:48:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:48:18 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:51:49 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:51:49 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:51:49 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:52:33 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:52:33 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:52:33 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:53:12 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:53:12 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32
+[09-Jan-2018 17:53:12 UTC] PHP Notice:  Undefined variable: default_post_thumbnail in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 32

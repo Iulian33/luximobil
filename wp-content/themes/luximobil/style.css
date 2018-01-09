@@ -2464,6 +2464,12 @@ div#n2-ss-2 .n2-ss-slide {
     .prefooter-section .post-item-container:hover .info-container {
       margin-bottom: 0 !important; }
 
+.archive-imobil {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .archive-imobil .products-results .post-item-container {
+    margin-bottom: 30px; }
+
 .dk-select,
 .dk-select *,
 .dk-select *:before,
