@@ -2470,7 +2470,7 @@ div#n2-ss-2 .n2-ss-slide {
   .archive-imobil .products-results .post-item-container {
     margin-bottom: 30px; }
 
-.dk-select,
+.carousel-container{margin-top:60px;background:#fff;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:14px;color:#000;padding:0;position:relative}.swiper-container{width:100%;height:100%;margin-left:auto;margin-right:auto}.swiper-slide{background-size:cover;background-position:center;height:400px}.swiper-slide.swiper-slide-bottom{transform:translateX(-150%)}.gallery-top{height:80%;width:100%}.gallery-thumbs{height:100px;box-sizing:border-box;padding:10px 0}.gallery-thumbs .swiper-slide{width:25%;height:100%;opacity:0.4}.gallery-thumbs .swiper-slide-active{opacity:1}.dk-select,
 .dk-select *,
 .dk-select *:before,
 .dk-select *:after,
