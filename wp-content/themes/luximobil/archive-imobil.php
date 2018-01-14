@@ -11,13 +11,13 @@ get_header(); ?>
 <div class="mainContent">
     <div class="container archive-imobil">
         <div class="col-sm-3">
-            <?php echo  do_shortcode('[searchandfilter id="418"]');?>
+            <?php echo do_shortcode('[searchandfilter id="418"]'); ?>
             <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg'; ?>
         </div>
         <div class="col-sm-9 products-results">
-            <?php if ( have_posts() ) :
+            <?php if (have_posts()) :
                 $i = 0;
-                while ( have_posts() ) : the_post(); ?>
+                while (have_posts()) : the_post(); ?>
                     <div class="post-item-container col-sm-4">
                         <a class="post-item-imobil" href="<?php the_permalink(); ?>">
                             <?php
@@ -35,9 +35,9 @@ get_header(); ?>
                             <?php } ?>
                             <div class="price-product">
                                 <?php
-                                $regular_price = get_field('regular_price',$product_id);
-                                $sale_check = get_field('enable_sale_price',$product_id);
-                                $sale_price = get_field('sale_price',$product_id);
+                                $regular_price = get_field('regular_price', $product_id);
+                                $sale_check = get_field('enable_sale_price', $product_id);
+                                $sale_price = get_field('sale_price', $product_id);
                                 if ($sale_price) {
                                     $sale_price = number_format($sale_price, 0, '.', ' ');
                                 } else {
@@ -99,9 +99,12 @@ get_header(); ?>
                     </div>
 
                 <?php endwhile; ?>
-                <?php the_posts_navigation(); ?>
+                <div class="pagination-container">
+                    <?php default_paging_nav(); ?>
+                </div>
+
             <?php else : ?>
-                <?php get_template_part( 'content', 'none' ); ?>
+                <?php get_template_part('content', 'none'); ?>
             <?php endif; ?>
         </div>
     </div>

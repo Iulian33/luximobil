@@ -1296,6 +1296,8 @@ div#n2-ss-2 {
   min-height: 450px;
 }
 
+
+// Styling Error 404
 .error-404{
   min-height: 350px;
   .page-title{
@@ -1309,5 +1311,10 @@ div#n2-ss-2 {
   .page-content{
     font-size: 16px;
     text-align: center;
+    padding-bottom: 100px;
   }
+}
+
+.pagination-container{
+  clear: both;
 }

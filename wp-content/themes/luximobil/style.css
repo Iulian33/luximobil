@@ -2545,7 +2545,11 @@ div#n2-ss-2 .n2-ss-slide {
     text-transform: uppercase; }
   .error-404 .page-content {
     font-size: 16px;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 100px; }
+
+.pagination-container {
+  clear: both; }
 
 .dk-select,
 .dk-select *,
