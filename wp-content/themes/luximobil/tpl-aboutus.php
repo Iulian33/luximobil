@@ -1,6 +1,6 @@
 <?php
 /*
- *Template Name: Servicii
+ *Template Name: About Us
 */
 get_header(); ?>
 <div class="main-content">

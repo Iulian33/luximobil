@@ -9,8 +9,6 @@ get_header(); ?>
 
  	<div class="mainContent">
  		<div class="container">
- 			<?php JH_check_sidebar(); ?>
-
 		   <section class="error-404 not-found">
 			   <header class="page-header">
 				   <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'jhfw' ); ?></h1>
@@ -22,7 +20,6 @@ get_header(); ?>
 			   </div><!-- .page-content -->
 		   </section><!-- .error-404 -->
 
-		  <?php JH_check_sidebar("end"); ?>
  		</div>
  	</div><!--mainContent-->
 

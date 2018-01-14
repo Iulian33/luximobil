@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: JH_framework\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-09 22:55+0000\n"
-"PO-Revision-Date: 2017-08-09 23:20+0000\n"
+"PO-Revision-Date: 2018-01-14 13:04+0000\n"
 "Last-Translator: JH_user <wordpress@gmail.com>\n"
 "Language-Team: Romanian\n"
 "Language: ro-RO\n"
@@ -46,7 +46,7 @@ msgid ""
 "below or a search?"
 msgstr ""
 "Se pare că nimici nu sa găsit la această locație. Poate încerci  câtevai din "
-"linkurile următoare sau căutarea ?"
+"linkurile de mai jos sau căutarea ?"
 
 #: comments.php:28
 #, php-format
@@ -55,6 +55,7 @@ msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "O parere referitor la &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s păreri referitoare la &ldquo;%2$s&rdquo;"
+msgstr[2] ""
 
 #: comments.php:35 comments.php:56
 msgid "Comment navigation"
@@ -321,4 +322,4 @@ msgstr "Anonim"
 
 #: 404.php:16
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Esti prost nu caut si trebu "
+msgstr "Oops! Aceasta pagina nu poate fi găsită."

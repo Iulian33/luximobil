@@ -66,6 +66,32 @@ div#n2-ss-2 {
     min-height: 350px;
     background-size: cover;
     background-position: 50% 65%;
+    .content-inner{
+      position: relative;
+      width: 100%;
+      min-height: 350px;
+      background: rgba(0, 0, 0, .5);
+      .hero-title{
+        text-align: center;
+        font-size: 35px;
+        font-family: $bold;
+        text-transform: uppercase;
+        line-height: 350px;
+
+        color: $color-white;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 5px;
+          background: $color-white;
+          bottom: 140px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
   }
 }
 
@@ -1264,4 +1290,24 @@ div#n2-ss-2 {
 
 .gallery-thumbs .swiper-slide-active {
   opacity: 1;
+}
+
+.main-content{
+  min-height: 450px;
+}
+
+.error-404{
+  min-height: 350px;
+  .page-title{
+    text-align: center;
+    color: $color-black;
+    font-family: $bold;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .page-content{
+    font-size: 16px;
+    text-align: center;
+  }
 }

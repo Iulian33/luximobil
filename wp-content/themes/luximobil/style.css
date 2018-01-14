@@ -1585,6 +1585,28 @@ div#n2-ss-2 .n2-ss-slide {
     min-height: 350px;
     background-size: cover;
     background-position: 50% 65%; }
+    .headerImage .pageImage .content-inner {
+      position: relative;
+      width: 100%;
+      min-height: 350px;
+      background: rgba(0, 0, 0, 0.5); }
+      .headerImage .pageImage .content-inner .hero-title {
+        text-align: center;
+        font-size: 35px;
+        font-family: ProximaNovaBold;
+        text-transform: uppercase;
+        line-height: 350px;
+        color: #fff;
+        position: relative; }
+        .headerImage .pageImage .content-inner .hero-title:after {
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 5px;
+          background: #fff;
+          bottom: 140px;
+          left: 50%;
+          transform: translateX(-50%); }
 
 .home .headerImage {
   display: none; }
@@ -2508,6 +2530,22 @@ div#n2-ss-2 .n2-ss-slide {
 
 .gallery-thumbs .swiper-slide-active {
   opacity: 1; }
+
+.main-content {
+  min-height: 450px; }
+
+.error-404 {
+  min-height: 350px; }
+  .error-404 .page-title {
+    text-align: center;
+    color: #000;
+    font-family: ProximaNovaBold;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .error-404 .page-content {
+    font-size: 16px;
+    text-align: center; }
 
 .dk-select,
 .dk-select *,

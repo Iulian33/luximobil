@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: JH_framework\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-09 22:55+0000\n"
-"PO-Revision-Date: 2017-08-09 23:19+0000\n"
+"PO-Revision-Date: 2018-01-14 13:03+0000\n"
 "Last-Translator: JH_user <wordpress@gmail.com>\n"
 "Language-Team: Romanian\n"
 "Language: ro-RO\n"
@@ -13,6 +13,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
+
+#: inc/template-tags.php:148
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:150
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:152
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:155
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Asides"
+
+#. 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:178
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
 
 #: 404.php:20
 msgid ""
@@ -29,6 +55,7 @@ msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "O parere referitor la &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s păreri referitoare la &ldquo;%2$s&rdquo;"
+msgstr[2] ""
 
 #: comments.php:35 comments.php:56
 msgid "Comment navigation"
@@ -212,35 +239,15 @@ msgstr "Autor: %s"
 msgid "Year: %s"
 msgstr "An: %s"
 
-#: inc/template-tags.php:148
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
 #: inc/template-tags.php:150
 #, php-format
 msgid "Month: %s"
 msgstr "Lună: %s"
 
-#: inc/template-tags.php:150
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
 #: inc/template-tags.php:152
 #, php-format
 msgid "Day: %s"
 msgstr "Ziuă: %s"
-
-#: inc/template-tags.php:152
-msgctxt "daily archives date format"
-msgid "F j, Y"
-msgstr ""
-
-#: inc/template-tags.php:155
-msgctxt "post format archive title"
-msgid "Asides"
-msgstr ""
 
 #: inc/template-tags.php:157
 msgctxt "post format archive title"
@@ -287,12 +294,6 @@ msgstr "Measje"
 msgid "Archives: %s"
 msgstr "Arhive: %s"
 
-#. 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:178
-#, php-format
-msgid "%1$s: %2$s"
-msgstr ""
-
 #: inc/template-tags.php:180
 msgid "Archives"
 msgstr "Arhivă"
@@ -321,4 +322,4 @@ msgstr "Anonim"
 
 #: 404.php:16
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Esti prost nu caut si trebu "
+msgstr "Oops! Aceasta pagina nu poate fi găsită."
