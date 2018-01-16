@@ -293,7 +293,7 @@ function my_content( $limit, $text = false, $word = false) {
 		$index = count( $content ) - 1;
 		$last = $content[$index];
 		if($word){
-			$last = $last.'<a href="'.get_permalink().'"> '.$word.'</a>';
+			$last = $last .' '. $word ;
 		}
 		$content[$index] = $last;
 	}

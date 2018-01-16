@@ -13,18 +13,18 @@
 <footer class="mainFooter" style="background-image: url(<?php echo $footer_bg_img['url'];?>);">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 col-widget">
+            <div class="col-md-3 col-sm-4 col-widget">
                 <div class="bg-contacts"></div>
                 <div class="contacts-contaner">
                     <?php dynamic_sidebar( 'footer-contacts' ); ?>
                 </div>
             </div>
-            <div class="col-sm-9">
+            <div class="col-md-9 col-sm-8">
                 <div class="row">
-                    <div class="col-sm-3 col-widget menu-1">
+                    <div class="col-md-3 col-sm-6 col-widget menu-1">
                         <?php dynamic_sidebar( 'footer-menu-1' ); ?>
                     </div>
-                    <div class="col-sm-3 col-widget menu-2">
+                    <div class="col-md-3 col-sm-6 col-widget menu-2">
                         <?php dynamic_sidebar( 'footer-menu-2' ); ?>
                     </div>
                     <div class="col-sm-8 col-widget footer-about">

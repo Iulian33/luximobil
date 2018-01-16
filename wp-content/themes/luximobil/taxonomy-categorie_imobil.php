@@ -6,11 +6,8 @@
  *
  * @package Site Theme
  */
-get_header();
-//global $wp_query;
-//var_dump($wp_query);
 
-?>
+get_header(); ?>
 <div class="mainContent">
     <div class="container archive-imobil">
         <div class="col-sm-3">
@@ -35,25 +32,26 @@ get_header();
                             } else { ?>
                                 <img class="default-post-img" src="<?php echo $default_post_thumbnail; ?>"
                                      alt="default-post image">
-                            <?php } ?>
-                            <div class="price-product">
-                                <?php
-                                $regular_price = get_field('regular_price', $product_id);
-                                $sale_check = get_field('enable_sale_price', $product_id);
-                                $sale_price = get_field('sale_price', $product_id);
-                                if ($sale_price) {
-                                    $sale_price = number_format($sale_price, 0, '.', ' ');
-                                } else {
-                                    $regular_price = number_format($regular_price, 0, '.', ' ');
-                                }
-                                ?>
+                            <?php }
+                            $regular_price = get_field('regular_price', $product_id);
+                            $sale_check = get_field('enable_sale_price', $product_id);
+                            $sale_price = get_field('sale_price', $product_id);
+                            if ($regular_price) { ?>
+                                <div class="price-product">
+                                    <?php if ($sale_price || $sale_price) {
+                                        $sale_price = number_format($sale_price, 0, '.', ' ');
+                                    } else {
+                                        $regular_price = number_format($regular_price, 0, '.', ' ');
+                                    }
+                                    ?>
 
-                                <?php if ($sale_price && $sale_check) { ?>
-                                    <?php echo $sale_price . ' €'; ?>
-                                <?php } else { ?>
-                                    <?php echo $regular_price . ' €'; ?>
-                                <?php } ?>
-                            </div>
+                                    <?php if ($sale_price && $sale_check) { ?>
+                                        <?php echo $sale_price . ' €'; ?>
+                                    <?php } else { ?>
+                                        <?php echo $regular_price . ' €'; ?>
+                                    <?php } ?>
+                                </div>
+                            <?php } ?>
                             <div class="info-container">
                                     <span class="title-post">
                                         <?php if ($region && $sector) {

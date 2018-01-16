@@ -34,7 +34,7 @@
     }
     .mask-block {
       h2 {
-        line-height: 130px;
+        line-height: 160px;
         position: relative;
         top: -30px;
       }
@@ -94,11 +94,16 @@
 
 .servicii-section {
   .servicii-content {
-    .service-container {
-      width: 100%;
-      padding: 0;
-      &:first-child{
-        padding-top: 30px;
+    padding-top: 30px;
+    a {
+      .service-container {
+        width: 50%;
+        padding: 0;
+      }
+      &:last-of-type{
+        .service-container{
+          width: 100%;
+        }
       }
     }
   }
@@ -125,4 +130,47 @@
 }
 .categories-section{
   padding-top: 0;
+}
+
+.mainFooter {
+  background-color: rgba(0, 0, 0, 0.90);
+  background-image: none !important;
+  .widget_nav_menu {
+    .menu{
+      padding-left: 15px;
+    }
+  }
+  .bg-contacts{
+    display: none;
+  }
+  .contacts-list{
+    padding-left: 0;
+    li{
+      &:first-child{
+        padding-top: 12px;
+      }
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+  .widget-title{
+    display: inline-block;
+    padding-top: 25px;
+    padding-left: 15px;
+    margin-bottom: 12px;
+    &:after{
+      width: calc(100% - 15px);
+      left: 15px;
+    }
+  }
+  .col-widget{
+    padding-right: 30px;
+    &:first-child{
+      padding-left: 15px;
+    }
+  }
+  .credits-bttom-footer{
+    padding-right: 30px;
+  }
 }

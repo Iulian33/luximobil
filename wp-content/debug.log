@@ -651,3 +651,46 @@
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 526
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 156
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 348
+[16-Jan-2018 18:53:27 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 44
+[16-Jan-2018 18:54:39 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/taxonomy-categorie_imobil.php on line 47
+[16-Jan-2018 18:56:39 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/taxonomy-categorie_imobil.php on line 47
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:14 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: sale_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 49
+[16-Jan-2018 19:00:15 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 52
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:00:51 UTC] PHP Notice:  Undefined variable: regular_price in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 35
+[16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/apartaments-carousel.php on line 48
+[16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/homes-carousel.php on line 47
+[16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/prefooter-items/loturi-teren.php on line 46
+[16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/prefooter-items/spatii-comerciale.php on line 37

@@ -52,6 +52,35 @@ Bootstrap import, theme_mixins & variables of theme
   @import "site/tablet-styles";
 }
 
+@media screen and (max-width: 992px) {
+  .mainFooter{
+    .col-widget {
+      &.menu-1,
+      &.menu-2 {
+        margin-left: 0 !important;
+      }
+    }
+    .footer-about{
+      position: relative;
+      width: 100%;
+      .textwidget{
+        padding-left: 15px;
+      }
+      .widget-title{
+        padding-left: 15px;
+        &:after{
+          left: 15px;
+        }
+      }
+    }
+    .credits-bttom-footer{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 30px;
+    }
+  }
+}
+
 @media all and (max-width: 767px) {
   @import "site/mobile-styles";
 }

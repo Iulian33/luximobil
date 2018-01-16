@@ -18,9 +18,6 @@ $products = $WPproducts->posts;
             <div class="row">
                 <div class="col-md-5 col-sm-12">
                     <ul class="list-specs">
-
-
-
                         <?php
                         foreach ($products as $product) {
                             $productId = $product->ID;
@@ -98,7 +95,8 @@ $products = $WPproducts->posts;
                                             ?>
                                         </div>
                                         <div class="description-product-ofert">
-                                            <?php echo $productContent; ?>
+<!--                                            --><?php //echo $productContent; ?>
+                                            <?php echo my_content(40, $productContent,'...'); ?>
                                         </div>
                                         <a href="<?php the_permalink($productId); ?>" class="button">
                                             <?php _e('Vezi Detalii'); ?>
