@@ -1,0 +1,128 @@
+/****************BUTTONS STYLES*****************/
+
+.button {
+  width: 100%;
+  margin-right: 0;
+  display: block;
+}
+
+/*************************HTML-BODY STYLES****************/
+
+.two-column_wrapper ul.gform_column.s1,
+.two-column_wrapper ul.gform_column.s2 {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.mainMenu {
+  display: none;
+}
+
+.mobileLink {
+  display: block;
+}
+
+.categories-section {
+  .category-box {
+    width: 100%;
+    &:nth-of-type(5),
+    &:nth-of-type(6) {
+      width: 100%;
+    }
+    .mask-block {
+      h2 {
+        line-height: 130px;
+        position: relative;
+        top: -30px;
+      }
+      .button {
+        left: 50%;
+      }
+    }
+  }
+}
+
+.section-title {
+  margin-bottom: 5px;
+  h1 {
+    font-size: 25px;
+    padding: 1px 0 0;
+  }
+}
+
+.categories-section,
+.apartaments-section {
+  padding-top: 15px;
+}
+
+.section-special-ofert {
+  .content-inner {
+    .list-specs{
+      padding-top: 0;
+    }
+    .product-container {
+      .content-prod {
+        position: relative;
+        margin: 0;
+        &:after{
+          left: 0;
+        }
+        .col-sm-5 {
+          padding: 0;
+          .image-container {
+            position: relative;
+            display: inline-block;
+            height: 320px;
+          }
+        }
+      }
+    }
+    .info-product-side {
+      padding: 30px 20px;
+      .title-product-ofert{
+        padding-top: 48px;
+      }
+      .price-ofert {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.servicii-section {
+  .servicii-content {
+    .service-container {
+      width: 100%;
+      padding: 0;
+      &:first-child{
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+.blog-template-default {
+  .blog-text-block {
+    .blog-heading{
+      margin-top: 10px;
+    }
+    .video {
+      margin-top: 30px;
+      iframe {
+       height: 300px;
+      }
+    }
+  }
+}
+.apartaments-section,
+.homes-section{
+  .container{
+    padding: 0;
+  }
+}
+.categories-section{
+  padding-top: 0;
+}

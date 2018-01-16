@@ -1,0 +1,20 @@
+@mixin transition($prop : all, $time-duration : .6s, $type: ease) {
+  -webkit-transition: $prop $time-duration $type;
+  -moz-transition: $prop $time-duration $type;
+  -ms-transition: $prop $time-duration $type;
+  -o-transition: $prop $time-duration $type;
+  transition: $prop $time-duration $type;
+}
+
+@mixin font($type: $font__main, $style: normal) {
+  font-family: $type;
+  font-style: $style;
+}
+
+@mixin blur($blur : 5px){
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}
