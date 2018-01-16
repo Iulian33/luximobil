@@ -66,12 +66,12 @@ div#n2-ss-2 {
     min-height: 350px;
     background-size: cover;
     background-position: 50% 65%;
-    .content-inner{
+    .content-inner {
       position: relative;
       width: 100%;
       min-height: 350px;
       background: rgba(0, 0, 0, .5);
-      .hero-title{
+      .hero-title {
         text-align: center;
         font-size: 35px;
         font-family: $bold;
@@ -80,7 +80,7 @@ div#n2-ss-2 {
 
         color: $color-white;
         position: relative;
-        &:after{
+        &:after {
           content: '';
           position: absolute;
           width: 100px;
@@ -490,16 +490,16 @@ div#n2-ss-2 {
   background-size: cover;
   background-position: 50% 70%;
   position: relative;
-  .contacts-list{
+  .contacts-list {
     padding-left: 5px;
-    li{
+    li {
       list-style-type: none;
       color: $color-white;
       padding-bottom: 25px;
       padding-left: 25px;
       &.address,
       &.phones,
-      &.mails{
+      &.mails {
         &:before {
           font-family: $font-icon;
           position: absolute;
@@ -508,36 +508,36 @@ div#n2-ss-2 {
           font-size: 20px;
         }
       }
-      &.address{
-        &:before{
+      &.address {
+        &:before {
           content: '\f041';
         }
       }
-      &.phones{
-        &:before{
+      &.phones {
+        &:before {
           content: '\f10b';
           font-size: 25px;
           margin-top: -2px;
         }
       }
-      &.mails{
-        &:before{
+      &.mails {
+        &:before {
           content: '\f0e0';
           font-size: 15px;
           padding-top: 11px;
         }
       }
-      a{
+      a {
         display: inline-block;
         color: $color-white;
         width: 90%;
       }
     }
   }
-  .container{
+  .container {
     position: relative;
   }
-  .widget-title{
+  .widget-title {
     text-transform: uppercase;
     color: $color-white;
     font-family: $bold;
@@ -547,7 +547,7 @@ div#n2-ss-2 {
     font-size: 18px;
     margin-bottom: 28px;
     padding-left: 25px;
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       display: inline-block;
@@ -557,20 +557,20 @@ div#n2-ss-2 {
       border-bottom: 3px solid $color-classic-red;
     }
   }
-  .widget_nav_menu{
-    .menu{
+  .widget_nav_menu {
+    .menu {
       padding-left: 25px;
       margin: 0;
-      li{
+      li {
         list-style-type: none;
         line-height: 33px;
         font-size: 18px;
         font-family: $light;
-        a{
+        a {
           color: $color-white;
           text-decoration: none;
-          @include transition(all,.3s);
-          &:hover{
+          @include transition(all, .3s);
+          &:hover {
             color: $color-classic-red;
           }
         }
@@ -583,18 +583,18 @@ div#n2-ss-2 {
       padding-left: 0;
     }
     &.menu-1,
-    &.menu-2{
+    &.menu-2 {
       margin-left: 42px;
     }
-    &.menu-2{
+    &.menu-2 {
       margin-left: 22px;
     }
   }
-  .footer-about{
+  .footer-about {
     position: absolute;
     right: 0;
     width: 42%;
-    .textwidget{
+    .textwidget {
       padding-left: 25px;
       color: $color-white;
       font-size: 13px;
@@ -614,20 +614,20 @@ div#n2-ss-2 {
     width: 100%;
     height: 100%;
   }
-  .credits-bttom-footer{
+  .credits-bttom-footer {
     padding-top: 40px;
     padding-left: 65px;
-    .copy-right-text{
+    .copy-right-text {
       color: $color-white;
       font-size: 12px;
     }
-    .credits-link{
+    .credits-link {
       float: right;
-      a{
+      a {
         color: $color-white;
         text-decoration: none;
         font-size: 12px;
-        &:hover{
+        &:hover {
           color: $color-classic-red;
         }
       }
@@ -1234,73 +1234,32 @@ div#n2-ss-2 {
   }
 }
 
-.archive-imobil{
+.archive-imobil {
   padding-top: 50px;
   padding-bottom: 50px;
-  .products-results{
-    .post-item-container{
+  .products-results {
+    .post-item-container {
       margin-bottom: 30px;
     }
   }
 }
 
+//.fullscreen {
+//  width: 80%;
+//  height: 80%;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//}
 
-.carousel-container {
-  margin-top: 60px;
-  background: $color-white;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  padding: 0;
-  position: relative;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  &.swiper-slide-bottom {
-    transform: translateX(-150%);
-  }
-}
-
-.gallery-top {
-  height: 80%;
-  width: 100%;
-}
-
-.gallery-thumbs {
-  height: 100px;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.gallery-thumbs .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1;
-}
-
-.main-content{
+.main-content {
   min-height: 450px;
 }
 
-
 // Styling Error 404
-.error-404{
+.error-404 {
   min-height: 350px;
-  .page-title{
+  .page-title {
     text-align: center;
     color: $color-black;
     font-family: $bold;
@@ -1308,13 +1267,108 @@ div#n2-ss-2 {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  .page-content{
+  .page-content {
     font-size: 16px;
     text-align: center;
     padding-bottom: 100px;
   }
 }
 
-.pagination-container{
+.pagination-container {
   clear: both;
+}
+
+//SINGLE IMOBIL
+.single-imobil {
+
+  .carousel-container {
+    margin-top: 60px;
+    background: $color-white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    position: relative;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px $gray-light;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    &.swiper-slide-bottom {
+      transform: translateX(-150%);
+    }
+  }
+
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+  }
+  .imobil-data {
+    margin-top: 55px;
+    padding-left: 30px;
+    .imobil-title {
+      color: $dark-text-color;
+      font-size: 22px;
+    }
+    .imobil-price {
+      font-size: 22px;
+    }
+    .description-table {
+      width: 100%;
+      table {
+        width: 100%;
+        tr {
+          background-color: $color-gray;
+          &:nth-of-type(2n+2) {
+            background-color: $color-lightgray;
+          }
+          td {
+            padding: 8px 0 8px 10px;
+          }
+          td:not(.description-label) {
+            float: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  .imobil-description {
+    .description-heading {
+      color: $dark-text-color;
+      text-align: center;
+      font-size: 22px;
+    }
+    .description {
+      padding: 0 20px;
+      p {
+        font-size: $font-size-base;
+      }
+    }
+  }
 }
