@@ -24,7 +24,7 @@ get_header(); ?>
                             <?php the_content();?>
                         </div>
                     </div>
-
+m-am saturat deamu
                     <?php endwhile; // end of the loop. ?>
                     <?php JH_check_sidebar("end"); ?>
             </div>
