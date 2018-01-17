@@ -95,8 +95,12 @@ $products = $WPproducts->posts;
                                             ?>
                                         </div>
                                         <div class="description-product-ofert">
+<<<<<<< HEAD
 <!--                                            --><?php //echo $productContent; ?>
                                             <?php echo my_content(40, $productContent,'...'); ?>
+=======
+                                            <?php echo $productContent; ?>
+>>>>>>> 5dda8edf3ecde5a3c94c9738b61f2e0fa529ab15
                                         </div>
                                         <a href="<?php the_permalink($productId); ?>" class="button">
                                             <?php _e('Vezi Detalii'); ?>

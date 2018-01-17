@@ -651,6 +651,7 @@
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 526
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 156
 [15-Jan-2018 09:40:27 UTC] PHP Warning:  A apărut o eroare neașteptată. S-ar putea să fie o problemă cu WordPress.org sau cu configurația acestui server. Dacă în continuare ai probleme, te rugăm să apelezi la <a href="http://ro.forums.wordpress.org/">forumurile de ajutor</a>. (WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 348
+<<<<<<< HEAD
 [16-Jan-2018 18:53:27 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/archive-imobil.php on line 44
 [16-Jan-2018 18:54:39 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/taxonomy-categorie_imobil.php on line 47
 [16-Jan-2018 18:56:39 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/taxonomy-categorie_imobil.php on line 47
@@ -694,3 +695,10 @@
 [16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/homes-carousel.php on line 47
 [16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/prefooter-items/loturi-teren.php on line 46
 [16-Jan-2018 19:08:45 UTC] PHP Warning:  number_format() expects parameter 1 to be double, string given in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/parts/home/prefooter-items/spatii-comerciale.php on line 37
+=======
+[15-Jan-2018 21:12:34 UTC] PHP Notice:  Undefined index: exists in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[15-Jan-2018 21:12:34 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[15-Jan-2018 21:13:05 UTC] PHP Notice:  Undefined index: exists in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[15-Jan-2018 21:13:05 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in C:\xampp\htdocs\luximobil\wp-content\plugins\duplicator\ctrls\ctrl.tools.php on line 94
+[16-Jan-2018 19:58:26 UTC] PHP Parse error:  syntax error, unexpected 'get_sub_field' (T_STRING) in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 91
+>>>>>>> 5dda8edf3ecde5a3c94c9738b61f2e0fa529ab15

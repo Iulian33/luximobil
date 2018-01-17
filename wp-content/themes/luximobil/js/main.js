@@ -110,20 +110,39 @@ jQuery(window).on('load', function(){
 
 
 
+if ($('body').hasClass('single-imobil')) {
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
 
-var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+    var v = document.getElementById("swiper-video");
+
+    v.addEventListener("canplay", function () {
+        mySwiper.stopAutoplay();
+    }, true);
+
+    v.addEventListener("ended", function () {
+        mySwiper.startAutoplay();
+    }, true);
+
+    var fullScreen = document.getElementsByClassName('swiper-slide-active');
+
+    for(var i = 0; i < fullScreen.length ; i++) {
+        fullScreen[i].addEventListener('click', function () {
+           this.classList.toggle('fullscreen');
+        });
     }
-});
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true,
-});
-galleryTop.controller.control = galleryThumbs;
-galleryThumbs.controller.control = galleryTop;
+}
