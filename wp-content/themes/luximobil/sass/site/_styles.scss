@@ -1364,3 +1364,47 @@ div#n2-ss-2 {
     }
   }
 }
+
+.imobil-data {
+  margin-top: 55px;
+  padding-left: 30px;
+  .imobil-title {
+    color: $dark-text-color;
+    font-size: 22px;
+  }
+  .imobil-price {
+    font-size: 22px;
+  }
+  .description-table {
+    width: 100%;
+    table {
+      width: 100%;
+      tr {
+        background-color: $color-gray;
+        &:nth-of-type(2n+2) {
+          background-color: $color-lightgray;
+        }
+        td {
+          padding: 8px 0 8px 10px;
+        }
+        td:not(.description-label) {
+          float: right;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+.imobil-description {
+  .description-heading {
+    color: $dark-text-color;
+    text-align: center;
+    font-size: 22px;
+  }
+  .description {
+    padding: 0 20px;
+    p {
+      font-size: $font-size-base;
+    }
+  }
+}
