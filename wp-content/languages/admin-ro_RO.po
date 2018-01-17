@@ -26,37 +26,37 @@ msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Europa/București"
 
-#: wp-admin/about.php:244
+#: wp-admin/about.php:262
 msgid "Improvements to Roles and Capabilities"
 msgstr "Îmbunătățiri aduse rolurilor și capabilităților"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:263
 msgid "New capabilities have been introduced that allow granular management of plugins and translation files. In addition, the site switching process in multisite has been fine-tuned to update the available roles and capabilities in a more reliable and coherent way."
 msgstr "Au fost introduse capabilități noi care permit administrarea fină a modulelor și fișierelor de traducere. În plus, procesul de comutare a sitului în multi-sit a fost ajustat fin pentru a actualiza rolurile și capabilitățile disponibile într-un mod mai fiabil și mai coerent."
 
-#: wp-admin/about.php:241
+#: wp-admin/about.php:259
 msgid "WordPress 4.9 includes an upgraded version of MediaElement.js, which removes dependencies on jQuery, improves accessibility, modernizes the UI, and fixes many bugs."
 msgstr "WordPress 4.9 include o versiune actualizată a MediaElement.js, care înlătură dependențele de jQuery, îmbunătățește accesibilitatea, modernizează UI-ul și corectează multe erori."
 
-#: wp-admin/about.php:240
+#: wp-admin/about.php:258
 msgid "MediaElement.js upgraded to 4.2.6"
 msgstr "MediaElement.js s-a actualizat la 4.2.6"
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:255
 msgid "We&#8217;ve introduced a new code editing library, CodeMirror, for use within core. Use it to improve any code writing or editing experiences within your plugins, like CSS or JavaScript include fields."
 msgstr "Am introdus o nouă bibliotecă de editare a codului, CodeMirror, pentru a fi folosită în nucleu. Folosește-o pentru a îmbunătăți toate experiențele de scriere sau editare de cod în modulele tale, cum ar fi câmpuri care includ CSS sau JavaScript."
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:254
 msgid "CodeMirror available for use in your themes and plugins"
 msgstr "CodeMirror este disponibil pentru utilizare în temele și modulele tale"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2017/11/01/improvements-to-the-customize-js-api-in-4-9/
-#: wp-admin/about.php:230
+#: wp-admin/about.php:248
 msgid "We&#8217;ve made numerous improvements to the Customizer JS API in WordPress 4.9, eliminating many pain points and making it just as easy to work with as the PHP API. There are also new base control templates, a date/time control, and section/panel/global notifications to name a few. <a href=\"%s\">Check out the full list.</a>"
 msgstr "Am făcut numeroase îmbunătățiri în WordPress 4.9 la API-ul JavaScript al Personalizatorului, eliminând multe puncte dureroase și făcându-l să funcționeze la fel de ușor ca și API-ul PHP. De asemenea, există noi șabloane de comandă de bază, o comandă dată/oră și notificări secțiune/panou/globale, pentru a numi doar câteva. <a href=\"%s\">Vezi lista completă.</a>"
 
-#: wp-admin/about.php:226
+#: wp-admin/about.php:244
 msgid "Customizer JS API Improvements"
 msgstr "Îmbunătățiri la API-ul JavaScript al personalizatorului"
 
@@ -64,7 +64,7 @@ msgstr "Îmbunătățiri la API-ul JavaScript al personalizatorului"
 msgid "This data is used to provide general enhancements to WordPress, which includes helping to protect your site by finding and automatically installing new updates. It is also used to calculate statistics, such as those shown on the <a href=\"%s\">WordPress.org stats page</a>."
 msgstr "Aceste date sunt folosite pentru a oferi îmbunătățiri generale pentru WordPress, care includ ajutorul pentru a-ți proteja situl prin găsirea și instalarea automată a actualizărilor noi. De asemenea, ele sunt folosite pentru a calcula statistici, cum ar fi cele arătate în <a href=\"%s\">pagina statistici WordPress.org</a>."
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:157
 msgid "When you edit themes and plugins directly, WordPress 4.9 will politely warn you that this is a dangerous practice. It will recommend that you backup your files before saving, so they don&#8217;t get overwritten by the next update. Take the safe route: your future self will thank you. Your team and customers will thank you."
 msgstr "Când editezi direct teme și module, WordPress 4.9 te avertizează politicos că aceasta este o practică periculoasă. Îți recomandă să-ți faci copii de siguranță pentru fișiere înainte de a le salva, pentru că ele nu pot fi suprascrise de următoarea actualizare. Urmează calea sigură: în viitor vei fi mulțumit. Echipa ta și clienții tăi îți vor mulțumi."
 
@@ -141,52 +141,52 @@ msgid "Enter the address here if you <a href=\"%s\">want your site home page to 
 msgstr "Introdu aici adresa dacă <a href=\"%s\">vrei ca prima pagină a sitului tău să fie diferită de directorul de instalare WordPress</a>."
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:219
+#: wp-admin/about.php:237
 msgid "Developer Happiness %s"
 msgstr "Bucuria dezvoltatorului %s"
 
-#: wp-admin/about.php:209
+#: wp-admin/about.php:227
 msgid "https://wordpress.org/plugins/gutenberg/"
 msgstr "https://wordpress.org/plugins/gutenberg/"
 
-#: wp-admin/about.php:208
+#: wp-admin/about.php:226
 msgid "WordPress is working on a new way to create and control your content and we&#8217;d love to have your help. Interested in being an <a href=\"%s\">early tester</a> or getting involved with the Gutenberg project? <a href=\"%s\">Contribute on GitHub</a>."
 msgstr "WordPress lucrează la un nou mod de a crea și controla conținutul și ne-ar plăcea să ne ajuți. Vrei să fii printre <a href=\"%s\">primii care-l testează</a> sau să te implici în proiectul Gutenberg? <a href=\"%s\">Contribuie pe GitHub</a>."
 
 #. translators: %s: handshake emoji
-#: wp-admin/about.php:202
+#: wp-admin/about.php:220
 msgid "Lend a Hand with Gutenberg %s"
 msgstr "Întinde o mână către Gutenberg %s"
 
-#: wp-admin/about.php:177
+#: wp-admin/about.php:195
 msgid "More Reliable Theme Switching"
 msgstr "Comutarea temelor mult mai sigură"
 
-#: wp-admin/about.php:169
+#: wp-admin/about.php:187
 msgid "Site Building Improvements"
 msgstr "Îmbunătățiri în construcția sitului"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:172
 msgid "The New Gallery Widget"
 msgstr "Noua piesă Galerie"
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:164
 msgid "Even More Widget Updates"
 msgstr "Chiar mai multe actualizări de piese"
 
-#: wp-admin/about.php:109
+#: wp-admin/about.php:127
 msgid "Were you lured away from your desk before you saved your new draft design? Fear not, when you return, WordPress 4.9 will politely ask whether or not you&#8217;d like to save your unsaved changes."
 msgstr "A trebuit să pleci de la birou înainte de a-ți salva noul proiect în ciornă? Nu te teme, când te întorci, WordPress 4.9 îți va cere politicos dacă vrei, sau nu, să-ți salvezi modificările nesalvate."
 
-#: wp-admin/about.php:116
+#: wp-admin/about.php:134
 msgid "Coding Enhancements"
 msgstr "Îmbunătățiri pentru codare"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:126
 msgid "A Prompt to Protect Your Work"
 msgstr "O asistare pentru a-ți proteja munca"
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:119
 msgid "Design Locking To Guard Your Changes"
 msgstr "Blocarea proiectării pentru a-ți proteja modificările"
 
@@ -198,75 +198,75 @@ msgstr "Luăm în serios confidențialitatea și transparența. Pentru a afla ma
 msgid "From time to time, your WordPress site may send data to WordPress.org &#8212; including, but not limited to &#8212; the version of WordPress you are using, and a list of installed plugins and themes."
 msgstr "Din când în când, situl tău WordPress poate trimite date la WordPress.org &#8212; incluzând, dar fără a se limita la &#8212; versiunea WordPress pe care o folosești și o listă a modulelor și temelor instalate."
 
-#: wp-admin/about.php:185
+#: wp-admin/about.php:203
 msgid "Were you confused by the steps to create a new menu? Perhaps no longer! We&#8217;ve ironed out the UX for a smoother menu creation process. Newly updated copy will guide you."
 msgstr "Au fost neclari pașii pentru a crea un meniu nou? N-ar mai trebuie să fie! Am finisat UX-ul pentru un proces de creare a meniului mai fluent. Versiunea actualizată recent te va ghida."
 
-#: wp-admin/about.php:184
+#: wp-admin/about.php:202
 msgid "Better Menu Instructions = Less Confusion"
 msgstr "Instrucțiuni mai bune pentru meniu = mai puțină confuzie"
 
-#: wp-admin/about.php:178
+#: wp-admin/about.php:196
 msgid "When you switch themes, widgets sometimes think they can just up and move location. Improvements in WordPress 4.9 offer more persistent menu and widget placement when you decide it&#8217;s time for a new theme. Additionally, you can preview installed themes or download, install, and preview new themes right. Nothing says handy like being able to preview before you deploy. "
 msgstr "Când schimbi temele, uneori piesele cred că sunt de capul lor și își schimbă locația. Îmbunătățirile din WordPress 4.9 oferă un meniu mai persistent și plasarea exactă a pieselor când decizi că este timpul pentru o temă nouă. În plus, poți previzualiza temele instalate sau să descarci, să instalezi și să previzualizezi direct teme noi. Nimeni nu pune la îndemână posibilitatea de a previzualiza înainte de instalare."
 
-#: wp-admin/about.php:162
+#: wp-admin/about.php:180
 msgid "Want to add media to your text widget? Embed images, video, and audio directly into the widget along with your text, with our simple but useful Add Media button. Woo!"
 msgstr "Vrei să adaugi media în piesa ta Text? Înglobezi imagini, video și audio direct în piesă, împreună cu propriul text, cu ajutorul butonului nostru simplu, dar util, Adaugă media. Mișto!"
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:179
 msgid "Press a Button, Add Media"
 msgstr "Apeși un buton, adaugi media"
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:173
 msgid "An incremental improvement to the media changes hatched in WordPress 4.8, you can now add a gallery via widget. Yes!"
 msgstr "O îmbunătățire incrementală la modificările media lansate în WordPress 4.8, acum poți adăuga o galerie printr-o piesă. Da!"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:156
 msgid "Warning: Potential Danger Ahead!"
 msgstr "Avertizare: pericol potențial în față!"
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:150
 msgid "The dreaded white screen. You&#8217;ll avoid it when working on themes and plugin code because WordPress 4.9 will warn you about saving an error. You&#8217;ll sleep better at night."
 msgstr "Ecranul alb înspăimântător. Îl vei evita când lucrezi cu codul temelor și modulelor deoarece WordPress 4.9 te va avertiza la salvarea unei erori. Vei dormi mai bine noaptea."
 
-#: wp-admin/about.php:131
+#: wp-admin/about.php:149
 msgid "Sandbox for Safety"
 msgstr "Sandbox pentru siguranță"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:143
 msgid "You&#8217;ve got a display problem but can&#8217;t quite figure out exactly what went wrong in the CSS you lovingly wrote. With syntax highlighting and error checking for CSS editing and the Custom HTML widget introduced in WordPress 4.8.1, you&#8217;ll pinpoint coding errors quickly. Practically guaranteed to help you scan code more easily and suss out and fix code errors quickly."
 msgstr "Ai o problemă de afișare, dar nu-ți poți da seama exact ce ai greșit în CSS-ul pe care l-ai scris cu drag. Cu evidențierea sintaxei și verificarea erorilor pentru editarea CSS-ului și piesa HTML personalizat introdusă în WordPress 4.8.1, vei identifica rapid erorile de codare. Practic, garantăm că te ajutăm să scanezi mai ușor codul și să înțelegi și să repari rapid erorile de cod."
 
-#: wp-admin/about.php:124
+#: wp-admin/about.php:142
 msgid "Syntax Highlighting and Error Checking? Yes, Please!"
 msgstr "Evidențierea sintaxei și verificarea erorilor? Da, te rog!"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:120
 msgid "Ever encounter a scenario where two designers walk into a project and designer A overrides designer B&#8217;s beautiful changes? WordPress 4.9&#8217;s design lock feature (similar to post locking) secures your draft design so that no one can make changes to it or erase all your hard work."
 msgstr "Ai întâlnit vreodată un scenariu în care doi designeri lucrează la același proiect și designerul A contramandează modificările frumoase ale designerului B? Funcționalitatea de blocare a designului din WordPress 4.9 (similară cu blocarea articolului) îți protejează designul în ciornă, deci nimeni nu poate face modificări sau nu-ți poate șterge toată munca grea depusă."
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:113
 msgid "Need to get some feedback on proposed site design changes? WordPress 4.9 gives you a preview link you can send to your team and customers so that you can collect and integrate feedback before you schedule the changes to go live. Can we say collaboration&#43;&#43;?"
 msgstr "Ai nevoie să primești câteva impresii cu privire la modificările propuse pentru designul sitului? WordPress 4.9 îți oferă o legătură de previzualizare pe care o poți trimite echipei tale și clienților tăi, deci poți colecta și integra impresii înainte de a-ți programa modificările pentru a fi live. Îi putem spune colaborare&#43;&#43;?"
 
-#: wp-admin/about.php:88
+#: wp-admin/about.php:106
 msgid "Yes, you read that right. Just like you can draft and revise posts and schedule them to go live on the date and time you choose, you can now tinker with your site&#8217;s design and schedule those design changes to go live as you please."
 msgstr "Da, ai citit bine. La fel cum poți redacta și revizui articole și să le programezi să fie live la data și ora pe care le alegi, acum poți face același lucru cu designul sitului tău și să programezi modificările de design să fie live atunci când vrei."
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:112
 msgid "Collaborate with Design Preview Links"
 msgstr "Colaborează cu legăturile de previzualizare a designului"
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:84
 msgid "Welcome to an improved Customizer workflow with design drafts, locking, scheduling, and preview links. What&#8217;s more, code syntax highlighting and error checking will make for a clean and smooth site building experience. Finally, if all that wasn&#8217;t pretty great, we&#8217;ve got a great new Gallery widget and improvements to theme browsing and switching."
 msgstr "Bine ai venit la un flux de lucru îmbunătățit în Personalizator, cu ciorne de proiectare, blocare, planificare și legături de previzualizare. În plus, evidențierea sintaxei de cod și verificarea erorilor vor crea o experiență clară și fluentă în construirea sitului. În cele din urmă, dacă toate acestea nu sunt suficiente, avem o nouă piesă Galerie și îmbunătățiri în răsfoirea și comutarea temelor."
 
-#: wp-admin/about.php:87
+#: wp-admin/about.php:105
 msgid "Draft and Schedule Site Design Customizations"
 msgstr "Redactează și programează personalizările de design ale sitului"
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:97
 msgid "Customizer Workflow Improved"
 msgstr "Flux de lucru îmbunătățit în Personalizator"
 
@@ -276,7 +276,7 @@ msgid "Thank you for updating to the latest version! WordPress %s will smooth yo
 msgstr "Îți mulțumim pentru actualizarea la ultima versiune! WordPress %s îți va îmbunătăți fluxul de lucru al designului și te protejează împotriva erorilor de codificare."
 
 #. translators: %s: party popper emoji
-#: wp-admin/about.php:61
+#: wp-admin/about.php:79
 msgid "Major Customizer Improvements, Code Error Checking, and More! %s"
 msgstr "Îmbunătățiri majore în Personalizator, verificarea erorilor de cod și altele! %s"
 
@@ -1704,7 +1704,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Acum este setată: %s)"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:372
+#: wp-admin/about.php:390
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versiunea %s</strong> a rezolvat o problemă de securitate."
 
@@ -1726,15 +1726,15 @@ msgstr "Îți poți schimba poza de profil în <a href=\"%s\">Gravatar</a>."
 msgid "Profile Picture"
 msgstr "Poză de profil"
 
-#: wp-admin/about.php:366
+#: wp-admin/about.php:384
 msgid "Security Releases"
 msgstr "Lansări de securitate"
 
-#: wp-admin/about.php:363
+#: wp-admin/about.php:381
 msgid "Maintenance Releases"
 msgstr "Lansări de mentenanță"
 
-#: wp-admin/about.php:34 wp-admin/about.php:369
+#: wp-admin/about.php:34 wp-admin/about.php:387
 msgid "Maintenance and Security Releases"
 msgstr "Lansări de mentenanță și securitate"
 
@@ -3818,8 +3818,8 @@ msgstr "Situl tău de la %1$s a suferit o problemă critică în timpul încerc�
 
 #: wp-admin/includes/class-core-upgrader.php:137
 #: wp-admin/includes/class-wp-upgrader.php:164
-#: wp-admin/includes/update-core.php:885 wp-admin/includes/update-core.php:962
-#: wp-admin/includes/update-core.php:985
+#: wp-admin/includes/update-core.php:921 wp-admin/includes/update-core.php:998
+#: wp-admin/includes/update-core.php:1021
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "Actualizarea nu poate fi instalată deoarece nu vom putea copia unele fișiere. Aceasta se datorează de obicei permisiunilor inconsistente ale sistemului de fișiere."
 
@@ -3946,7 +3946,7 @@ msgstr "Se actualizează tema: %s"
 msgid "Updating plugin: %s"
 msgstr "Se actualizează modulul: %s"
 
-#: wp-admin/includes/update-core.php:1022
+#: wp-admin/includes/update-core.php:1058
 msgid "There is not enough free disk space to complete the update."
 msgstr "Nu este suficient spațiu pe disc pentru a finaliza actualizarea."
 
@@ -3991,11 +3991,11 @@ msgstr "WordPress %s"
 msgid "This password will not be stored on the server."
 msgstr "Parola nu va fi stocată pe server."
 
-#: wp-admin/includes/update-core.php:913
+#: wp-admin/includes/update-core.php:949
 msgid "Preparing to install the latest version&#8230;"
 msgstr "Se pregătește instalarea ultimei versiuni&#8230;"
 
-#: wp-admin/includes/update-core.php:975
+#: wp-admin/includes/update-core.php:1011
 msgid "Copying the required files&#8230;"
 msgstr "Se copiază fișierele necesare&#8230;"
 
@@ -4760,7 +4760,7 @@ msgstr "Motoare de căutare descurajate"
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "Ți-am pregătit câteva legături pentru ca să poți începe:"
 
-#: wp-admin/includes/update-core.php:1261 wp-admin/update-core.php:511
+#: wp-admin/includes/update-core.php:1301 wp-admin/update-core.php:511
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Bun venit în WordPress %1$s. Vei fi redirectat la ecranul Despre WordPress. Dacă nu, apasă <a href=\"%2$s\">aici</a>."
 
@@ -5572,7 +5572,7 @@ msgid "Show Toolbar when viewing site"
 msgstr "Afișează bara de unelte când vizualizez situl"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:377
+#: wp-admin/about.php:395
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat %2$s eroare."
@@ -5582,7 +5582,7 @@ msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat %2$s de erori."
 #. translators: 1: WordPress version number, 2: plural number of bugs.
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:39 wp-admin/about.php:385
+#: wp-admin/about.php:39 wp-admin/about.php:57 wp-admin/about.php:403
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat câteva probleme de securitate și %2$s eroare."
@@ -5591,7 +5591,7 @@ msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat câteva probleme de securi
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:381
+#: wp-admin/about.php:399
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate și %2$s eroare."
@@ -5599,7 +5599,7 @@ msgstr[1] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate 
 msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate și %2$s de erori."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:50 wp-admin/about.php:389
+#: wp-admin/about.php:50 wp-admin/about.php:68 wp-admin/about.php:407
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Pentru mai multe informații, vezi <a href=\"%s\">notele de lansare</a>."
 
@@ -5613,19 +5613,19 @@ msgid "What&#8217;s New"
 msgstr "Noutăți"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:374
+#: wp-admin/about.php:392
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Versiunea %s</strong> a rezolvat câteva probleme de securitate."
 
-#: wp-admin/about.php:365
+#: wp-admin/about.php:383
 msgid "Security Release"
 msgstr "Actualizare de securitate"
 
-#: wp-admin/about.php:362
+#: wp-admin/about.php:380
 msgid "Maintenance Release"
 msgstr "Actualizare de mentenanță"
 
-#: wp-admin/about.php:368
+#: wp-admin/about.php:386
 msgid "Maintenance and Security Release"
 msgstr "Actualizare de mentenanță și securitate"
 
@@ -5633,11 +5633,11 @@ msgstr "Actualizare de mentenanță și securitate"
 msgid "This screen allows you to choose your permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "Acest ecran îți oferă posibilitatea să alegi structura ta de legături permanente. Poți opta pentru o structură obișnuită sau îți poți crea structuri de URL personalizate."
 
-#: wp-admin/includes/update-core.php:1262 wp-admin/update-core.php:512
+#: wp-admin/includes/update-core.php:1302 wp-admin/update-core.php:512
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Bun venit pe WordPress %1$s. <a href=\"%2$s\">Află mai multe</a>."
 
-#: wp-admin/about.php:255
+#: wp-admin/about.php:273
 msgid "Return to Updates"
 msgstr "Înapoi la actualizări"
 
@@ -5909,11 +5909,11 @@ msgstr "Deoarece aceasta este o instalare multi-sit, poți adăuga conturi care 
 msgid "Welcome to WordPress %s"
 msgstr "Bun venit pe WordPress %s"
 
-#: wp-admin/about.php:258
+#: wp-admin/about.php:276
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Mergi la Panou control &rarr; Prima pagină"
 
-#: wp-admin/about.php:255
+#: wp-admin/about.php:273
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Înapoi la Panou control &rarr; Actualizări"
 
@@ -7719,7 +7719,7 @@ msgid "Update Plugins"
 msgstr "Actualizează module"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:349
-#: wp-admin/includes/update-core.php:1258 wp-admin/update-core.php:510
+#: wp-admin/includes/update-core.php:1298 wp-admin/update-core.php:510
 msgid "WordPress updated successfully"
 msgstr "WordPress actualizat cu succes"
 
@@ -7731,7 +7731,7 @@ msgstr "Actualizări WordPress"
 msgid "Edit menu item"
 msgstr "Editează element meniu"
 
-#: wp-admin/about.php:258
+#: wp-admin/about.php:276
 msgid "Go to Dashboard"
 msgstr "Mergi la panoul de control"
 
@@ -7914,7 +7914,7 @@ msgstr "Detalii"
 msgid "Version: %s"
 msgstr "Versiunea: %s"
 
-#: wp-admin/includes/update-core.php:872
+#: wp-admin/includes/update-core.php:908
 msgid "The update could not be unpacked"
 msgstr "Actualizările nu au putut fi dezarhivate"
 
@@ -8539,7 +8539,7 @@ msgstr[0] "Inactive <span class=\"count\">(%s)</span>"
 msgstr[1] "Inactive <span class=\"count\">(%s)</span>"
 msgstr[2] "Inactive <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/update-core.php:859
+#: wp-admin/includes/update-core.php:895
 msgid "Verifying the unpacked files&#8230;"
 msgstr "Verific fișierele despachetate&#8230;"
 
@@ -9011,19 +9011,19 @@ msgstr[0] "%s legătură ștearsă."
 msgstr[1] "%s legături șterse"
 msgstr[2] "%s de legături șterse"
 
-#: wp-admin/includes/update-core.php:1132
+#: wp-admin/includes/update-core.php:1172
 msgid "Upgrading database&#8230;"
 msgstr "Actualizare bază de date&#8230;"
 
-#: wp-admin/includes/update-core.php:910
+#: wp-admin/includes/update-core.php:946
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "Actualizarea nu poate fi instalată deoarece WordPress %1$s necesită versiunea MySQL %2$s sau mai recentă. Tu rulezi versiunea %3$s."
 
-#: wp-admin/includes/update-core.php:908
+#: wp-admin/includes/update-core.php:944
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "Actualizarea nu poate fi instalată deoarece WordPress %1$s necesită versiunea PHP %2$s sau mai recentă. Tu rulezi versiunea %3$s."
 
-#: wp-admin/includes/update-core.php:906
+#: wp-admin/includes/update-core.php:942
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "Actualizarea nu poate fi instalată deoarece WordPress %1$s necesită versiunea PHP %2$s sau mai recentă și versiunea MySQL %3$s sau mai recentă. Tu rulezi versiunea PHP %4$s și versiunea MySQL %5$s."
 
@@ -10216,7 +10216,7 @@ msgstr "Nu există un director temporar."
 
 #: wp-admin/includes/class-wp-upgrader.php:162 wp-admin/includes/file.php:1170
 #: wp-admin/includes/file.php:1281 wp-admin/includes/file.php:1339
-#: wp-admin/includes/update-core.php:1207
+#: wp-admin/includes/update-core.php:1247
 msgid "Could not create directory."
 msgstr "Nu s-a putut crea directorul."
 
@@ -10225,8 +10225,8 @@ msgid "Could not extract file from archive."
 msgstr "Nu s-a putut extrage fișier din arhivă."
 
 #: wp-admin/includes/file.php:1195 wp-admin/includes/file.php:1299
-#: wp-admin/includes/file.php:1334 wp-admin/includes/update-core.php:1091
-#: wp-admin/includes/update-core.php:1202
+#: wp-admin/includes/file.php:1334 wp-admin/includes/update-core.php:1127
+#: wp-admin/includes/update-core.php:1242
 msgid "Could not copy file."
 msgstr "Nu s-a putut copia fișierul."
 
@@ -10512,12 +10512,12 @@ msgid "Failed to connect to SSH2 Server %s"
 msgstr "Conectare eșuată la serverul SSH2 %s"
 
 #: wp-admin/includes/class-wp-upgrader.php:167
-#: wp-admin/includes/update-core.php:1054
+#: wp-admin/includes/update-core.php:1090
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "Situl iese din mentenanță&#8230;"
 
 #: wp-admin/includes/class-wp-upgrader.php:166
-#: wp-admin/includes/update-core.php:967
+#: wp-admin/includes/update-core.php:1003
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Situl intră în mentenanță&#8230;"
 

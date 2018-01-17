@@ -4,10 +4,11 @@
 */
 get_header(); ?>
 <div class="main-content">
-    <div class="container">
+    <div class="container content-servicii">
         <?php if (have_rows('servicii_repeater')):
             while (have_rows('servicii_repeater')) : the_row(); ?>
-                <section class="service-tab-container" id="<?php the_sub_field('service_section_id'); ?>">
+                <section class="service-tab-container">
+                    <div class="section-indicator" id="<?php the_sub_field('service_section_id'); ?>"></div>
                     <div class="circle-container">
                         <?php if (have_rows('heading_service')):
                             while (have_rows('heading_service')): the_row(); ?>

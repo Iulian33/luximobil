@@ -1318,3 +1318,49 @@ div#n2-ss-2 {
 .pagination-container{
   clear: both;
 }
+
+
+//Service page styles
+.content-servicii{
+  padding: 50px 0;
+}
+.service-tab-container{
+  background: $color-speacialgray;
+  margin: 90px 0;
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  padding: 100px 85px 85px;
+  text-align: center;
+  @include border-radius(30px);
+  position: relative;
+  .section-indicator{
+    position: absolute;
+    top: -160px;
+  }
+  .circle-container{
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    top: -66px;
+    background: $color-blue;
+    left: 50%;
+    @include border-radius(50%);
+    transform: translateX(-50%);
+    border: 7px solid $color-white;
+    i {
+      color: $color-white;
+      font-size: 42px;
+      position: relative;
+      top: 14px;
+      margin-top: 6px;
+      display: block;
+    }
+    .service-title{
+      color: $color-white;
+      font-size: 16px;
+      font-family: $bold;
+      text-transform: uppercase;
+    }
+  }
+}
