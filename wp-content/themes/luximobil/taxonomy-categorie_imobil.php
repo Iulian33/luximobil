@@ -101,7 +101,11 @@ get_header(); ?>
 
                 <?php endwhile; ?>
                 <div class="pagination-container">
+<<<<<<< HEAD
                     <?php custom_paging_nav($wp_query); ?>
+=======
+                    <?php default_paging_nav(); ?>
+>>>>>>> 5dda8edf3ecde5a3c94c9738b61f2e0fa529ab15
                 </div>
 
             <?php else : ?>
