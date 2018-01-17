@@ -287,7 +287,9 @@ function my_content( $limit, $text = false, $word = false) {
 	$content = explode( " ", $content );
 	if ( count( $content ) > $limit ) {
 		$trim = true;
-	}
+	} else{
+	    $trim = false;
+    }
 	$content = array_slice( $content, 0, $limit, true );
 	if ( $trim ) {
 		$index = count( $content ) - 1;
