@@ -30,7 +30,7 @@ $products = $WPproducts->posts;
                             $typeOrder = @$typeOrdersTerms[0]->name;
                             if (@$special_ofert_ckecbox[0] == 'enable_special_ofert') {
                                 // List with all Specs
-                                include ('addons/specs-list.php');
+                                include('addons/specs-list.php');
                                 break;
                             }
                         }
@@ -41,7 +41,7 @@ $products = $WPproducts->posts;
                     <div class="product-container">
                         <div class="row content-prod">
                             <?php
-                            foreach ($products as $product ) {
+                            foreach ($products as $product) {
                                 $productId = $product->ID;
                                 $special_ofert_ckecbox = get_field('special_ofert', $productId);
                                 if (@$special_ofert_ckecbox[0] == 'enable_special_ofert') {
@@ -95,12 +95,7 @@ $products = $WPproducts->posts;
                                             ?>
                                         </div>
                                         <div class="description-product-ofert">
-<<<<<<< HEAD
-<!--                                            --><?php //echo $productContent; ?>
-                                            <?php echo my_content(40, $productContent,'...'); ?>
-=======
-                                            <?php echo $productContent; ?>
->>>>>>> 5dda8edf3ecde5a3c94c9738b61f2e0fa529ab15
+                                            <?php echo my_content(40, $productContent, '...'); ?>
                                         </div>
                                         <a href="<?php the_permalink($productId); ?>" class="button">
                                             <?php _e('Vezi Detalii'); ?>
