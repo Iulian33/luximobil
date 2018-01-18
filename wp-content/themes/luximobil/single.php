@@ -28,7 +28,7 @@ get_header(); ?>
                 <?php JH_check_sidebar("end"); ?>
             </div>
         </div>
-        <div class="row">
+        <div class="row related-products-container">
 
             <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg';
 
