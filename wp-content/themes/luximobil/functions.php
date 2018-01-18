@@ -646,3 +646,34 @@ function remove_pages_editor(){
     }
 }
 add_action( 'add_meta_boxes', 'remove_pages_editor' );
+
+
+
+// LUXIMOBIL SIMILAR POSTS
+
+function related_products($custom_post_type, $custom_taxonomy, $nr_posts) {
+    global $post;
+    $post_terms = array();
+    $taxonomy = $custom_taxonomy;
+    $terms = wp_get_post_terms($post->ID, $taxonomy);
+    foreach ($terms as $term) {
+        $post_terms[] = $term->term_id;
+    }
+    $posts_per_page = $nr_posts;
+    $args = array(
+        'posts_per_page' => $posts_per_page,
+        'orderby' => 'date',
+        'post_status' => 'publish',
+        'post_type' => $custom_post_type,
+        'post__not_in' => array($post->ID),
+        'tax_query' => array(
+            array(
+                'taxonomy' => $taxonomy,
+                'field' => 'id',
+                'terms' => $post_terms
+            ),
+        )
+    );
+    $all_posts = new WP_Query($args);
+    return $all_posts->posts;
+}
