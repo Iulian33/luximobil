@@ -174,3 +174,31 @@
     padding-right: 30px;
   }
 }
+
+.content-servicii {
+  padding: 40px 0 0;
+}
+.service-tab-container{
+  padding: 80px 20px 30px;
+}
+
+.headerImage {
+  min-height: 290px;
+  .pageImage {
+    min-height: 290px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .content-inner {
+      min-height: 290px;
+      .hero-title{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 130px 0 60px;
+        &:after{
+          bottom: 50px;
+        }
+      }
+    }
+  }
+}
