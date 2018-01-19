@@ -13,17 +13,29 @@
                     while (have_rows('imobil_carousel')) : the_row(); ?>
 
                         <?php $imobil_image = get_sub_field('imobil_image'); ?>
-                        <div class="swiper-slide"
-                             style="background-image: url(<?php echo $imobil_image['url']; ?>);"></div>
+                        <?php if ($imobil_image) { ?>
+
+                            <div class="swiper-slide"
+                                 style="background-image: url(<?php echo $imobil_image['url']; ?>);">
+                                <a href="<?php echo $imobil_image['url']; ?>" data-fancybox="imobil-carousel"></a>
+                            </div>
+
+                        <?php } ?>
                     <?php endwhile; ?>
-                <?php else : ?>
-                    // no rows found
                 <?php endif; ?>
-                <?php $video = get_field('imobil_video'); ?>
-                <?php if ($video) { ?>
+                <?php $video_url = get_field('imobil_video', false, false); ?>
+                <?php if ($video_url) { ?>
                     <div class="swiper-slide" id="swiper-video">
-                        <?php echo $video; ?>
+                        <a data-fancybox="imobil-carousel" href="<?php echo $video_url; ?>">
+                            <?php $imobil_video_thumbnail = get_field('imobil_video_thumbnail'); ?>
+                            <div class="video-slide-image"
+                                 style="background-image: url(<?php echo $imobil_video_thumbnail['url']; ?>);">
+                                <i class="fa fa-play-circle"></i>
+
+                            </div>
+                        </a>
                     </div>
+
                 <?php } ?>
             </div>
             <!-- Add Arrows -->
@@ -38,19 +50,20 @@
 
                     <?php while (have_rows('imobil_carousel')) : the_row(); ?>
                         <?php $imobil_image = get_sub_field('imobil_image'); ?>
-                        <div class="swiper-slide swiper-slide-bottom"
-                             style="background-image: url(<?php echo $imobil_image['url']; ?>);"></div>
+                        <?php if ($imobil_image) { ?>
+                            <div class="swiper-slide swiper-slide-bottom"
+                                 style="background-image: url(<?php echo $imobil_image['url']; ?>);"></div>
+                        <?php } ?>
 
                         <?php the_sub_field('sub_field_name'); ?>
                     <?php endwhile; ?>
-                <?php else : ?>
-                    // no rows found
                 <?php endif; ?>
 
                 <?php $imobil_video_thumbnail = get_field('imobil_video_thumbnail'); ?>
                 <?php if ($imobil_video_thumbnail) { ?>
                     <div class="swiper-slide swiper-slide-bottom"
                          style="background-image: url(<?php echo $imobil_video_thumbnail['url']; ?>);">
+                        <i class="fa fa-play-circle"></i>
                     </div>
                 <?php } ?>
             </div>

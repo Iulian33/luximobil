@@ -714,3 +714,86 @@
 [19-Jan-2018 17:57:42 UTC] PHP Fatal error:  Call to undefined function is_post_type() in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/functions.php on line 685
 [19-Jan-2018 18:12:33 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/functions.php on line 688
 [19-Jan-2018 19:05:41 UTC] PHP Notice:  Undefined variable: product_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 70
+[19-Jan-2018 20:09:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'luximobil_us'@'localhost' (using password: YES) in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1531
+[19-Jan-2018 20:09:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'luximobil_us'@'localhost' (using password: YES) in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1531
+[19-Jan-2018 20:09:52 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'luximobil_us'@'localhost' (using password: YES) in C:\xampp\htdocs\luximobil\wp-includes\wp-db.php on line 1531
+[19-Jan-2018 20:11:52 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:11:53 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:12:40 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:12:49 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:14:16 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:14:18 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:16:53 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:19:03 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:20:50 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:21:06 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:21:58 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:22:15 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:22:17 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:22:59 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:23:01 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:23:02 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:26:59 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:27:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:27:33 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 50
+[19-Jan-2018 20:28:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:28:48 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:29:17 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:29:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 119
+[19-Jan-2018 20:30:42 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:30:49 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:31:18 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:31:52 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:32:18 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:34:00 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:34:29 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:35:03 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\single.php on line 48
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:32 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:58:33 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:00 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 20:59:01 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\functions.php on line 688
+[19-Jan-2018 21:20:20 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 28
+[19-Jan-2018 21:53:00 UTC] PHP Warning:  Illegal string offset 'url' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 35
+[19-Jan-2018 21:53:00 UTC] PHP Warning:  Illegal string offset 'url' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 72

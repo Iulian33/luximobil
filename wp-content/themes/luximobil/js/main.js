@@ -134,3 +134,7 @@ if ($('body').hasClass('single-imobil')) {
 
 
 }
+//Fancybox
+$("[data-fancybox]").fancybox({
+
+});
