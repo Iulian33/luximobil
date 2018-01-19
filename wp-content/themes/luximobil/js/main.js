@@ -128,21 +128,5 @@ if ($('body').hasClass('single-imobil')) {
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
 
-    var v = document.getElementById("swiper-video");
 
-    v.addEventListener("canplay", function () {
-        mySwiper.stopAutoplay();
-    }, true);
-
-    v.addEventListener("ended", function () {
-        mySwiper.startAutoplay();
-    }, true);
-
-    var fullScreen = document.getElementsByClassName('swiper-slide-active');
-
-    for(var i = 0; i < fullScreen.length ; i++) {
-        fullScreen[i].addEventListener('click', function () {
-           this.classList.toggle('fullscreen');
-        });
-    }
 }

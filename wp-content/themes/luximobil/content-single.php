@@ -19,8 +19,12 @@
                 <?php else : ?>
                     // no rows found
                 <?php endif; ?>
+
                 <div class="swiper-slide" id="swiper-video">
-                    <video src="https://www.youtube.com/watch?v=QH2-TGUlwu4&t=13s"></video>
+                    <?php
+                    $video = get_field('imobil_video');
+                    echo $video;
+                    ?>
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -43,11 +47,12 @@
                 <?php else : ?>
                     // no rows found
                 <?php endif; ?>
-                <div class="swiper-slide"
-                     style="background-image: url('http://i0.kym-cdn.com/entries/icons/mobile/000/005/608/nyan-cat-01-625x450.jpg');"></div>
+                <?php $imobil_video_thumbnail = get_field('imobil_video_thumbnail'); ?>
+                <div class="swiper-slide swiper-slide-bottom" style="background-image: url("<?php  $imobil_video_thumbnail['url'];?>");"> </div>
             </div>
         </div>
     </div>
+
 
     <div class="col-sm-5">
         <div class="imobil-data">
@@ -88,13 +93,7 @@
                             <tr>
                                 <td class="description-label"><?php _e('Etaje Clădire', 'jhfw'); ?></td>
                                 <td>
-                                    <?php the_sub_field('etaje_cladire'); ?>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="description-label"><?php _e('Etaj', 'jhfw'); ?></td>
-                                <td>
-                                    <?php the_sub_field('etaj'); ?>
+                                    <?php the_sub_field('etaj'); ?><?php _e('/'); the_sub_field('etaje_cladire'); ?>
                                 </td>
                             </tr>
                             <tr>
@@ -152,4 +151,5 @@
             </div>
         </div>
     </div>
+
 </div>
