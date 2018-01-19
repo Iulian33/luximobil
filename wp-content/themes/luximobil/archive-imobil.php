@@ -10,7 +10,7 @@
 get_header(); ?>
 <div class="mainContent">
     <div class="container archive-imobil">
-        <div class="col-sm-3">
+        <div class="col-sm-3 filters-col">
             <?php echo do_shortcode('[searchandfilter id="418"]'); ?>
             <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg'; ?>
         </div>
@@ -38,10 +38,10 @@ get_header(); ?>
                             $sale_price = get_field('sale_price', $product_id);
                             if ($regular_price) { ?>
                             <div class="price-product">
-                                <?php if ($sale_price || $sale_price) {
+                                <?php if ($sale_price && $sale_check) {
                                     $sale_price = number_format($sale_price, 0, '.', ' ');
                                 } else {
-                                        $regular_price = number_format($regular_price, 0, '.', ' ');
+                                    $regular_price = number_format($regular_price, 0, '.', ' ');
                                 }
                                 ?>
 

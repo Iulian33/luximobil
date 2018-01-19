@@ -15,8 +15,8 @@ $products = $WPproducts->posts;
     <div class="overlay-section" style="background-color: <?php echo $overlayColor; ?>"></div>
     <div class="container">
         <div class="content-inner">
-            <div class="row">
-                <div class="col-md-5 col-sm-12">
+            <div class="row main-row-so">
+                <div class="col-md-5 col-sm-12 specs-col">
                     <ul class="list-specs">
                         <?php
                         foreach ($products as $product) {

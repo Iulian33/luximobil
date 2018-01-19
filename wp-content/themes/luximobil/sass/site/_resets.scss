@@ -21,6 +21,13 @@ textarea {
   }
 }
 
+// Remove input type number spiners
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 input[type="text"],
 input[type="email"],

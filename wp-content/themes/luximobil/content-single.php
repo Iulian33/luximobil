@@ -19,13 +19,12 @@
                 <?php else : ?>
                     // no rows found
                 <?php endif; ?>
-
-                <div class="swiper-slide" id="swiper-video">
-                    <?php
-                    $video = get_field('imobil_video');
-                    echo $video;
-                    ?>
-                </div>
+                <?php $video = get_field('imobil_video'); ?>
+                <?php if ($video) { ?>
+                    <div class="swiper-slide" id="swiper-video">
+                        <?php echo $video; ?>
+                    </div>
+                <?php } ?>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next swiper-button-white"></div>
@@ -47,26 +46,45 @@
                 <?php else : ?>
                     // no rows found
                 <?php endif; ?>
+
                 <?php $imobil_video_thumbnail = get_field('imobil_video_thumbnail'); ?>
-                <div class="swiper-slide swiper-slide-bottom" style="background-image: url("<?php  $imobil_video_thumbnail['url'];?>");"> </div>
+                <?php if ($imobil_video_thumbnail) { ?>
+                    <div class="swiper-slide swiper-slide-bottom"
+                         style="background-image: url(<?php echo $imobil_video_thumbnail['url']; ?>);">
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
 
-
     <div class="col-sm-5">
         <div class="imobil-data">
             <h2 class="imobil-title">
-                <?php the_title(); ?>
+                <?php
+                $product_id = get_the_ID();
+                $sectorsTerms = wp_get_post_terms($product_id, 'sectors_imobil');
+                $regionTerms = wp_get_post_terms($product_id, 'regions_imobil');
+                $region = @$regionTerms[0]->name;
+                $sector = @$sectorsTerms[0]->name;
+
+                if ($region && $sector) {
+                    echo $region . ' , ';
+                } elseif ($region) {
+                    echo $region;
+                }
+                if ($sector) {
+                    echo $sector;
+                } ?>
             </h2>
             <h3 class="imobil-price">
                 <?php
                 $sale_price = get_field('sale_price');
                 $sale_price = number_format($sale_price, 0, '.', ' ');
                 $regular_price = get_field('regular_price');
+                $sale_check = get_field('enable_sale_price');
                 $regular_price = number_format($regular_price, 0, '.', ' ');
 
-                if ($sale_price) {
+                if ($sale_price && $sale_check) {
                     echo $sale_price . ' €';
                 } else {
                     echo $regular_price . ' €';
@@ -90,12 +108,16 @@
                                     <?php the_sub_field('numar_camere'); ?>
                                 </td>
                             </tr>
+                            <?php $etaj = get_sub_field('etaj'); ?>
+                            <?php if ($etaj) { ?>
                             <tr>
-                                <td class="description-label"><?php _e('Etaje Clădire', 'jhfw'); ?></td>
+                                <td class="description-label"><?php _e('Etaj', 'jhfw'); ?></td>
                                 <td>
-                                    <?php the_sub_field('etaj'); ?><?php _e('/'); the_sub_field('etaje_cladire'); ?>
+                                    <?php echo $etaj; ?><?php _e(' / ');
+                                    the_sub_field('etaje_cladire'); ?>
                                 </td>
                             </tr>
+                        <?php } ?>
                             <tr>
                                 <td class="description-label"><?php _e('Stare', 'jhfw'); ?></td>
                                 <td>
@@ -151,5 +173,4 @@
             </div>
         </div>
     </div>
-
 </div>

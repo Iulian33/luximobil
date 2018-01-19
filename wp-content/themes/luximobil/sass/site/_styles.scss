@@ -827,6 +827,7 @@ div#n2-ss-2 {
 .post-item-container {
   overflow: hidden;
   img {
+    width: calc(100% + 15px);
     height: 100%;
   }
   .info-container {
@@ -1346,6 +1347,9 @@ div#n2-ss-2 {
 
 .related-products-container {
   margin: 40px 0;
+  display: inline-block;
+  width: 100%;
+  clear: both;
 }
 .main-content{
   min-height: 450px;
@@ -1460,6 +1464,97 @@ div#n2-ss-2 {
     padding: 0 20px;
     p {
       font-size: $font-size-base;
+    }
+  }
+}
+
+
+
+// Filters styles
+.filters-col{
+  padding-left: 0;
+}
+.searchandfilter {
+  ul{
+    margin: 0 !important;
+    padding: 0;
+    > li{
+      &:first-child{
+        padding-top: 0;
+      }
+      padding-bottom: 20px;
+    }
+    h4{
+      background: $color-lightblue;
+      margin-bottom: 18px;
+      padding: 13px 15px;
+      color: $color-white;
+      font-family: $bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .sf-meta-range-slider{
+      .sf-input-range-number{
+        max-width: 126px;
+        width: 126px;
+        padding-left: 10px;
+        background: #e1e1e1;
+        border: 1px solid transparent;
+        text-align: center;
+        outline: 0;
+      }
+    }
+    .sf-range-postfix{
+      position: absolute;
+      margin-left: -20px;
+      margin-top: 10px;
+    }
+    .sf-range-values-seperator{
+      padding: 0 2px;
+      position: relative;
+      top: 8px;
+    }
+    .meta-slider{
+      margin-top: 18px;
+      margin-left: 8px;
+      max-width: 255px;
+      border-radius: 50px;
+      border: none;
+    }
+    .noUi-base{
+      background: #e1e1e1;
+      border: none;
+      border-radius: 50px;
+    }
+    .noUi-connect{
+      border-radius: 50px;
+      background: $color-lightblue;
+    }
+    .noUi-background{
+      background: #e1e1e1;
+      box-shadow: none;
+      border-radius: 50px;
+    }
+    .noUi-handle{
+      background: $color-lightblue;
+      box-shadow: 0 0 5px 0;
+      border: none;
+      &:after,
+      &:before{
+        content: none;
+      }
+    }
+
+  // Remove all items radio option from view
+    .sf-field-taxonomy-type_imobil,
+    .sf-field-post-meta-imobil_specifications_etaj{
+      ul{
+        li{
+          &:first-child{
+            display: none;
+          }
+        }
+      }
     }
   }
 }

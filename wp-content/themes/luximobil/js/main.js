@@ -61,8 +61,12 @@ $(document).ready(function($) {
     main_menu.appendTo("#mobilemenu");
     $("#mobilemenu").mmenu({
         "offCanvas": {
-            "zposition":"front"
-        }
+            "zposition":"front",
+            "position" : "right"
+        },
+        navbar: {
+            title: "Meniu"
+        },
     });
 
 	// Initialize dropkick select for forms

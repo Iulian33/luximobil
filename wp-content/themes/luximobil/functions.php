@@ -191,7 +191,7 @@ function header_form_messge(){
 function admin_color_schemes() {
     //Get the theme directory
     $theme_dir = get_template_directory_uri();
- 
+
     //Jh Framework
     wp_admin_css_color( 'green', __( 'JH Colors' ),
         get_template_directory_uri().'/css/admin-colors.css',
@@ -212,7 +212,7 @@ add_action('user_register', 'set_default_admin_color');
 function adminbar_styles() {
 	if ( is_admin_bar_showing() ) {
 
-		// Admin-bar Style 
+		// Admin-bar Style
 		$theme_dir = get_template_directory_uri();
 		wp_enqueue_style( 'admin-bar-overrides', get_template_directory_uri().'/css/admin-colors.css', array( 'admin-bar' ), null, 'all' );
 	}
@@ -527,7 +527,7 @@ function google_fonts() {
 	);
 	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
             }
-            
+
 add_action('wp_enqueue_scripts', 'google_fonts');
 
 function JH_jquery_to_footer() {
@@ -679,3 +679,28 @@ function related_products($custom_post_type, $custom_taxonomy, $nr_posts) {
     $all_posts = new WP_Query($args);
     return $all_posts->posts;
 }
+
+
+function update_sf_fields( $post_id ) {
+    global $post;
+
+    // verifyed if we are on imobil post type
+    if  ($post->post_type == 'imobil') {
+
+        $imobile_etaj = 0;
+        if (have_rows('imobil_specifications',$post_id)) {
+            while (have_rows('imobil_specifications',$post_id)) {
+                the_row();
+                $imobile_etaj_real = get_sub_field('etaj');
+                update_sub_field('etaj_sf_only', $imobile_etaj_real);
+                $imobile_etaj = get_sub_field('etaj_sf_only');
+                echo $imobile_etaj_real;
+            }
+        }
+        die($imobile_etaj);
+
+
+
+    }
+}
+add_action( 'save_post', 'update_sf_fields' );

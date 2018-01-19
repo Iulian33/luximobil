@@ -61,7 +61,8 @@
 .section-special-ofert {
   .content-inner {
     .list-specs{
-      padding-top: 0;
+      padding-top: 40px;
+      padding-bottom: 0;
     }
     .product-container {
       .content-prod {
@@ -200,5 +201,13 @@
         }
       }
     }
+  }
+}
+
+.main-row-so{
+  display: flex;
+  flex-direction: column;
+  .specs-col{
+    order: 2;
   }
 }
