@@ -11,7 +11,7 @@
   font-style: $style;
 }
 
-@mixin blur($blur : 5px){
+@mixin blur($blur : 5px) {
   -webkit-filter: blur($blur);
   -moz-filter: blur($blur);
   -o-filter: blur($blur);
@@ -23,4 +23,52 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
+}
+
+@mixin general-button() {
+  font-family: $regular;
+  font-size: $font__size;
+  @include transition();
+  height: $button__height;
+  line-height: $button__height;
+  background: $color__background-button;
+  color: $color__button;
+  border: 0;
+  display: inline-block;
+  padding: 0 20px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 50px;
+  &:hover {
+    color: #fff;
+    background: $color__background-button-hover;
+    text-decoration: none;
+  }
+}
+
+@mixin filter-button($checked : 'false') {
+  @if $checked == 'true' {
+    background: transparent;
+    border: 2px solid $color-lightblue;
+    color: $color-white;
+    background: $color-lightblue;
+    padding: 8px 20px;
+    text-align: center;
+    @include transition();
+    cursor: pointer;
+  } @else {
+    background: transparent;
+    border: 2px solid $color-lightblue;
+    color: $color-lightblue;
+    padding: 8px 20px;
+    text-align: center;
+    @include transition();
+    cursor: pointer;
+    &:hover {
+      color: $color-white;
+      background: $color-lightblue;
+    }
+  }
 }
