@@ -356,8 +356,8 @@ function custom_paging_nav( $custom_query ) {
 		'current'  => $paged,
 		'mid_size' => 1,
 		'add_args' => array_map( 'urlencode', $query_args ),
-		'prev_text' => __( '&larr; Previous', 'twentyfourteen' ),
-		'next_text' => __( 'Next &rarr;', 'twentyfourteen' ),
+		'prev_text' => __( '<i class="fa fa-chevron-left"></i>', 'twentyfourteen' ),
+		'next_text' => __( '<i class="fa fa-chevron-right"></i>', 'twentyfourteen' ),
 	) );
 
 	if ( $links ) :
@@ -681,26 +681,27 @@ function related_products($custom_post_type, $custom_taxonomy, $nr_posts) {
 }
 
 
-function update_sf_fields( $post_id ) {
-    global $post;
-
-    // verifyed if we are on imobil post type
-    if  ($post->post_type == 'imobil') {
-
-        $imobile_etaj = 0;
-        if (have_rows('imobil_specifications',$post_id)) {
-            while (have_rows('imobil_specifications',$post_id)) {
-                the_row();
-                $imobile_etaj_real = get_sub_field('etaj');
-                update_sub_field('etaj_sf_only', $imobile_etaj_real);
-                $imobile_etaj = get_sub_field('etaj_sf_only');
-                echo $imobile_etaj_real;
-            }
-        }
-        die($imobile_etaj);
-
-
-
-    }
-}
-add_action( 'save_post', 'update_sf_fields' );
+//function update_sf_fields( $post_id ) {
+//    global $post;
+//
+//    // verifyed if we are on imobil post type
+//    if  ($post->post_type == 'imobil') {
+//
+//        $imobile_etaj = 0;
+//        if (have_rows('imobil_specifications',$post_id)) {
+//            while (have_rows('imobil_specifications',$post_id)) {
+//                the_row();
+//                $imobile_etaj_real = get_sub_field('etaj');
+//                update_sub_field('etaj_sf_only', $imobile_etaj_real);
+//                $imobile_etaj = get_sub_field('etaj_sf_only');
+//
+//            }
+//        }
+//        var_dump(get_field('imobil_specifications',$post_id));
+//        die($imobile_etaj);
+//
+//
+//
+//    }
+//}
+//add_action( 'save_post', 'update_sf_fields' );

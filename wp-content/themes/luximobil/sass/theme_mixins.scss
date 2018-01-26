@@ -54,7 +54,8 @@
     border: 2px solid $color-lightblue;
     color: $color-white;
     background: $color-lightblue;
-    padding: 8px 20px;
+    padding: 8px;
+    min-width: 35px;
     text-align: center;
     @include transition();
     cursor: pointer;
@@ -62,7 +63,8 @@
     background: transparent;
     border: 2px solid $color-lightblue;
     color: $color-lightblue;
-    padding: 8px 20px;
+    padding: 8px;
+    min-width: 35px;
     text-align: center;
     @include transition();
     cursor: pointer;

@@ -715,3 +715,6 @@
 [19-Jan-2018 18:12:33 UTC] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/functions.php on line 688
 [19-Jan-2018 19:05:41 UTC] PHP Notice:  Undefined variable: product_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 70
 [20-Jan-2018 15:56:25 UTC] PHP Notice:  Undefined index: buna in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 127
+[20-Jan-2018 17:17:10 UTC] PHP Notice:  Undefined index: buna in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 127
+[20-Jan-2018 17:27:15 UTC] PHP Notice:  Undefined index: buna in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 127
+[20-Jan-2018 17:27:54 UTC] PHP Notice:  Undefined index: reparatie_euro in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/content-single.php on line 127

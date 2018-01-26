@@ -616,42 +616,45 @@ div#n2-ss-2 {
   }
 }
 
-/************** PAGINATION STYLES ****************/
-
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute;
-}
+/************** Pagination Styles ****************/
 
 .paging-navigation {
-  border-top: 5px solid #000;
   margin: 48px 0;
   .loop-pagination {
     margin-top: -5px;
-    text-align: center;
+    text-align: right;
   }
   .page-numbers {
-    border-top: 5px solid transparent;
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 900;
     margin-right: 1px;
-    padding: 7px 16px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
     text-transform: uppercase;
+    background: transparent;
+    border: 1px solid $color-lightblue;
+    @include transition();
+    border-radius: 50%;
     &.current {
-      border-top: 5px solid $color__background-button;
+      color: $color-white;
+      background: $color-lightblue;
     }
   }
   a {
     &:hover {
-      border-top: 5px solid $color__background-button;
-      color: #2B2B2B;
+      text-decoration: none;
+      color: $color-white;
+      background: $color-lightblue;
     }
   }
 }
 
 #main .content .paging-navigation a {
-  color: #2B2B2B;
+  color: $color-white;
+
 }
 
 /****************** ACF GOOGLE MAP ************************/
@@ -1529,7 +1532,8 @@ div#n2-ss-2 {
 
     // Remove all items radio option from view
     .sf-field-taxonomy-type_imobil,
-    .sf-field-post-meta-imobil_specifications_etaj{
+    .sf-field-post-meta-imobil_specifications_etaj,
+    .sf-field-post-meta-imobil_specifications_number_of_rooms {
       ul{
         li{
           &:first-child{
@@ -1627,6 +1631,12 @@ div#n2-ss-2 {
             float: left;
           }
         }
+      }
+    }
+    .sf-field-post-meta-imobil_specifications_etaj,
+    .sf-field-post-meta-imobil_specifications_number_of_rooms {
+      .sf-level-0{
+        display: inline;
       }
     }
   }
