@@ -47,12 +47,12 @@ div#n2-ss-2 {
     min-height: 350px;
     background-size: cover;
     background-position: 50% 65%;
-    .content-inner{
+    .content-inner {
       position: relative;
       width: 100%;
       min-height: 350px;
       background: rgba(0, 0, 0, .5);
-      .hero-title{
+      .hero-title {
         text-align: center;
         font-size: 35px;
         font-family: $bold;
@@ -61,7 +61,7 @@ div#n2-ss-2 {
 
         color: $color-white;
         position: relative;
-        &:after{
+        &:after {
           content: '';
           position: absolute;
           width: 100px;
@@ -471,16 +471,16 @@ div#n2-ss-2 {
   background-size: cover;
   background-position: 50% 70%;
   position: relative;
-  .contacts-list{
+  .contacts-list {
     padding-left: 5px;
-    li{
+    li {
       list-style-type: none;
       color: $color-white;
       padding-bottom: 25px;
       padding-left: 25px;
       &.address,
       &.phones,
-      &.mails{
+      &.mails {
         &:before {
           font-family: $font-icon;
           position: absolute;
@@ -489,36 +489,36 @@ div#n2-ss-2 {
           font-size: 20px;
         }
       }
-      &.address{
-        &:before{
+      &.address {
+        &:before {
           content: '\f041';
         }
       }
-      &.phones{
-        &:before{
+      &.phones {
+        &:before {
           content: '\f10b';
           font-size: 25px;
           margin-top: -2px;
         }
       }
-      &.mails{
-        &:before{
+      &.mails {
+        &:before {
           content: '\f0e0';
           font-size: 15px;
           padding-top: 11px;
         }
       }
-      a{
+      a {
         display: inline-block;
         color: $color-white;
         width: 90%;
       }
     }
   }
-  .container{
+  .container {
     position: relative;
   }
-  .widget-title{
+  .widget-title {
     text-transform: uppercase;
     color: $color-white;
     font-family: $bold;
@@ -528,7 +528,7 @@ div#n2-ss-2 {
     font-size: 18px;
     margin-bottom: 28px;
     padding-left: 25px;
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       display: inline-block;
@@ -538,20 +538,20 @@ div#n2-ss-2 {
       border-bottom: 3px solid $color-classic-red;
     }
   }
-  .widget_nav_menu{
-    .menu{
+  .widget_nav_menu {
+    .menu {
       padding-left: 25px;
       margin: 0;
-      li{
+      li {
         list-style-type: none;
         line-height: 33px;
         font-size: 18px;
         font-family: $light;
-        a{
+        a {
           color: $color-white;
           text-decoration: none;
-          @include transition(all,.3s);
-          &:hover{
+          @include transition(all, .3s);
+          &:hover {
             color: $color-classic-red;
           }
         }
@@ -564,18 +564,18 @@ div#n2-ss-2 {
       padding-left: 0;
     }
     &.menu-1,
-    &.menu-2{
+    &.menu-2 {
       margin-left: 42px;
     }
-    &.menu-2{
+    &.menu-2 {
       margin-left: 22px;
     }
   }
-  .footer-about{
+  .footer-about {
     position: absolute;
     right: 0;
     width: 42%;
-    .textwidget{
+    .textwidget {
       padding-left: 25px;
       color: $color-white;
       font-size: 13px;
@@ -595,20 +595,20 @@ div#n2-ss-2 {
     width: 100%;
     height: 100%;
   }
-  .credits-bttom-footer{
+  .credits-bttom-footer {
     padding-top: 40px;
     padding-left: 65px;
-    .copy-right-text{
+    .copy-right-text {
       color: $color-white;
       font-size: 12px;
     }
-    .credits-link{
+    .credits-link {
       float: right;
-      a{
+      a {
         color: $color-white;
         text-decoration: none;
         font-size: 12px;
-        &:hover{
+        &:hover {
           color: $color-classic-red;
         }
       }
@@ -1219,11 +1219,11 @@ div#n2-ss-2 {
   }
 }
 
-.archive-imobil{
+.archive-imobil {
   padding-top: 50px;
   padding-bottom: 50px;
-  .products-results{
-    .post-item-container{
+  .products-results {
+    .post-item-container {
       margin-bottom: 30px;
     }
   }
@@ -1240,32 +1240,73 @@ div#n2-ss-2 {
     position: relative;
   }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  &.swiper-slide-bottom {
-    transform: translateX(-150%);
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .video-slide-image {
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+      }
+      i {
+        position: absolute;
+        @include transition(all, .3s, ease);
+        font-size: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+      }
+      &:hover {
+        i {
+          font-size: 160px;
+          text-shadow: 0 0 40px #666;
+        }
+      }
+    }
+    &.swiper-slide-bottom {
+      transform: translateX(-150%);
+      cursor: pointer;
+      i {
+        position: relative;
+        font-size: 35px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+      }
+    }
+  }
   #swiper-video {
     iframe {
       width: 100%;
       height: 100%;
     }
+    a {
+      img {
+        width: 100%;
+      }
+    }
   }
 
-.gallery-top {
-  height: 80%;
-  width: 100%;
-}
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
 
   .gallery-thumbs {
     height: 100px;
@@ -1276,11 +1317,10 @@ div#n2-ss-2 {
       height: 100%;
       opacity: 0.4;
     }
-    .swiper-slide-active{
-      opacity:1;
+    .swiper-slide-active {
+      opacity: 1;
     }
   }
-
 
   .imobil-data {
     margin-top: 55px;
@@ -1335,15 +1375,15 @@ div#n2-ss-2 {
   width: 100%;
   clear: both;
 }
-.main-content{
+
+.main-content {
   min-height: 450px;
 }
 
-
 // Styling Error 404
-.error-404{
+.error-404 {
   min-height: 350px;
-  .page-title{
+  .page-title {
     text-align: center;
     color: $color-black;
     font-family: $bold;
@@ -1351,23 +1391,23 @@ div#n2-ss-2 {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  .page-content{
+  .page-content {
     font-size: 16px;
     text-align: center;
     padding-bottom: 100px;
   }
 }
 
-.pagination-container{
+.pagination-container {
   clear: both;
 }
 
-
 //Service page styles
-.content-servicii{
+.content-servicii {
   padding: 50px 0;
 }
-.service-tab-container{
+
+.service-tab-container {
   background: $color-speacialgray;
   margin: 90px 0;
   width: 80%;
@@ -1377,11 +1417,11 @@ div#n2-ss-2 {
   text-align: center;
   @include border-radius(30px);
   position: relative;
-  .section-indicator{
+  .section-indicator {
     position: absolute;
     top: -160px;
   }
-  .circle-container{
+  .circle-container {
     position: absolute;
     width: 132px;
     height: 132px;
@@ -1399,7 +1439,7 @@ div#n2-ss-2 {
       margin-top: 6px;
       display: block;
     }
-    .service-title{
+    .service-title {
       color: $color-white;
       font-size: 16px;
       font-family: $bold;
@@ -1438,6 +1478,7 @@ div#n2-ss-2 {
     }
   }
 }
+
 .imobil-description {
   .description-heading {
     color: $dark-text-color;
@@ -1452,24 +1493,23 @@ div#n2-ss-2 {
   }
 }
 
-
-
 // Filters styles
-.filters-col{
+.filters-col {
   padding-left: 0;
 }
+
 .searchandfilter {
-  ul{
+  ul {
     margin: 0 !important;
     padding: 0;
-    > li{
+    > li {
       padding-top: 5px;
       padding-bottom: 5px;
-      &:first-child{
+      &:first-child {
         padding-top: 0;
       }
     }
-    h4{
+    h4 {
       background: $color-lightblue;
       margin-bottom: 18px;
       padding: 10px 15px;
@@ -1478,8 +1518,8 @@ div#n2-ss-2 {
       text-transform: uppercase;
       text-align: center;
     }
-    .sf-meta-range-slider{
-      .sf-input-range-number{
+    .sf-meta-range-slider {
+      .sf-input-range-number {
         max-width: 126px;
         width: 126px;
         padding-left: 10px;
@@ -1489,43 +1529,43 @@ div#n2-ss-2 {
         outline: 0;
       }
     }
-    .sf-range-postfix{
+    .sf-range-postfix {
       position: absolute;
       margin-left: -20px;
       margin-top: 10px;
     }
-    .sf-range-values-seperator{
+    .sf-range-values-seperator {
       padding: 0 2px;
       position: relative;
       top: 8px;
     }
-    .meta-slider{
+    .meta-slider {
       margin-top: 18px;
       margin-left: 8px;
       max-width: 255px;
       border-radius: 50px;
       border: none;
     }
-    .noUi-base{
+    .noUi-base {
       background: #e1e1e1;
       border: none;
       border-radius: 50px;
     }
-    .noUi-connect{
+    .noUi-connect {
       border-radius: 50px;
       background: $color-lightblue;
     }
-    .noUi-background{
+    .noUi-background {
       background: #e1e1e1;
       box-shadow: none;
       border-radius: 50px;
     }
-    .noUi-handle{
+    .noUi-handle {
       background: $color-lightblue;
       box-shadow: 0 0 5px 0;
       border: none;
       &:after,
-      &:before{
+      &:before {
         content: none;
       }
     }
@@ -1533,8 +1573,7 @@ div#n2-ss-2 {
     // Remove all items radio option from view
     .sf-field-taxonomy-type_imobil,
     .sf-field-post-meta-imobil_specifications_etaj,
-    .sf-field-post-meta-imobil_specifications_number_of_rooms {
-      ul{
+    .sf-field-post-meta-imobil_specifications_number_of_rooms {  ul{
         li{
           &:first-child{
             display: none;

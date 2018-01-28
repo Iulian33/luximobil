@@ -132,3 +132,7 @@ if ($('body').hasClass('single-imobil')) {
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
 }
+//Fancybox
+$("[data-fancybox]").fancybox({
+
+});

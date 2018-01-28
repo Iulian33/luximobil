@@ -9,23 +9,23 @@ get_header(); ?>
 
 <div id="primary" class="mainContent">
     <div class="container">
-        <?php get_template_part('content', 'single'); ?>
+                <?php get_template_part('content', 'single'); ?>
 
 
-        <div class="row">
-            <div class="col-xs-12 col-sm-7 col-lg-7">
-                <?php while (have_posts()) : the_post(); ?>
-                    <div class="imobil-description">
-                        <h3 class="description-heading">
-                            <?php _e('Descriere', 'jhfw'); ?>
-                        </h3>
-                        <div class="description">
-                            <?php the_content(); ?>
-                        </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-7 col-lg-7">
+                        <?php while (have_posts()) : the_post(); ?>
+                            <div class="imobil-description">
+                                <h3 class="description-heading">
+                                    <?php _e('Descriere', 'jhfw'); ?>
+                                </h3>
+                                <div class="description">
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+                        <?php endwhile; // end of the loop. ?>
                     </div>
-                <?php endwhile; // end of the loop. ?>
-            </div>
-        </div>
+                </div>
         <div class="row">
             <div class="related-products-container">
                 <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg';
@@ -41,8 +41,9 @@ get_header(); ?>
                         $region = @$regionTerms[0]->name;
                         $sector = @$sectorsTerms[0]->name; ?>
 
-                        <a class="post-item-imobil" href="<?php the_permalink($product_id);; ?>">
-                            <? if (get_the_post_thumbnail($product_id)) { ?>
+                        <a class="post-item-imobil" href="<?php the_permalink($product_id); ?>">
+
+                            <?php if (get_the_post_thumbnail($product_id)) { ?>
                                 <img src="<?php echo get_the_post_thumbnail_url($product_id, 'post-size'); ?>"
                                      alt="default-post image">
                             <?php } else { ?>
