@@ -743,27 +743,23 @@ function related_products($custom_post_type, $custom_taxonomy, $nr_posts)
     return $all_posts->posts;
 }
 
-//function update_sf_fields( $post_id ) {
-//    global $post;
-//
-//    // verifyed if we are on imobil post type
-//    if  ($post->post_type == 'imobil') {
-//
-//        $imobile_etaj = 0;
-//        if (have_rows('imobil_specifications',$post_id)) {
-//            while (have_rows('imobil_specifications',$post_id)) {
-//                the_row();
-//                $imobile_etaj_real = get_sub_field('etaj');
-//                update_sub_field('etaj_sf_only', $imobile_etaj_real);
-//                $imobile_etaj = get_sub_field('etaj_sf_only');
-//
-//            }
-//        }
-//        var_dump(get_field('imobil_specifications',$post_id));
-//        die($imobile_etaj);
-//
-//
-//
-//    }
-//}
-//add_action( 'save_post', 'update_sf_fields' );
+
+function update_sf_fields($post_id) {
+
+    if(get_post_type($post_id) === 'imobil') {
+
+        $etaj_imobil = get_post_meta($post_id,'imobil_specifications_etaj', true);
+        $camere_imobil = get_post_meta($post_id,'imobil_specifications_numar_camere', true);
+
+        $meta_value_etaj = $etaj_imobil >= 5 ? '5+': $etaj_imobil;
+        $meta_value_camere = $camere_imobil >= 5 ? '5+': $camere_imobil;
+
+        update_post_meta( $post_id, 'search_filter_etaj', $meta_value_etaj );
+        update_post_meta( $post_id, 'search_filter_camere', $meta_value_camere );
+
+    }
+
+
+}
+
+add_action('save_post','update_sf_fields',90);

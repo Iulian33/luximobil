@@ -1572,8 +1572,8 @@ div#n2-ss-2 {
 
     // Remove all items radio option from view
     .sf-field-taxonomy-type_imobil,
-    .sf-field-post-meta-imobil_specifications_etaj,
-    .sf-field-post-meta-imobil_specifications_numar_camere {  ul{
+    .sf-field-post-meta-search_filter_etaj,
+    .sf-field-post-meta-search_filter_camere {  ul{
         li{
           &:first-child{
             display: none;
@@ -1672,8 +1672,8 @@ div#n2-ss-2 {
         }
       }
     }
-    .sf-field-post-meta-imobil_specifications_etaj,
-    .sf-field-post-meta-imobil_specifications_numar_camere {
+    .sf-field-post-meta-search_filter_etaj,
+    .sf-field-post-meta-search_filter_camere {
       .sf-level-0{
         display: inline;
       }
