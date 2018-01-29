@@ -183,26 +183,7 @@
   padding: 80px 20px 30px;
 }
 
-.headerImage {
-  min-height: 290px;
-  .pageImage {
-    min-height: 290px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    .content-inner {
-      min-height: 290px;
-      .hero-title{
-        font-size: 20px;
-        line-height: 30px;
-        padding: 130px 0 60px;
-        &:after{
-          bottom: 50px;
-        }
-      }
-    }
-  }
-}
+
 
 .main-row-so{
   display: flex;
@@ -210,4 +191,37 @@
   .specs-col{
     order: 2;
   }
+}
+
+.close-filters {
+  display: block;
+}
+
+.filters-col{
+  width: 100%;
+  margin-left: 0;
+  transform: scale(0);
+  &.opened-filter-popup{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sf-field-post-meta-search_filter_etaj,
+.sf-field-post-meta-search_filter_camere {
+  ul{
+    text-align: center;
+  }
+}
+
+.sf-field-post-meta-regular_price{
+  > div{
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+.filters-button{
+  width: 80%;
+  left: 10%;
+  text-align: center;
 }

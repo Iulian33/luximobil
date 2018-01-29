@@ -1,6 +1,6 @@
 $ = jQuery;
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
     $(window).on('scroll', function () {
         makeNavSticky();
     });
@@ -8,10 +8,10 @@ $(document).ready(function($) {
     var makeNavSticky = function () {
         var $header = $('.main-header'),
             headerHeight = 135;
-            deviceScreen = window.matchMedia("(max-width: 1025px)");
+        deviceScreen = window.matchMedia("(max-width: 1025px)");
 
         if ($(window).scrollTop() >= headerHeight) {
-            if (!deviceScreen.matches){
+            if (!deviceScreen.matches) {
                 $header.addClass('sticky');
             }
         } else {
@@ -23,7 +23,7 @@ $(document).ready(function($) {
         margin: 25,
         loop: true,
         autoplay: true,
-        responsive : {
+        responsive: {
             0: {
                 items: 1,
                 stagePadding: 60
@@ -41,7 +41,7 @@ $(document).ready(function($) {
         margin: 25,
         loop: true,
         autoplay: true,
-        responsive : {
+        responsive: {
             0: {
                 items: 1,
                 stagePadding: 60
@@ -61,36 +61,36 @@ $(document).ready(function($) {
     main_menu.appendTo("#mobilemenu");
     $("#mobilemenu").mmenu({
         "offCanvas": {
-            "zposition":"front",
-            "position" : "right"
+            "zposition": "front",
+            "position": "right"
         },
         navbar: {
             title: "Meniu"
-        },
+        }
     });
 
-	// Initialize dropkick select for forms
-	$('select').dropkick({
-		mobile: true
-	});
+    // Initialize dropkick select for forms
+    $('select').dropkick({
+        mobile: true
+    });
 
 
-    (function($, window) {
+    (function ($, window) {
         function autoheight() {
             var max = 0;
 
             $ls = $('.article-block');
 
-            $ls.each(function() {
+            $ls.each(function () {
                 $t = $(this);
-                $t.css('height','');
+                $t.css('height', '');
                 max = Math.max(max, $t.height());
             });
             $ls.height(max);
 
         }
 
-        $(function() {
+        $(function () {
             // the inline-block selector
             autoheight(); // first time
             $(window).load(autoheight); // when all content finishes loading
@@ -98,21 +98,52 @@ $(document).ready(function($) {
             $(document).on('sf:ajaxfinish', '.searchandfilter', autoheight);
         });
     })(jQuery, window);
+    doFilter_button();
 
-
- });
-
-jQuery(document).bind('gform_page_loaded', function(event, form_id, current_page){
-	$('select').dropkick({
-		mobile: true
-	});
 });
 
-jQuery(window).on('load', function(){
-	$('.loader-container').fadeOut(600);
+// Filters On Small device Code
+var filtersButton = $('.filters-button');
+var filtersPopup = $('.filters-col');
+var closeFilters = $('.close-filters');
+
+var doFilter_button = function () {
+
+    $(window).click(function () {
+        filtersPopup.removeClass('opened-filter-popup');
+    });
+
+    closeFilters.click(function () {
+       filtersPopup.removeClass('opened-filter-popup');
+    });
+
+    filtersButton.click(function (event) {
+        filtersPopup.addClass('opened-filter-popup');
+        event.stopPropagation();
+    });
+
+    filtersPopup.click(function (event) {
+        event.stopPropagation();
+    });
+
+};
+
+$(document).on("sf:ajaxfinish", ".searchandfilter", function(){
+    console.log('here');
+    doFilter_button();
 });
 
 
+
+jQuery(document).bind('gform_page_loaded', function (event, form_id, current_page) {
+    $('select').dropkick({
+        mobile: true
+    });
+});
+
+jQuery(window).on('load', function () {
+    $('.loader-container').fadeOut(600);
+});
 
 if ($('body').hasClass('single-imobil')) {
     var galleryTop = new Swiper('.gallery-top', {
@@ -133,6 +164,4 @@ if ($('body').hasClass('single-imobil')) {
     galleryThumbs.controller.control = galleryTop;
 }
 //Fancybox
-$("[data-fancybox]").fancybox({
-
-});
+$("[data-fancybox]").fancybox({});

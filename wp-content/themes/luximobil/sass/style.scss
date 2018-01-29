@@ -5,7 +5,6 @@ Author URI:
 version: 1.0
 Description: Development theme by Julian Hook
 !*/
-
 /*--------------------------------------------------------------
 Bootstrap import, theme_mixins & variables of theme
 --------------------------------------------------------------*/
@@ -13,17 +12,15 @@ Bootstrap import, theme_mixins & variables of theme
 @import "site/fonts";
 @import "site/variables";
 @import "theme_mixins";
-
-
 // Resets & base styles imports
 @import "site/resets";
 @import "site/styles";
-
 
 // Internet Explorer Breake point
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   @import "site/ie";
 }
+
 @supports (-ms-accelerator:true) {
   @import "site/ie";
 }
@@ -48,32 +45,75 @@ Bootstrap import, theme_mixins & variables of theme
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .right-datas {
+    display: none;
+  }
+  .search-form{
+    width: 110%;
+  }
+  .main-header {
+    .mainMenu {
+      > ul {
+        > li {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .filters-col {
+    position: fixed;
+    top: 0;
+    padding: 10px 15px 0;
+    opacity: 0;
+    left: 0;
+    z-index: 999;
+    @include transition();
+    background: $color-white;
+    width: 320px;
+    margin-left: -320px;
+    height: 100vh;
+    overflow-y: scroll;
+    &.opened-filter-popup {
+      margin-left: 0;
+      opacity: 1;
+      box-shadow: 0 0 400px 0;
+    }
+  }
+  .products-results {
+    padding-left: 0;
+  }
+  .filters-button {
+    display: block;
+  }
+}
+
 @media all and (max-width: 1024px) {
   @import "site/tablet-styles";
 }
 
 @media screen and (max-width: 992px) {
-  .mainFooter{
+  .mainFooter {
     .col-widget {
       &.menu-1,
       &.menu-2 {
         margin-left: 0 !important;
       }
     }
-    .footer-about{
+    .footer-about {
       position: relative;
       width: 100%;
-      .textwidget{
+      .textwidget {
         padding-left: 15px;
       }
-      .widget-title{
+      .widget-title {
         padding-left: 15px;
-        &:after{
+        &:after {
           left: 15px;
         }
       }
     }
-    .credits-bttom-footer{
+    .credits-bttom-footer {
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 30px;

@@ -17,7 +17,7 @@ $products = $WPproducts->posts;
     <div class="container">
         <div class="content-inner">
             <div class="row main-row-so">
-                <div class="col-md-5 col-sm-12 specs-col">
+                <div class="col-lg-5 col-sm-12 specs-col">
                     <ul class="list-specs">
                         <?php
                         foreach ($products as $product) {
@@ -38,7 +38,7 @@ $products = $WPproducts->posts;
                         ?>
                     </ul>
                 </div>
-                <div class="col-md-7 col-sm-12">
+                <div class="col-lg-7 col-sm-12">
                     <div class="product-container">
                         <div class="row content-prod">
                             <?php

@@ -31,6 +31,28 @@
   }
 }
 
+.headerImage {
+  min-height: 290px;
+  .pageImage {
+    min-height: 290px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .content-inner {
+      min-height: 290px;
+      .hero-title{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 130px 0 60px;
+        &:after{
+          bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+
 .categories-section {
   .category-box {
     width: 50%;
@@ -112,3 +134,4 @@
     background: $color-white;
   }
 }
+

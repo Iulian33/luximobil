@@ -11,10 +11,11 @@ get_header(); ?>
 <div class="mainContent">
     <div class="container archive-imobil">
         <div class="col-sm-3 filters-col">
+            <i class="fa fa-close close-filters"></i>
             <?php echo do_shortcode('[searchandfilter id="418"]'); ?>
             <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg'; ?>
         </div>
-        <div class="col-sm-9 products-results">
+        <div class="col-lg-9 products-results">
             <?php if (have_posts()) :
                 $i = 0;
                 while (have_posts()) : the_post(); ?>
@@ -102,6 +103,9 @@ get_header(); ?>
                 <?php endwhile; ?>
                 <div class="pagination-container">
                     <?php custom_paging_nav($wp_query); ?>
+                </div>
+                <div class="filters-button">
+                    <span><?php _e('Filtre','jhfw'); ?></span>
                 </div>
 
             <?php else : ?>
