@@ -9,23 +9,23 @@ get_header(); ?>
 
 <div id="primary" class="mainContent">
     <div class="container">
-                <?php get_template_part('content', 'single'); ?>
+        <?php get_template_part('content', 'single'); ?>
 
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-7 col-lg-7">
-                        <?php while (have_posts()) : the_post(); ?>
-                            <div class="imobil-description">
-                                <h3 class="description-heading">
-                                    <?php _e('Descriere', 'jhfw'); ?>
-                                </h3>
-                                <div class="description">
-                                    <?php the_content(); ?>
-                                </div>
-                            </div>
-                        <?php endwhile; // end of the loop. ?>
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 col-lg-7">
+                <?php while (have_posts()) : the_post(); ?>
+                    <div class="imobil-description">
+                        <h3 class="description-heading">
+                            <?php _e('Descriere', 'jhfw'); ?>
+                        </h3>
+                        <div class="description">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
-                </div>
+                <?php endwhile; // end of the loop. ?>
+            </div>
+        </div>
         <div class="row">
             <div class="related-products-container">
                 <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg';
@@ -49,25 +49,25 @@ get_header(); ?>
                             <?php } else { ?>
                                 <img class="default-post-img" src="<?php echo $default_post_thumbnail; ?>"
                                      alt="default-post image">
-                            <?php } ?>
-                            <div class="price-product">
-                                <?php
-                                $regular_price = get_field('regular_price', $product_id);
-                                $sale_check = get_field('enable_sale_price', $product_id);
-                                $sale_price = get_field('sale_price', $product_id);
-                                if ($sale_price) {
-                                    $sale_price = number_format($sale_price, 0, '.', ' ');
-                                } else {
-                                    $regular_price = number_format($regular_price, 0, '.', ' ');
-                                }
-                                ?>
-
-                                <?php if ($sale_price && $sale_check) { ?>
+                            <?php }
+                            $regular_price = get_field('regular_price', $product_id);
+                            $sale_check = get_field('enable_sale_price', $product_id);
+                            $sale_price = get_field('sale_price', $product_id);
+                            if ($sale_price) {
+                                @$sale_price = number_format($sale_price, 0, '.', ' ');
+                            } else {
+                                @$regular_price = number_format($regular_price, 0, '.', ' ');
+                            }
+                            if ($sale_price && $sale_check) { ?>
+                                <div class="price-product">
                                     <?php echo $sale_price . ' €'; ?>
-                                <?php } else { ?>
+                                </div>
+                            <?php } elseif ($regular_price) { ?>
+                                <div class="price-product">
                                     <?php echo $regular_price . ' €'; ?>
-                                <?php } ?>
-                            </div>
+                                </div>
+                            <?php } ?>
+
                             <div class="info-container">
                                     <span class="title-post">
                                         <?php if ($region && $sector) {

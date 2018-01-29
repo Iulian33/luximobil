@@ -175,10 +175,21 @@ function JH_scripts()
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
 }
+
 
 add_action('wp_enqueue_scripts', 'JH_scripts');
 add_filter('gform_init_scripts_footer', '__return_true');
+
+
+function jh_admin_scripts() {
+    if(is_admin()){
+        wp_enqueue_script('admin-script', get_bloginfo('template_url').'/js/admin.js', array('jquery'));
+    }
+}
+
+add_action('admin_enqueue_scripts', 'jh_admin_scripts');
 
 
 //load JH login styles
@@ -731,7 +742,6 @@ function related_products($custom_post_type, $custom_taxonomy, $nr_posts)
     $all_posts = new WP_Query($args);
     return $all_posts->posts;
 }
-
 
 //function update_sf_fields( $post_id ) {
 //    global $post;

@@ -31,28 +31,25 @@ if ($products->have_posts()) {
                 <?php } else { ?>
                 <img class="default-post-img-wide" src="<?php echo $default_post_thumbnail; ?>"
                      alt="default-post image">
-                <?php } ?>
-
-
-
-                <div class="price-product">
-                    <?php
-                    $regular_price = get_field('regular_price');
-                    $sale_check = get_field('enable_sale_price');
-                    $sale_price = get_field('sale_price');
-                    if ($sale_price) {
-                        $sale_price = number_format($sale_price, 0, '.', ' ');
-                    } else {
-                        $regular_price = number_format($regular_price, 0, '.', ' ');
-                    }
-                    ?>
-
-                    <?php if ($sale_price && $sale_check) { ?>
+                <?php }
+                $regular_price = get_field('regular_price');
+                $sale_check = get_field('enable_sale_price');
+                $sale_price = get_field('sale_price');
+                if ($sale_price) {
+                    @$sale_price = number_format($sale_price, 0, '.', ' ');
+                } else {
+                    @$regular_price = number_format($regular_price, 0, '.', ' ');
+                }
+                ?>
+                <?php if ($sale_price && $sale_check) { ?>
+                    <div class="price-product">
                         <?php echo $sale_price . ' €'; ?>
-                    <?php } else { ?>
+                    </div>
+                <?php } elseif($regular_price) { ?>
+                    <div class="price-product">
                         <?php echo $regular_price . ' €'; ?>
-                    <?php } ?>
-                </div>
+                    </div>
+                <?php } ?>
                 <div class="info-container">
                                     <span class="title-post">
                                         <?php if ($region && $sector) {

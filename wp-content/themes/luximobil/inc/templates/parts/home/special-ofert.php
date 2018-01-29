@@ -4,7 +4,8 @@ $overlayColor = get_field('overlay_color_SP');
 
 $args = array(
     'post_type' => 'imobil',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'posts_per_page' => -1
 );
 
 $WPproducts = new WP_Query($args);

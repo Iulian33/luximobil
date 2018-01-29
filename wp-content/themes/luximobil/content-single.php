@@ -92,14 +92,14 @@
             <h3 class="imobil-price">
                 <?php
                 $sale_price = get_field('sale_price');
-                $sale_price = number_format($sale_price, 0, '.', ' ');
+                @$sale_price = number_format($sale_price, 0, '.', ' ');
                 $regular_price = get_field('regular_price');
                 $sale_check = get_field('enable_sale_price');
-                $regular_price = number_format($regular_price, 0, '.', ' ');
+                @$regular_price = number_format($regular_price, 0, '.', ' ');
 
                 if ($sale_price && $sale_check) {
                     echo $sale_price . ' €';
-                } else {
+                } elseif($regular_price) {
                     echo $regular_price . ' €';
                 } ?>
             </h3>

@@ -1573,7 +1573,7 @@ div#n2-ss-2 {
     // Remove all items radio option from view
     .sf-field-taxonomy-type_imobil,
     .sf-field-post-meta-imobil_specifications_etaj,
-    .sf-field-post-meta-imobil_specifications_number_of_rooms {  ul{
+    .sf-field-post-meta-imobil_specifications_numar_camere {  ul{
         li{
           &:first-child{
             display: none;
@@ -1673,7 +1673,7 @@ div#n2-ss-2 {
       }
     }
     .sf-field-post-meta-imobil_specifications_etaj,
-    .sf-field-post-meta-imobil_specifications_number_of_rooms {
+    .sf-field-post-meta-imobil_specifications_numar_camere {
       .sf-level-0{
         display: inline;
       }

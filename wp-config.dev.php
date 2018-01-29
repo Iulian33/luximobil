@@ -17,10 +17,10 @@ define('WP_CACHE', false); // Added by WP Rocket
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'luximobil_test_db');
+define('DB_NAME', 'luximobil_db');
 
 /** MySQL database username */
-define('DB_USER', 'luximobil_us_db');
+define('DB_USER', 'luximobil_us');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'luximobil');

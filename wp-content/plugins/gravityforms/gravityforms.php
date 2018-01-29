@@ -5245,3 +5245,9 @@ if ( ! function_exists( 'gf_do_action' ) ) {
 		}
 	}
 }
+
+add_filter('site_transient_update_plugins', 'remove_update_notification_gforms');
+function remove_update_notification_gforms($value) {
+    unset($value->response[ plugin_basename(__FILE__) ]);
+    return $value;
+}
