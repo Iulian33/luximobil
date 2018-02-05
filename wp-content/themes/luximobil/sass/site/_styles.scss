@@ -619,7 +619,6 @@ div#n2-ss-2 {
 /************** Pagination Styles ****************/
 
 .paging-navigation {
-  margin: 48px 0;
   .loop-pagination {
     margin-top: -5px;
     text-align: right;
@@ -1694,7 +1693,7 @@ div#n2-ss-2 {
 // Tablet filters Button styles
 .filters-button {
   display: none;
-  position: fixed;
+  //position: fixed;
   letter-spacing: 1px;
   bottom: 25px;
   left: 25px;
@@ -1708,6 +1707,7 @@ div#n2-ss-2 {
   z-index: 99;
   box-shadow: 0 0 70px 0px rgba(0, 0, 0, 0.45);
   cursor: pointer;
+  text-align: center;
   &:hover {
     background: $color-blue - 60%;
   }

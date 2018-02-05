@@ -98,41 +98,29 @@ $(document).ready(function ($) {
             $(document).on('sf:ajaxfinish', '.searchandfilter', autoheight);
         });
     })(jQuery, window);
-    doFilter_button();
-
 });
 
 // Filters On Small device Code
-var filtersButton = $('.filters-button');
+var filtersButton = '.filters-button';
 var filtersPopup = $('.filters-col');
 var closeFilters = $('.close-filters');
 
-var doFilter_button = function () {
-
-    $(window).click(function () {
-        filtersPopup.removeClass('opened-filter-popup');
-    });
-
-    closeFilters.click(function () {
-       filtersPopup.removeClass('opened-filter-popup');
-    });
-
-    filtersButton.click(function (event) {
-        filtersPopup.addClass('opened-filter-popup');
-        event.stopPropagation();
-    });
-
-    filtersPopup.click(function (event) {
-        event.stopPropagation();
-    });
-
-};
-
-$(document).on("sf:ajaxfinish", ".searchandfilter", function(){
-    console.log('here');
-    doFilter_button();
+$(document).on('click', function () {
+    filtersPopup.removeClass('opened-filter-popup');
 });
 
+closeFilters.click(function () {
+    filtersPopup.removeClass('opened-filter-popup');
+});
+
+$(document).on('click',filtersButton, function (event) {
+    filtersPopup.addClass('opened-filter-popup');
+    event.stopPropagation();
+});
+
+filtersPopup.click(function (event) {
+    event.stopPropagation();
+});
 
 
 jQuery(document).bind('gform_page_loaded', function (event, form_id, current_page) {

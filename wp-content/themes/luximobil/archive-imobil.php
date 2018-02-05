@@ -10,6 +10,7 @@
 get_header(); ?>
 <div class="mainContent">
     <div class="container archive-imobil">
+        <div class="row">
         <div class="col-sm-3 filters-col">
             <i class="fa fa-close close-filters"></i>
             <?php echo do_shortcode('[searchandfilter id="418"]'); ?>
@@ -101,11 +102,19 @@ get_header(); ?>
                     </div>
 
                 <?php endwhile; ?>
-                <div class="pagination-container">
-                    <?php custom_paging_nav($wp_query); ?>
-                </div>
-                <div class="filters-button">
-                    <span><?php _e('Filtre','jhfw'); ?></span>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="filters-button">
+                                <span><?php _e('Filtre','jhfw'); ?></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <div class="pagination-container">
+                                <?php custom_paging_nav($wp_query); ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             <?php else : ?>
