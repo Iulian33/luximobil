@@ -72,6 +72,9 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
 
+define('WP_HOME','http://luximobil.julianhook.com/');
+define('WP_SITEURL','http://luximobil.julianhook.com/');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
