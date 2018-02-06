@@ -11,44 +11,7 @@ get_header(); ?>
     <div class="container">
         <?php get_template_part('content', 'single'); ?>
 
-        <div class="row">
-            <div class="col-lg-7">
-                <p>
-                    <?php _e('Calculează ratele de finanțare', 'jhfw'); ?>
-                </p>
-                <div class="divider"></div>
-                <div class="first-column col-sm-6">
-                    <p>
-                        <?php _e('Prima rată : %'); ?>
-                    </p>
-                    <input type="number" placeholder="30%">
-                    <p>
-                        <?php _e("Prima rată $", 'jhfw'); ?>
-                    </p>
-                    <input type="number" placeholder="10,000 $">
-                </div>
-                <div class="second-column col-sm-6">
-                    <p>
-                        <?php _e('Rambursare', 'jhfw'); ?>
-                    </p>
-                    <input type="number" placeholder="30%">
-                    <p>
-                        <?php _e("Prima rată $", 'jhfw'); ?>
-                    </p>
-                    <input type="number" placeholder="10,000 $">
-                </div>
-                <div class="final-results">
-                    <p>
-                        <?php _e('Plata lunară : - ', 'jhfw'); ?>
-                        <?php _e('1300$'); ?>
-                    </p>
-                    <p>
-                        <?php _e('Suma finanțată : - ', 'jhfw'); ?>
-                        <?php _e('1900$'); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
+
 
 
         <div class="row">
@@ -60,6 +23,52 @@ get_header(); ?>
                         </div>
                     </div>
                 <?php endwhile; // end of the loop. ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="calculator">
+                    <p>
+                        <?php _e('Calculează ratele de finanțare', 'jhfw'); ?>
+                    </p>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="first-column col-sm-6">
+                            <p>
+                                <?php _e('Prima rată : %'); ?>
+                            </p>
+                            <input type="number" placeholder="30%">
+                            <p>
+                                <?php _e("Prima rată $", 'jhfw'); ?>
+                            </p>
+                            <input type="number" placeholder="10,000 $">
+                        </div>
+                        <div class="second-column col-sm-6">
+                            <p>
+                                <?php _e('Rambursare', 'jhfw'); ?>
+                            </p>
+                            <input type="number" placeholder="30%">
+                            <p>
+                                <?php _e("Prima rată $", 'jhfw'); ?>
+                            </p>
+                            <input type="number" placeholder="10,000 $">
+                        </div>
+                    </div>
+                    <div class="final-results">
+                        <p>
+                            <?php _e('Plata lunară : - ', 'jhfw'); ?>
+                           <span>
+                            <?php _e('1300$'); ?>
+                           </span>
+                        </p>
+                        <p>
+                            <?php _e('Suma finanțată : - ', 'jhfw'); ?>
+                         <span>
+                            <?php _e('1900$'); ?>
+                         </span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">

@@ -122,4 +122,12 @@
   .imobil-data {
     padding-left: 0;
   }
+  .calculator {
+    padding-right: 40px;
+    .first-column, .second-column {
+      input {
+        width: 100%;
+      }
+    }
+  }
 }
