@@ -60,7 +60,7 @@
 
 .section-special-ofert {
   .content-inner {
-    .list-specs{
+    .list-specs {
       padding-top: 40px;
       padding-bottom: 0;
     }
@@ -68,7 +68,7 @@
       .content-prod {
         position: relative;
         margin: 0;
-        &:after{
+        &:after {
           left: 0;
         }
         .col-sm-5 {
@@ -83,7 +83,7 @@
     }
     .info-product-side {
       padding: 30px 20px;
-      .title-product-ofert{
+      .title-product-ofert {
         padding-top: 48px;
       }
       .price-ofert {
@@ -101,8 +101,8 @@
         width: 50%;
         padding: 0;
       }
-      &:last-of-type{
-        .service-container{
+      &:last-of-type {
+        .service-container {
           width: 100%;
         }
       }
@@ -112,24 +112,26 @@
 
 .blog-template-default {
   .blog-text-block {
-    .blog-heading{
+    .blog-heading {
       margin-top: 10px;
     }
     .video {
       margin-top: 30px;
       iframe {
-       height: 300px;
+        height: 300px;
       }
     }
   }
 }
+
 .apartaments-section,
-.homes-section{
-  .container{
+.homes-section {
+  .container {
     padding: 0;
   }
 }
-.categories-section{
+
+.categories-section {
   padding-top: 0;
 }
 
@@ -137,41 +139,41 @@
   background-color: rgba(0, 0, 0, 0.90);
   background-image: none !important;
   .widget_nav_menu {
-    .menu{
+    .menu {
       padding-left: 15px;
     }
   }
-  .bg-contacts{
+  .bg-contacts {
     display: none;
   }
-  .contacts-list{
+  .contacts-list {
     padding-left: 0;
-    li{
-      &:first-child{
+    li {
+      &:first-child {
         padding-top: 12px;
       }
-      &:last-child{
+      &:last-child {
         padding-bottom: 0;
       }
     }
   }
-  .widget-title{
+  .widget-title {
     display: inline-block;
     padding-top: 25px;
     padding-left: 15px;
     margin-bottom: 12px;
-    &:after{
+    &:after {
       width: calc(100% - 15px);
       left: 15px;
     }
   }
-  .col-widget{
+  .col-widget {
     padding-right: 30px;
-    &:first-child{
+    &:first-child {
       padding-left: 15px;
     }
   }
-  .credits-bttom-footer{
+  .credits-bttom-footer {
     padding-right: 30px;
   }
 }
@@ -179,16 +181,15 @@
 .content-servicii {
   padding: 40px 0 0;
 }
-.service-tab-container{
+
+.service-tab-container {
   padding: 80px 20px 30px;
 }
 
-
-
-.main-row-so{
+.main-row-so {
   display: flex;
   flex-direction: column;
-  .specs-col{
+  .specs-col {
     order: 2;
   }
 }
@@ -197,11 +198,11 @@
   display: block;
 }
 
-.filters-col{
+.filters-col {
   width: 100%;
   margin-left: 0;
   transform: scale(0);
-  &.opened-filter-popup{
+  &.opened-filter-popup {
     transform: scale(1);
     opacity: 1;
   }
@@ -209,27 +210,39 @@
 
 .sf-field-post-meta-search_filter_etaj,
 .sf-field-post-meta-search_filter_camere {
-  ul{
+  ul {
     text-align: center;
   }
 }
 
-.sf-field-post-meta-regular_price{
-  > div{
+.sf-field-post-meta-regular_price {
+  > div {
     width: 270px;
     margin: 0 auto;
   }
 }
-.filters-button{
+
+.filters-button {
   width: 80%;
   left: 10%;
+  display: block;
   text-align: center;
+  margin: 30px auto 0;
+}
+
+.searchandfilter {
+  ul .sf-meta-range-slider {
+    .sf-input-range-number {
+      max-width: 126px;
+      width: 126px;
+    }
+  }
 }
 
 .gform_wrapper {
   .gform_body {
-    .gform_fields{
-      &.s2{
+    .gform_fields {
+      &.s2 {
         padding-left: 0;
       }
     }
@@ -241,9 +254,23 @@
   }
 }
 
-
 .page-template-tpl-contact {
   .contact-inner {
     padding: 0 15px 20px 15px;
+  }
+}
+
+.paging-navigation {
+  .loop-pagination {
+    text-align: center;
+  }
+}
+
+.products-results {
+  .col-xs-12 {
+    > .row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 }

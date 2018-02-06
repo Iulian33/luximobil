@@ -52,6 +52,14 @@
   }
 }
 
+.searchandfilter {
+  ul .sf-meta-range-slider {
+    .sf-input-range-number {
+      max-width: 140px;
+      width: 135px;
+    }
+  }
+}
 
 .categories-section {
   .category-box {
