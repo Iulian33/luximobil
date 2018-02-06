@@ -858,3 +858,21 @@ Stack trace:
 [05-Feb-2018 22:30:50 UTC] PHP Notice:  Undefined index: widget_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 32
 [05-Feb-2018 22:31:25 UTC] PHP Notice:  Undefined index: widget_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 32
 [05-Feb-2018 22:31:32 UTC] PHP Notice:  Undefined variable: widget_ID in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 38
+[06-Feb-2018 20:31:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function request_filesystem_credentials() in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-upgrader-skin.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-automatic-upgrader-skin.php(47): WP_Upgrader_Skin->request_filesystem_credentials(false, '/Applications/M...', true)
+#1 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-automatic-updater.php(144): Automatic_Upgrader_Skin->request_filesystem_credentials(false, '/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/update.php(85): WP_Automatic_Updater->should_update('core', Object(stdClass), '/Applications/M...')
+#3 /Applications/MAMP/htdocs/luximobil/wp-includes/update.php(215): find_core_auto_update()
+#4 /Applications/MAMP/htdocs/luximobil/wp-includes/class-wp-hook.php(286): wp_version_check()
+#5 /Applications/MAMP/htdocs/luximobil/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 /Applications/MAMP/htdocs/lu in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-upgrader-skin.php on line 93
+[06-Feb-2018 20:59:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function request_filesystem_credentials() in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-upgrader-skin.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-automatic-upgrader-skin.php(47): WP_Upgrader_Skin->request_filesystem_credentials(false, '/Applications/M...', true)
+#1 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-automatic-updater.php(144): Automatic_Upgrader_Skin->request_filesystem_credentials(false, '/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/luximobil/wp-admin/includes/update.php(85): WP_Automatic_Updater->should_update('core', Object(stdClass), '/Applications/M...')
+#3 /Applications/MAMP/htdocs/luximobil/wp-includes/update.php(215): find_core_auto_update()
+#4 /Applications/MAMP/htdocs/luximobil/wp-includes/class-wp-hook.php(286): wp_version_check()
+#5 /Applications/MAMP/htdocs/luximobil/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 /Applications/MAMP/htdocs/lu in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/class-wp-upgrader-skin.php on line 93

@@ -51,9 +51,9 @@
 @mixin filter-button($checked : 'false') {
   @if $checked == 'true' {
     background: transparent;
-    border: 2px solid $color-lightblue;
+    border: 2px solid $brand-secundary;
     color: $color-white;
-    background: $color-lightblue;
+    background: $brand-secundary;
     padding: 8px;
     min-width: 35px;
     text-align: center;
@@ -61,8 +61,8 @@
     cursor: pointer;
   } @else {
     background: transparent;
-    border: 2px solid $color-lightblue;
-    color: $color-lightblue;
+    border: 2px solid $brand-secundary;
+    color: $brand-secundary;
     padding: 8px;
     min-width: 35px;
     text-align: center;
@@ -70,7 +70,7 @@
     cursor: pointer;
     &:hover {
       color: $color-white;
-      background: $color-lightblue;
+      background: $brand-secundary;
     }
   }
 }

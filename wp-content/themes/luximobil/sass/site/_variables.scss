@@ -1,6 +1,6 @@
 // Theme colors
-$color-blue: #3876b3;
-$color-lightblue: #0787ea;
+$brand-primary: #CCAF7D - 30%;
+$brand-secundary: #003463;
 $color-white: #fff;
 $color-black: #000;
 $color-gray: #cccccc;
@@ -30,8 +30,8 @@ $color__background-body: #fff;
 
 /* BUTTON -----------------------------*/
 $button__height : 30px;
-$color__background-button: $color-blue;
-$color__background-button-hover: $color-blue - 60%;
+$color__background-button: $brand-primary;
+$color__background-button-hover: $brand-primary - 60%;
 $color__button: $color-white;
 /*-------------------------------------*/
 
