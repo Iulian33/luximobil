@@ -826,6 +826,7 @@ div#n2-ss-2 {
 
 .post-item-container {
   overflow: hidden;
+  margin-bottom: 20px;
   img {
     width: calc(100% + 15px);
     height: 100%;
@@ -1338,6 +1339,14 @@ div#n2-ss-2 {
     }
   }
 
+  .fancybox-container {
+    .fancybox-button {
+      &:hover {
+        background : transparent;
+      }
+    }
+  }
+
   .imobil-data {
     margin-top: 55px;
     padding-left: 30px;
@@ -1372,10 +1381,6 @@ div#n2-ss-2 {
   }
   .imobil-description {
     text-align: left;
-    .description-heading {
-      color: $dark-text-color;
-      font-size: 22px;
-    }
     .description {
       padding: 0 20px 0 0;
       p {
@@ -1473,6 +1478,7 @@ div#n2-ss-2 {
   }
   .imobil-price {
     font-size: 22px;
+    margin-top: 0 ;
   }
   .description-table {
     width: 100%;
@@ -1484,7 +1490,7 @@ div#n2-ss-2 {
           background-color: $color-lightgray;
         }
         td {
-          padding: 8px 0 8px 10px;
+          padding: 10px 0 10px 10px;
         }
         td:not(.description-label) {
           float: right;

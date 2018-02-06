@@ -70,7 +70,7 @@
 
 .blog-template-default {
   .blog-text-block {
-    .blog-heading{
+    .blog-heading {
       margin-top: 14px;
       line-height: 55px;
     }
@@ -83,22 +83,26 @@
     }
   }
 }
+
 .categories-section {
   margin-top: 60px;
 }
-.post-item-container{
+
+.post-item-container {
   .info-container {
     margin-bottom: -60px !important;
-    .specs-product{
-      .col-xs-4{
+    .specs-product {
+      .col-xs-4 {
         font-size: 12px;
       }
     }
   }
 }
-.mm-listview > li:not(.mm-divider):after{
+
+.mm-listview > li:not(.mm-divider):after {
   left: 0;
 }
+
 //Style Tablet & Mobile Menu
 #mobilemenu {
   box-shadow: 0 0 200px 0 $color-black;
@@ -110,5 +114,12 @@
   }
   .current-menu-item, .current-menu-parent {
     background: $color-white;
+  }
+}
+
+//Single page apartment data
+.single-imobil {
+  .imobil-data {
+    padding-left: 0;
   }
 }
