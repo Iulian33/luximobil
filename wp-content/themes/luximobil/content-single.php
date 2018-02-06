@@ -5,7 +5,7 @@
 ?>
 <div class="row">
 
-    <div class="carousel-container col-sm-7 col-lg-7">
+    <div class="carousel-container col-sm-7 col-lg-7 col-xs-12">
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
                 <?php if (have_rows('imobil_carousel')):
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="col-sm-5">
+    <div class="col-sm-5 col-lg-5 col-xs-12">
         <div class="imobil-data">
             <h2 class="imobil-title">
                 <?php
