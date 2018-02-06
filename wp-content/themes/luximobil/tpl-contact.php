@@ -10,24 +10,21 @@
  * @package Site Theme
  */
 
- get_header(); ?>
+get_header(); ?>
 
- 	<div class="mainContent">
- 		<div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-                        <h1><?php the_title(); ?></h1>
-                        <?php the_content(); ?>
-                    <?php endwhile; endif; ?>
-                </div>
-
-                <?php get_sidebar(); ?>
+<div class="mainContent">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 contact-inner">
+                <?php dynamic_sidebar('sidebar-1');
+                if (have_posts()) :
+                    while (have_posts()) : the_post();
+                        the_content();
+                    endwhile;
+                endif; ?>
             </div>
- 		</div>
- 	</div><!--mainContent-->
+        </div>
+    </div>
+</div><!--mainContent-->
 
-
- 	
-
- <?php get_footer(); ?>
+<?php get_footer(); ?>

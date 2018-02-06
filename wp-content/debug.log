@@ -822,3 +822,39 @@
 [05-Feb-2018 21:13:31 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
 [05-Feb-2018 21:13:34 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
 [05-Feb-2018 21:13:34 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:23:21 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:23:21 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:23:36 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:23:36 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:09 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:09 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:09 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:09 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:23 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:23 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:23 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:23 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:24 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:24 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:24 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:39:24 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:39:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php:5251) in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/misc.php on line 1114
+[05-Feb-2018 21:41:53 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:41:53 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 21:42:52 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[05-Feb-2018 21:42:52 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[05-Feb-2018 22:20:04 UTC] PHP Notice:  Undefined variable: title in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 53
+[05-Feb-2018 22:28:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function vardump() in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php:33
+Stack trace:
+#0 /Applications/MAMP/htdocs/luximobil/wp-includes/class-wp-widget.php(372): google_map_widget->widget(Array, Array)
+#1 /Applications/MAMP/htdocs/luximobil/wp-includes/widgets.php(742): WP_Widget->display_callback(Array, Array)
+#2 /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/tpl-contact.php(21): dynamic_sidebar('sidebar-1')
+#3 /Applications/MAMP/htdocs/luximobil/wp-includes/template-loader.php(74): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/luximobil/wp-blog-header.php(19): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/luximobil/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 33
+[05-Feb-2018 22:29:33 UTC] PHP Notice:  Undefined index: ID in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 32
+[05-Feb-2018 22:30:50 UTC] PHP Notice:  Undefined index: widget_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 32
+[05-Feb-2018 22:31:25 UTC] PHP Notice:  Undefined index: widget_id in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 32
+[05-Feb-2018 22:31:32 UTC] PHP Notice:  Undefined variable: widget_ID in /Applications/MAMP/htdocs/luximobil/wp-content/themes/luximobil/inc/templates/widgets/google-map.php on line 38

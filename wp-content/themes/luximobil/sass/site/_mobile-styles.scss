@@ -225,3 +225,25 @@
   left: 10%;
   text-align: center;
 }
+
+.gform_wrapper {
+  .gform_body {
+    .gform_fields{
+      &.s2{
+        padding-left: 0;
+      }
+    }
+  }
+  .gform_footer {
+    input[type="submit"] {
+      margin-top: 23px;
+    }
+  }
+}
+
+
+.page-template-tpl-contact {
+  .contact-inner {
+    padding: 0 15px 20px 15px;
+  }
+}

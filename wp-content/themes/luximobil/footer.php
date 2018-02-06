@@ -48,6 +48,5 @@
 
 <div id="mobilemenu" class="displayNone"></div>
 <?php wp_footer(); ?>
-
 </body>
 </html>

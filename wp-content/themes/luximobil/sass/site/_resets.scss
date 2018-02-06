@@ -11,8 +11,7 @@ input[type="tel"],
 input[type="number"],
 textarea {
   color: $color__text-input;
-  border: 1px solid $color__border-input;
-  border-radius: 3px;
+  border: 2px solid $color__border-input;
   max-width: 100%;
   vertical-align: top;
   &:focus {

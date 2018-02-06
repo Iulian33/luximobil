@@ -83,7 +83,7 @@ add_action('after_setup_theme', 'JH_setup');
 function JH_widgets_init()
 {
     register_sidebar(array(
-        'name' => __('Contact Sidebar', 'jhfw'),
+        'name' => __('Contact Map Area', 'jhfw'),
         'id' => 'sidebar-1',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -170,11 +170,9 @@ function JH_scripts()
 
     wp_enqueue_script('swiper', "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js");
 
-    wp_enqueue_script('mainjs', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
+    wp_enqueue_script('google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDPEng8fkd9N8nWbWDZBjoyKT0Q_ZM1r2Q',array('jquery'));
 
-    if (is_singular() && comments_open() && get_option('thread_comments')) {
-        wp_enqueue_script('comment-reply');
-    }
+    wp_enqueue_script('mainjs', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
 
 }
 
@@ -586,10 +584,9 @@ function JH_jquery_to_footer()
 add_action('wp', 'JH_jquery_to_footer');
 
 
-function my_acf_google_map_api($api)
-{
-    $api['key'] = 'AIzaSyDPEng8fkd9N8nWbWDZBjoyKT0Q_ZM1r2Q';
+function my_acf_google_map_api($api) {
 
+    $api['key'] = 'AIzaSyDPEng8fkd9N8nWbWDZBjoyKT0Q_ZM1r2Q';
     return $api;
 
 }
@@ -599,8 +596,7 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 add_filter('gform_init_scripts_footer', '__return_true');
 add_filter('gform_cdata_open', 'wrap_gform_cdata_open', 1);
-function wrap_gform_cdata_open($content = '')
-{
+function wrap_gform_cdata_open($content = '') {
     if ((defined('DOING_AJAX') && DOING_AJAX) || isset($_POST['gform_ajax'])) {
         return $content;
     }
@@ -621,56 +617,6 @@ function wrap_gform_cdata_close($content = '')
 add_image_size('hd', 1920, 0, true);
 
 
-/**
- * Adds JH_map Google widget.
- */
-class JH_map extends WP_Widget
-{
-
-    function __construct()
-    {
-        parent::__construct(
-            'jh_map', // Base ID
-            __('Google map', 'jhfw'), // Name
-            array('description' => __('Google map widget by Julian Hook', 'jhfw')) // Args
-        );
-    }
-
-    public function widget($args, $instance)
-    {
-        echo $args['before_widget'];
-        if (!empty($instance['title'])) {
-            echo $args['before_title'] . apply_filters('widget_title', $instance['title']) . $args['after_title'];
-        }
-        ob_start();
-        $adres = get_field('address', 'widget_' . $this->id);
-
-        echo do_shortcode('[flexiblemap address="' . $adres . '" draggable="false"]');
-
-        $output = ob_get_contents();
-        ob_end_clean();
-        echo $output;
-        echo $args['after_widget'];
-    }
-
-    public function form($instance)
-    {
-    }
-
-    public function update($new_instance, $old_instance)
-    {
-    }
-
-} // class JH_map
-
-// register JH_map widget
-function register_JH_map()
-{
-    register_widget('JH_map');
-}
-
-add_action('widgets_init', 'register_JH_map');
-
 function change_post_type_link($link, $post = 0)
 {
     if ($post->post_type == 'product') {
@@ -690,8 +636,9 @@ function remove_default_post_type()
 }
 
 // Include eCommerce Module hand writen
-include('e-commerce/general-post-type.php');
-include('blog/blog-post-type.php');
+include ('e-commerce/general-post-type.php');
+include ('blog/blog-post-type.php');
+include ('inc/templates/widgets/google-map.php');
 
 
 add_image_size('post-size', 280, 380, true);
