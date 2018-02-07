@@ -32,7 +32,7 @@
 </head>
 <?php include ('inc/templates/parts/loader.php'); ?>
 
-<body <?php body_class(); ?>">
+<body <?php body_class(); ?>>
 <div class="mainContainer">
     <header class="main-header">
         <div class="container">
