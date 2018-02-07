@@ -32,7 +32,7 @@
 </head>
 <?php include ('inc/templates/parts/loader.php'); ?>
 
-<body <?php body_class(JHUseSidebar()); ?> data-sidebar="<?php JHUseSidebar(); ?>">
+<body>
 <div class="mainContainer">
     <header class="main-header">
         <div class="container">

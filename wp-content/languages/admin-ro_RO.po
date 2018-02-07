@@ -262,13 +262,13 @@ msgstr "Da, ai citit bine. La fel cum poți redacta și revizui articole și să
 msgid "Collaborate with Design Preview Links"
 msgstr "Colaborează cu legăturile de previzualizare a designului"
 
-#: wp-admin/about.php:84
-msgid "Welcome to an improved Customizer workflow with design drafts, locking, scheduling, and preview links. What&#8217;s more, code syntax highlighting and error checking will make for a clean and smooth site building experience. Finally, if all that wasn&#8217;t pretty great, we&#8217;ve got a great new Gallery widget and improvements to theme browsing and switching."
-msgstr "Bine ai venit la un flux de lucru îmbunătățit în Personalizator, cu ciorne de proiectare, blocare, planificare și legături de previzualizare. În plus, evidențierea sintaxei de cod și verificarea erorilor vor crea o experiență clară și fluentă în construirea sitului. În cele din urmă, dacă toate acestea nu sunt suficiente, avem o nouă piesă Galerie și îmbunătățiri în răsfoirea și comutarea temelor."
-
 #: wp-admin/about.php:105
 msgid "Draft and Schedule Site Design Customizations"
 msgstr "Redactează și programează personalizările de design ale sitului"
+
+#: wp-admin/about.php:84
+msgid "Welcome to an improved Customizer workflow with design drafts, locking, scheduling, and preview links. What&#8217;s more, code syntax highlighting and error checking will make for a clean and smooth site building experience. Finally, if all that wasn&#8217;t pretty great, we&#8217;ve got a great new Gallery widget and improvements to theme browsing and switching."
+msgstr "Bine ai venit la un flux de lucru îmbunătățit în Personalizator, cu ciorne de proiectare, blocare, planificare și legături de previzualizare. În plus, evidențierea sintaxei de cod și verificarea erorilor vor crea o experiență clară și fluentă în construirea sitului. În cele din urmă, dacă toate acestea nu sunt suficiente, avem o nouă piesă Galerie și îmbunătățiri în răsfoirea și comutarea temelor."
 
 #: wp-admin/about.php:97
 msgid "Customizer Workflow Improved"
@@ -5841,13 +5841,13 @@ msgstr "Multe persoane profită de scurtăturile tastaturii pentru a-și modera 
 msgid "Managing pages is very similar to managing posts, and the screens can be customized in the same way."
 msgstr "Administrarea paginilor este similară cu administrarea articolelor, iar ecranele pot fi personalizate în același fel."
 
-#: wp-admin/edit-form-advanced.php:396 wp-admin/edit.php:237
-msgid "Pages are similar to posts in that they have a title, body text, and associated metadata, but they are different in that they are not part of the chronological blog stream, kind of like permanent posts. Pages are not categorized or tagged, but can have a hierarchy. You can nest pages under other pages by making one the &#8220;Parent&#8221; of the other, creating a group of pages."
-msgstr "Paginile sunt similare articolelor în sensul că au un titlu, un corp de text și metadate asociate, dar ele sunt diferite prin faptul că nu fac parte din fluxul cronologic al blogului, fiind un fel de articole permanente. Paginile nu au categorii și etichete, dar pot avea o ierarhie. Poți crea pagini sub alte pagini făcând-o pe una &#8222;părintele&#8221; celeilalte, creând un grup de pagini."
-
 #: wp-admin/index.php:46
 msgid "Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful WordPress information."
 msgstr "Legăturile din bara de unelte din partea de sus a ecranului conectează panoul tău de control și partea din față a sitului și oferă acces la profilul tău și informații utile despre WordPress."
+
+#: wp-admin/edit-form-advanced.php:396 wp-admin/edit.php:237
+msgid "Pages are similar to posts in that they have a title, body text, and associated metadata, but they are different in that they are not part of the chronological blog stream, kind of like permanent posts. Pages are not categorized or tagged, but can have a hierarchy. You can nest pages under other pages by making one the &#8220;Parent&#8221; of the other, creating a group of pages."
+msgstr "Paginile sunt similare articolelor în sensul că au un titlu, un corp de text și metadate asociate, dar ele sunt diferite prin faptul că nu fac parte din fluxul cronologic al blogului, fiind un fel de articole permanente. Paginile nu au categorii și etichete, dar pot avea o ierarhie. Poți crea pagini sub alte pagini făcând-o pe una &#8222;părintele&#8221; celeilalte, creând un grup de pagini."
 
 #: wp-admin/upload.php:201
 msgid "Hovering over a row reveals action links: Edit, Delete Permanently, and View. Clicking Edit or on the media file&#8217;s name displays a simple screen to edit that individual file&#8217;s metadata. Clicking Delete Permanently will delete the file from the media library (as well as from any posts to which it is currently attached). View will take you to the display page for that file."
@@ -9087,13 +9087,13 @@ msgstr "Ar trebui să actualizezi acum fișierul .htaccess."
 msgid "Unable to locate WordPress theme directory."
 msgstr "Nu pot localiza directorul de teme WordPress."
 
-#: wp-admin/options-discussion.php:160
-msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Când un comentariu conține în text său oricare dintre aceste cuvinte, nume, URL, adresă email sau adresă IP, el va fi reținut în <a href=\"edit-comments.php?comment_status=moderated\">coada de moderare</a>. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
-
 #: wp-admin/options-discussion.php:169
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be put in the trash. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
 msgstr "Când un comentariu conține în text său oricare dintre aceste cuvinte, nume, URL, adresă email sau adresă IP, el va fi trimis la gunoi. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
+
+#: wp-admin/options-discussion.php:160
+msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Când un comentariu conține în text său oricare dintre aceste cuvinte, nume, URL, adresă email sau adresă IP, el va fi reținut în <a href=\"edit-comments.php?comment_status=moderated\">coada de moderare</a>. Un cuvânt sau o adresă IP per rând. Potrivirea se va căuta și în interiorul cuvintelor, așa că &#8222;press&#8221; se va potrivi și pentru &#8222;WordPress&#8221;."
 
 #. translators: %s: web.config
 #: wp-admin/options-permalink.php:343

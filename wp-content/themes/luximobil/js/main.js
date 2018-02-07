@@ -170,6 +170,42 @@ var filtersButton = '.filters-button';
 var filtersPopup = $('.filters-col');
 var closeFilters = $('.close-filters');
 
+
+
+function Utils() {}
+
+Utils.prototype = {
+    constructor: Utils,
+    isElementInView: function (element, fullyInView) {
+        var pageTop = $(window).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var elementTop = $(element).offset().top;
+        var elementBottom = elementTop + $(element).height();
+
+        if (fullyInView === true) {
+            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+        } else {
+            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+        }
+    }
+};
+
+var Utils = new Utils();
+
+
+$( window ).scroll(function() {
+
+    var footerElem = $('.mainFooter');
+    var Fbutton = $(filtersButton);
+    var isElementInView = Utils.isElementInView(footerElem, false);
+
+    if (isElementInView) {
+        Fbutton.addClass('static');
+    } else {
+        Fbutton.removeClass('static');
+    }
+});
+
 $(document).on('click', function () {
     filtersPopup.removeClass('opened-filter-popup');
 });

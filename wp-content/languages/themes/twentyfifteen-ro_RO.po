@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-28 06:04:58+0000\n"
+"PO-Revision-Date: 2018-01-24 16:24:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -242,7 +242,7 @@ msgstr "Regret, dar nimic nu s-a potrivit cu termenii de căutare. Te rog încea
 
 #: content-none.php:22
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Gata să-ți publici primul articol? <a href=\"%1$s\">Începe de aici</a>."
+msgstr "Ești gata să-ți publici primul articol? <a href=\"%1$s\">Începe de aici</a>."
 
 #: content-none.php:15
 msgid "Nothing Found"

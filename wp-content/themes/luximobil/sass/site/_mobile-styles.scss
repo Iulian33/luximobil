@@ -286,3 +286,10 @@
     padding-right: 15px;
   }
 }
+
+.filters-button {
+  &.static {
+    left: 5px;
+    width: 100%;
+  }
+}
