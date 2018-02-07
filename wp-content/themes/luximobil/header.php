@@ -30,9 +30,8 @@
     <![endif]-->
     <?php wp_head(); ?>
 </head>
-<?php include('inc/templates/parts/loader.php'); ?>
-
 <body>
+<?php include('inc/templates/parts/loader.php'); ?>
 <div <?php body_class(); ?>>
     <div class="mainContainer">
         <header class="main-header">
