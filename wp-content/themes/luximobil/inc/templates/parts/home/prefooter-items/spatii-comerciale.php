@@ -60,10 +60,9 @@ if ($products->have_posts()) {
                                 <?php the_sub_field('adresa_imobil'); ?>
                             </div>
                             <div class="col-xs-12">
-                                <a href="<?php the_permalink($product_id); ?>"
-                                   class="button go-to-product">
-                                    <?php _e('Vezi Detalii', 'jhfw'); ?>
-                                </a>
+                                <div class="button go-to-product">
+                                    <?php _e('Vezi', 'jhfw'); ?>
+                                </div>
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>

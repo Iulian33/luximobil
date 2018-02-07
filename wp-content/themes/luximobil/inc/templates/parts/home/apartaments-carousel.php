@@ -91,10 +91,9 @@
                                                     ?>
                                                 </div>
                                                 <div class="col-xs-12">
-                                                    <a href="<?php the_permalink($product_id); ?>"
-                                                       class="button go-to-product">
+                                                    <div class="button go-to-product">
                                                         <?php _e('Vezi', 'jhfw'); ?>
-                                                    </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         <?php endwhile; ?>
