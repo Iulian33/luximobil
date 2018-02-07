@@ -710,3 +710,17 @@ function update_sf_fields($post_id) {
 }
 
 add_action('save_post','update_sf_fields',90);
+
+function change_footer_version($html) {
+    $html .= ' | J.H Theme 1.0.1';
+    return $html;
+}
+add_filter( 'update_footer', 'change_footer_version', 15);
+
+
+add_filter('style_loader_tag', 'remove_type_atribute', 10, 2);
+add_filter('script_loader_tag', 'remove_type_atribute', 10, 2);
+
+function remove_type_atribute($tag ) {
+    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+}
