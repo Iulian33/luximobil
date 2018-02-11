@@ -797,3 +797,8 @@
 [19-Jan-2018 21:20:20 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 28
 [19-Jan-2018 21:53:00 UTC] PHP Warning:  Illegal string offset 'url' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 35
 [19-Jan-2018 21:53:00 UTC] PHP Warning:  Illegal string offset 'url' in C:\xampp\htdocs\luximobil\wp-content\themes\luximobil\content-single.php on line 72
+[07-Feb-2018 00:51:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Applications/MAMP/htdocs/luximobil/wp-includes/update.php on line 529
+[08-Feb-2018 15:02:15 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[08-Feb-2018 15:02:15 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[09-Feb-2018 09:27:35 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[09-Feb-2018 09:27:35 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223

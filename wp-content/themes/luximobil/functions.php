@@ -712,7 +712,7 @@ function update_sf_fields($post_id) {
 add_action('save_post','update_sf_fields',90);
 
 function change_footer_version($html) {
-    $html .= ' | J.H Theme 1.0.1';
+    $html .= ' | J.H Theme 1.0';
     return $html;
 }
 add_filter( 'update_footer', 'change_footer_version', 15);
