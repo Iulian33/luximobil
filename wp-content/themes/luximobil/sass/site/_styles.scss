@@ -88,16 +88,15 @@ div#n2-ss-2 {
   background: $color-white;
   width: 100%;
   .siteLogo {
-    width: 75%;
+    width: 90%;
     display: block;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 12px auto;
     a {
       display: block;
       img {
         width: auto;
-        height: 133px;
-        max-width: 84%;
+        max-width: 100%;
         display: block;
         position: relative;
         left: 50%;
@@ -350,7 +349,7 @@ div#n2-ss-2 {
     .dropdown-menu-container {
       .dropdown-menu {
         .label-dropdown {
-          padding: 19px 20px 16px;
+          padding: 18px 20px 16px;
           border-radius: 0;
         }
       }
