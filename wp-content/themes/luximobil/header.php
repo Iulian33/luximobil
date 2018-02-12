@@ -13,6 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <?php if (is_singular('imobil')) { ?>
+       <title><?php echo 'Lux Imobil &#8211; Imobil'; ?></title>
+   <? } ?>
+
     <?php
     $favicon = get_field('site_favicon', 'option');
     if ($favicon) {

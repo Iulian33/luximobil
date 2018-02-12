@@ -721,6 +721,13 @@ add_filter( 'update_footer', 'change_footer_version', 15);
 add_filter('style_loader_tag', 'remove_type_atribute', 10, 2);
 add_filter('script_loader_tag', 'remove_type_atribute', 10, 2);
 
-function remove_type_atribute($tag ) {
-    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
+function remove_type_atribute($tag) {
+    return preg_replace("/type=['\"]text\/(javascript|css)['\"]/", '', $tag);
 }
+
+if (is_singular('imobil')) {
+    remove_action('wp_head', '_wp_render_title_tag', 1);
+}
+
+add_image_size('team-photo',300,350, true);
+

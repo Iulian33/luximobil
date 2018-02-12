@@ -1,58 +1,58 @@
 $ = jQuery;
 
 // Google Map Widget
-function new_map( $el ) {
+function new_map($el) {
     var $markers = $el.find('.marker');
     var args = {
-        zoom		: 16,
-        center		: new google.maps.LatLng(0, 0),
-        mapTypeId	: google.maps.MapTypeId.ROADMAP
+        zoom: 16,
+        center: new google.maps.LatLng(0, 0),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    var map = new google.maps.Map( $el[0], args);
+    var map = new google.maps.Map($el[0], args);
     map.markers = [];
 
-    $markers.each(function(){
-        add_marker( $(this), map );
+    $markers.each(function () {
+        add_marker($(this), map);
     });
-    center_map( map );
+    center_map(map);
     return map;
 }
 
-function add_marker( $marker, map ) {
-    var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+function add_marker($marker, map) {
+    var latlng = new google.maps.LatLng($marker.attr('data-lat'), $marker.attr('data-lng'));
     // create marker
     var marker = new google.maps.Marker({
-        position	: latlng,
-        map			: map
+        position: latlng,
+        map: map
     });
-    map.markers.push( marker );
-    if( $marker.html() ) {
+    map.markers.push(marker);
+    if ($marker.html()) {
         // create info window
         var infowindow = new google.maps.InfoWindow({
-            content		: $marker.html()
+            content: $marker.html()
         });
-        google.maps.event.addListener(marker, 'click', function() {
+        google.maps.event.addListener(marker, 'click', function () {
 
-            infowindow.open( map, marker );
+            infowindow.open(map, marker);
 
         });
     }
 
 }
 
-function center_map( map ) {
+function center_map(map) {
     var bounds = new google.maps.LatLngBounds();
-    $.each( map.markers, function( i, marker ){
-        var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
-        bounds.extend( latlng );
+    $.each(map.markers, function (i, marker) {
+        var latlng = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+        bounds.extend(latlng);
     });
 
-    if( map.markers.length == 1 ) {
-        map.setCenter( bounds.getCenter() );
-        map.setZoom( 16 );
+    if (map.markers.length == 1) {
+        map.setCenter(bounds.getCenter());
+        map.setZoom(16);
     } else {
-        map.fitBounds( bounds );
+        map.fitBounds(bounds);
     }
 
 }
@@ -120,6 +120,23 @@ $(document).ready(function ($) {
         }
     });
 
+    $(".team-members-carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            1025: {
+                items: 4
+            }
+        }
+    });
+
     // mobilemenu Code
     var main_menu = $(".mainMenu > ul").clone();
     main_menu.removeAttr("id class").find("li").removeAttr("id");
@@ -171,8 +188,8 @@ var filtersPopup = $('.filters-col');
 var closeFilters = $('.close-filters');
 
 
-
-function Utils() {}
+function Utils() {
+}
 
 Utils.prototype = {
     constructor: Utils,
@@ -193,7 +210,7 @@ Utils.prototype = {
 var Utils = new Utils();
 
 
-$( window ).scroll(function() {
+$(window).scroll(function () {
 
     var footerElem = $('.mainFooter');
     var Fbutton = $(filtersButton);
@@ -214,7 +231,7 @@ closeFilters.click(function () {
     filtersPopup.removeClass('opened-filter-popup');
 });
 
-$(document).on('click',filtersButton, function (event) {
+$(document).on('click', filtersButton, function (event) {
     filtersPopup.addClass('opened-filter-popup');
     event.stopPropagation();
 });
