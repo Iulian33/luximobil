@@ -204,6 +204,7 @@
   transform: scale(0);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 70px;
   &.opened-filter-popup {
     transform: scale(1);
     opacity: 1;

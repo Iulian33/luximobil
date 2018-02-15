@@ -88,6 +88,8 @@ $(document).ready(function ($) {
         margin: 25,
         loop: true,
         autoplay: true,
+        touchDrag: true,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
@@ -106,6 +108,8 @@ $(document).ready(function ($) {
         margin: 25,
         loop: true,
         autoplay: true,
+        touchDrag: true,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1,
@@ -229,14 +233,22 @@ $(document).on('click', function () {
 
 closeFilters.click(function () {
     filtersPopup.removeClass('opened-filter-popup');
-    $('body').css({"overflow" : "auto"});
+    $('body').css({
+        "overflow" : "auto",
+        "position" : "relative",
+        "height" : "auto"
+    });
 
 });
 
 $(document).on('click', filtersButton, function (event) {
     filtersPopup.addClass('opened-filter-popup');
     event.stopPropagation();
-    $('body').css({"overflow" : "hidden"});
+    $('body').css({
+        "overflow" : "hidden",
+        "position" : "fixed",
+        "height" : "100vh"
+    });
 });
 
 filtersPopup.click(function (event) {
