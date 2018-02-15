@@ -229,11 +229,14 @@ $(document).on('click', function () {
 
 closeFilters.click(function () {
     filtersPopup.removeClass('opened-filter-popup');
+    $('body').css({"overflow" : "auto"});
+
 });
 
 $(document).on('click', filtersButton, function (event) {
     filtersPopup.addClass('opened-filter-popup');
     event.stopPropagation();
+    $('body').css({"overflow" : "hidden"});
 });
 
 filtersPopup.click(function (event) {
