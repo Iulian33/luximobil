@@ -13,19 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <?php if (is_singular('imobil')) { ?>
-       <title><?php echo 'Lux Imobil &#8211; Imobil'; ?></title>
-   <? } ?>
-
-    <?php
-    $favicon = get_field('site_favicon', 'option');
-    if ($favicon) {
-        $fav_url = $favicon['url'];
-    } else {
-        $fav_url = get_template_directory_uri() . "/images/Jh-insign.png";
-    }
-    ?>
-    <link rel="shortcut icon" href="<?php echo $fav_url; ?>">
+    <?php echo imobilOnlyTitle(); ?>
+    <?php echo siteFavicon(); ?>
     <!--[if lt IE 9]>
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
@@ -34,6 +23,7 @@
     <![endif]-->
     <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <?php include('inc/templates/parts/loader.php'); ?>
 <div class="mainContainer">
@@ -43,15 +33,7 @@
                 <div class="col-md-6 col-lg-3 col-xs-6 logo_col">
                     <div class="siteLogo">
                         <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>">
-                            <?php
-                            $site_logo = get_field('site_logo', 'option');
-                            if (!$site_logo) {
-                                $img_src = get_template_directory_uri() . "/images/default-logo.png";
-                            } else {
-                                $img_src = $site_logo['url'];
-                            }
-                            ?>
-                            <img src="<?php echo $img_src; ?>" alt="<?php bloginfo('name'); ?>"/>
+                            <?php echo siteLogo(); ?>
                         </a>
                     </div>
                     <div class="dropdown-menu-container">

@@ -1,13 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Alex
- * Date: 03-Jan-18
- * Time: 9:38 PM
+ * Template for Single Blog post
  */
 
 get_header(); ?>
-
 <div id="primary" class="mainContent">
     <div class="container">
         <div class="row">
@@ -29,14 +25,10 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-
-
-                    <?php endwhile; // end of the loop. ?>
-                </main><!-- #main -->
+                    <?php endwhile; ?>
+                </main>
             </div>
         </div>
     </div>
-</div><!-- #primary -->
-
-
+</div>
 <?php get_footer(); ?>

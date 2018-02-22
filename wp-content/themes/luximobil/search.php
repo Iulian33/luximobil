@@ -13,8 +13,8 @@ get_header(); ?>
         <div class="row">
             <div class="col-sm-3 filters-col">
                 <i class="fa fa-close close-filters"></i>
-                <?php echo do_shortcode('[searchandfilter id="418"]'); ?>
-                <?php $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg'; ?>
+                <?php echo do_shortcode('[searchandfilter id="418"]');
+                $default_post_thumbnail = get_template_directory_uri() . '/images/default-img-post.jpg'; ?>
             </div>
             <div class="col-lg-9 products-results">
                 <?php if (have_posts()) :
@@ -45,13 +45,12 @@ get_header(); ?>
                                         } else {
                                             $regular_price = number_format($regular_price, 0, '.', ' ');
                                         }
-                                        ?>
 
-                                        <?php if ($sale_price && $sale_check) { ?>
-                                            <?php echo $sale_price . ' €'; ?>
-                                        <?php } else { ?>
-                                            <?php echo $regular_price . ' €'; ?>
-                                        <?php } ?>
+                                        if ($sale_price && $sale_check) {
+                                            echo $sale_price . ' €';
+                                        } else {
+                                            echo $regular_price . ' €';
+                                        } ?>
                                     </div>
                                 <?php } ?>
                                 <div class="info-container">
@@ -100,13 +99,12 @@ get_header(); ?>
                                 </div>
                             </a>
                         </div>
-
                     <?php endwhile; ?>
                     <div class="col-xs-12">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="filters-button">
-                                    <span><?php _e('Filtre','jhfw'); ?></span>
+                                    <span><?php _e('Filtre', 'jhfw'); ?></span>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-12">
@@ -122,5 +120,6 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
         </div>
-    </div><!--mainContent-->
-    <?php get_footer(); ?>
+    </div>
+</div>
+<?php get_footer(); ?>

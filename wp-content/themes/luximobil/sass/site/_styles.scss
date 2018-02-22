@@ -1844,3 +1844,12 @@ div#n2-ss-2 {
     }
   }
 }
+
+.simple-content-page{
+  padding: 45px 0  70px;
+  .page-title {
+    color: $color-black;
+    font-family: $bold;
+    text-transform: uppercase;
+  }
+}

@@ -4,22 +4,17 @@
  */
 ?>
 <div class="row">
-
     <div class="carousel-container col-sm-7 col-lg-7 col-xs-12">
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
                 <?php if (have_rows('imobil_carousel')):
-
                     while (have_rows('imobil_carousel')) : the_row(); ?>
-
                         <?php $imobil_image = get_sub_field('imobil_image'); ?>
                         <?php if ($imobil_image) { ?>
-
                             <div class="swiper-slide"
                                  style="background-image: url(<?php echo $imobil_image['url']; ?>);">
                                 <a href="<?php echo $imobil_image['url']; ?>" data-fancybox="imobil-carousel"></a>
                             </div>
-
                         <?php } ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -31,36 +26,28 @@
                             <div class="video-slide-image"
                                  style="background-image: url(<?php echo $imobil_video_thumbnail['url']; ?>);">
                                 <i class="fa fa-play-circle"></i>
-
                             </div>
                         </a>
                     </div>
-
                 <?php } ?>
             </div>
-            <!-- Add Arrows -->
             <div class="swiper-button-next swiper-button-white"></div>
             <div class="swiper-button-prev swiper-button-white"></div>
         </div>
-
-
         <div class="swiper-container gallery-thumbs">
             <div class="swiper-wrapper">
-                <?php if (have_rows('imobil_carousel')): ?>
-
-                    <?php while (have_rows('imobil_carousel')) : the_row(); ?>
-                        <?php $imobil_image = get_sub_field('imobil_image'); ?>
-                        <?php if ($imobil_image) { ?>
+                <?php if (have_rows('imobil_carousel')):
+                    while (have_rows('imobil_carousel')) : the_row();
+                        $imobil_image = get_sub_field('imobil_image');
+                        if ($imobil_image) { ?>
                             <div class="swiper-slide swiper-slide-bottom"
                                  style="background-image: url(<?php echo $imobil_image['url']; ?>);"></div>
-                        <?php } ?>
-
-                        <?php the_sub_field('sub_field_name'); ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php $imobil_video_thumbnail = get_field('imobil_video_thumbnail'); ?>
-                <?php if ($imobil_video_thumbnail) { ?>
+                        <?php }
+                        the_sub_field('sub_field_name');
+                    endwhile;
+                endif;
+                $imobil_video_thumbnail = get_field('imobil_video_thumbnail');
+                if ($imobil_video_thumbnail) { ?>
                     <div class="swiper-slide swiper-slide-bottom"
                          style="background-image: url(<?php echo $imobil_video_thumbnail['url']; ?>);">
                         <i class="fa fa-play-circle"></i>
@@ -99,7 +86,7 @@
 
                 if ($sale_price && $sale_check) {
                     echo $sale_price . ' €';
-                } elseif($regular_price) {
+                } elseif ($regular_price) {
                     echo $regular_price . ' €';
                 } ?>
             </h3>
@@ -138,9 +125,7 @@
                                     $stare = get_sub_field_object('stare');
                                     $current_value = $stare['value'];
                                     $current_choice = $stare['choices'][$current_value];
-                                    echo $current_choice;
-                                    ?>
-
+                                    echo $current_choice; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -180,8 +165,7 @@
                                 </td>
                             </tr>
                         <?php endwhile;
-                    endif;
-                    ?>
+                    endif; ?>
                 </table>
             </div>
         </div>

@@ -44,11 +44,12 @@ class Loco_Locale implements JsonSerializable {
     public static function parse( $tag ){
         $locale = new Loco_Locale('');
         try {
-            $locale->setSubtags( loco_parse_locale($tag) );
+            $locale->setSubtags( loco_parse_wp_locale($tag) );
         }
         catch( Exception $e ){
             // isValid should return false
         }
+        do_action( 'loco_parse_locale', $locale, $tag );
         return $locale;
     }
 
@@ -66,16 +67,27 @@ class Loco_Locale implements JsonSerializable {
 
     /**
      * @internal
-     * Allow read-only access to subtags
+     * Allow read access to subtags
      */
     public function __get( $t ){
         return isset($this->tag[$t]) ? $this->tag[$t] : '';
     }
 
 
+    /**
+     * @internal
+     * Allow write access to subtags
+     */
+    public function __set( $t, $s ){
+        if( isset($this->tag[$t]) ){
+            $this->tag[$t] = $s;
+            $this->setSubtags( $this->tag );
+        }
+    }
+
 
     /**
-     * Set subtags as produced from loco_parse_locale
+     * Set subtags as produced from loco_parse_wp_locale
      * @return Loco_Locale
      */
     public function setSubtags( array $tag ){
@@ -402,7 +414,7 @@ class Loco_Locale implements JsonSerializable {
 
 
 // Depends on compiled library
-if( ! function_exists('loco_parse_locale') ){
+if( ! function_exists('loco_parse_wp_locale') ){
     loco_include('lib/compiled/locales.php');
 }
 

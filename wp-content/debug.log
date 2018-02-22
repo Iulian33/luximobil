@@ -909,3 +909,18 @@
 [22-Feb-2018 09:14:26 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
 [22-Feb-2018 09:14:30 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
 [22-Feb-2018 09:14:30 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:08:29 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:08:29 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:08:55 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:08:55 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:08:55 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:08:55 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:09:01 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:09:01 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:09:01 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:09:01 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:09:02 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:09:02 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:09:02 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php on line 5251
+[22-Feb-2018 18:09:02 UTC] PHP Warning:  Attempt to modify property of non-object in /Applications/MAMP/htdocs/luximobil/wp-content/plugins/search-filter-pro/search-filter-pro.php on line 223
+[22-Feb-2018 18:09:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/luximobil/wp-content/plugins/gravityforms/gravityforms.php:5251) in /Applications/MAMP/htdocs/luximobil/wp-admin/includes/misc.php on line 1114
