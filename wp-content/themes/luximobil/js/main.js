@@ -234,9 +234,9 @@ $(document).on('click', function () {
 closeFilters.click(function () {
     filtersPopup.removeClass('opened-filter-popup');
     $('body').css({
-        "overflow" : "auto",
-        "position" : "relative",
-        "height" : "auto"
+        "overflow": "auto",
+        "position": "relative",
+        "height": "auto"
     });
 
 });
@@ -245,9 +245,9 @@ $(document).on('click', filtersButton, function (event) {
     filtersPopup.addClass('opened-filter-popup');
     event.stopPropagation();
     $('body').css({
-        "overflow" : "hidden",
-        "position" : "fixed",
-        "height" : "100vh"
+        "overflow": "hidden",
+        "position": "fixed",
+        "height": "100vh"
     });
 });
 
@@ -285,3 +285,177 @@ if ($('body').hasClass('single-imobil')) {
 }
 //Fancybox
 $("[data-fancybox]").fancybox({});
+
+
+// Variabiles Calculator
+var pretImobil, primaRataProcent, primaRataNr, procentAnual,
+    rambursare, plataLunaraDOM, sumaFinantataDOM, sumaAnuala,
+    startPrice, startRateNumber;
+
+
+// Getting necesary elements from DOM
+var pretImobilDOM = document.getElementById('calc-pret-imobil');
+var primaRataProcentDOM = document.getElementById('rata-procent');
+var primaRataNrDOM = document.getElementById('rata-numericValue');
+var rambursareDOM = document.getElementById('rambursare');
+var procentAnualDOM = document.getElementById('procent-anual');
+plataLunaraDOM = document.getElementById('plata-lunara');
+sumaFinantataDOM = document.getElementById('suma-finantata');
+
+
+// initialize Calculator
+function initCalculator() {
+    if (pretImobilDOM) {
+        startPrice = parseInt(pretImobilDOM.value);
+        pretImobil = parseInt(pretImobilDOM.value);
+        primaRataProcent = parseInt(primaRataProcentDOM.value);
+        rambursare = parseInt(rambursareDOM.value);
+        procentAnual = parseInt(procentAnualDOM.value);
+        startRateNumber = initialRateNumber();
+        calculateRateNr();
+        calculateNeededSum();
+    }
+}
+
+
+if (pretImobilDOM) {
+    // ------- Focus Events ----------
+    pretImobilDOM.addEventListener('focus', function () {
+        this.select();
+    });
+    primaRataProcentDOM.addEventListener('focus', function () {
+        if (primaRataProcent < 30) {
+            primaRataProcentDOM.value = 30;
+        }
+        this.select();
+    });
+
+    primaRataNrDOM.addEventListener('focus', function () {
+        primaRataNr = parseInt(primaRataNrDOM.value);
+        var curentRateNr = parseInt(primaRataNrDOM.value);
+        var tempRateNr;
+
+        if (curentRateNr === startRateNumber) {
+            tempRateNr = startRateNumber;
+        } else {
+            tempRateNr = curentRateNr;
+        }
+
+        if (primaRataNr < tempRateNr) {
+            primaRataNrDOM.value = tempRateNr;
+        } else if (primaRataNr > tempRateNr) {
+            primaRataNrDOM.value = tempRateNr;
+        }
+        this.select();
+    });
+
+
+    // ------- On input change events ----------
+
+    // ##### Imobil Price
+    pretImobilDOM.addEventListener('keyup', function () {
+        pretImobil = pretImobilDOM.value;
+        if (pretImobil !== '') {
+            pretImobil = parseInt(pretImobil);
+        } else {
+            pretImobil = 0;
+        }
+        if (pretImobil > startPrice) {
+            pretImobilDOM.value = startPrice;
+            calculateRateNr();
+        } else if (pretImobil < 1) {
+            pretImobilDOM.value = 0;
+            this.select();
+            calculateRateNr();
+        } else {
+            calculateRateNr();
+        }
+        calculateNeededSum();
+    });
+
+
+    // ##### Rata Procent
+    primaRataProcentDOM.addEventListener('keyup', function () {
+        primaRataProcent = primaRataProcentDOM.value;
+        if (primaRataProcent > 90) {
+            primaRataProcentDOM.value = 90;
+            calculateRateNr();
+        } else if (!(primaRataProcent < 30)) {
+            calculateRateNr();
+        } else if (primaRataProcent < 1) {
+            primaRataProcentDOM.value = 0;
+            this.select();
+        }
+        calculateNeededSum();
+    });
+
+
+    // ##### Rata In numeric Value
+    primaRataNrDOM.addEventListener('keyup', function () {
+        var tempPrice;
+        var curentPriceNr = parseInt(pretImobilDOM.value);
+
+        if (startPrice === curentPriceNr) {
+            tempPrice = startPrice;
+        } else {
+            tempPrice = curentPriceNr;
+        }
+
+        // getting corect rate number
+        primaRataNr = primaRataNrDOM.value;
+        if (primaRataNr !== '') {
+            primaRataNr = parseInt(primaRataNr);
+        } else {
+            primaRataNr = 0;
+        }
+
+        if (primaRataNr > tempPrice) {
+            primaRataNrDOM.value = tempPrice;
+            calculateProcentRate();
+        } else if (!(primaRataNr < startRateNumber)) {
+            calculateProcentRate();
+        } else if (primaRataNr < 1) {
+            primaRataNrDOM.value = 0;
+            this.select();
+        }
+        calculateNeededSum();
+    });
+
+    // rambursare.addEventListener('keyup',function () {
+    //     alert('here');
+    // });
+
+}
+
+
+function initialRateNumber() {
+    var rataNrRez = ( pretImobil * primaRataProcent ) / 100;
+    return Math.round(rataNrRez);
+}
+
+function calculateMouthSum() {
+    // Plata lunara
+}
+
+function calculateNeededSum() {
+    pretImobil = parseInt(pretImobilDOM.value);
+    primaRataNr = parseInt(primaRataNrDOM.value);
+    var sumaFinantata = pretImobil - primaRataNr;
+    sumaFinantataDOM.textContent = sumaFinantata;
+}
+
+
+function calculateRateNr() {
+    primaRataProcent = parseInt(primaRataProcentDOM.value);
+    var rataNrRez = ( pretImobil * primaRataProcent ) / 100;
+    primaRataNrDOM.value = Math.round(rataNrRez);
+}
+
+function calculateProcentRate() {
+    pretImobil = parseInt(pretImobilDOM.value);
+    primaRataNr = parseInt(primaRataNrDOM.value);
+    var rataProcentRez = (primaRataNr * 100) / pretImobil;
+    primaRataProcentDOM.value = Math.round(rataProcentRez);
+}
+
+window.addEventListener('load', initCalculator);

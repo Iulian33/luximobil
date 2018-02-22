@@ -1409,7 +1409,10 @@ div#n2-ss-2 {
       font-family: $bold;
     }
     input {
+      border: none;
       border-bottom: solid 3px $color-classic-red;
+      outline: 0;
+      padding-left: 12px;
     }
   }
   .final-results {
