@@ -45,7 +45,6 @@ function update_sf_fields($post_id) {
         $camere_imobil = get_post_meta($post_id,'imobil_specifications_numar_camere', true);
         $meta_value_etaj = $etaj_imobil >= 5 ? '5+': $etaj_imobil;
         $meta_value_camere = $camere_imobil >= 5 ? '5+': $camere_imobil;
-
         update_post_meta( $post_id, 'search_filter_etaj', $meta_value_etaj );
         update_post_meta( $post_id, 'search_filter_camere', $meta_value_camere );
 

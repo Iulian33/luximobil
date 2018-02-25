@@ -71,6 +71,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 define('WP_DEBUG_LOG', false);
+define( 'DISALLOW_FILE_EDIT', true );
 
 /* That's all, stop editing! Happy blogging. */
 

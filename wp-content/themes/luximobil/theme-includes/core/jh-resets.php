@@ -73,12 +73,35 @@ if (is_singular('imobil')) {
     remove_action('wp_head', '_wp_render_title_tag', 1);
 }
 
+function footer_admin_credentials()
+{
+    $footer_admin_text = 'Developed by ';
+    $author_website = 'Julian Hook';
+    echo $footer_admin_text . '<a href="http://julianhook.com/" 
+                                  target="_blank">' . $author_website . '</a>';
+}
+
+function reset_admin_toolbar( $wp_admin_bar ) {
+    $wp_admin_bar->remove_node( 'wp-logo' );
+    $wp_admin_bar->remove_menu('comments');
+}
 
 
+// Removing Menu items from admin
+function remove_menus(){
+    remove_menu_page( 'edit-comments.php' );
+    remove_menu_page( 'edit.php?post_type=search-filter-widget' );
+    remove_menu_page( 'duplicator' );
+}
 
+
+add_filter('acf/settings/show_admin', '__return_false');
+add_action( 'admin_menu', 'remove_menus' );
+add_action( 'admin_bar_menu', 'reset_admin_toolbar', 999 );
+add_filter('admin_footer_text', 'footer_admin_credentials');
 add_filter('style_loader_tag', 'remove_type_atribute', 10, 2);
 add_filter('script_loader_tag', 'remove_type_atribute', 10, 2);
-add_filter( 'update_footer', 'change_footer_version', 15);
+add_filter('update_footer', 'change_footer_version', 15);
 add_action('add_meta_boxes', 'remove_pages_editor');
 add_filter('post_type_link', 'change_post_type_link', 10, 2);
 add_action('admin_menu', 'remove_default_post_type');

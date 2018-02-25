@@ -25,7 +25,6 @@ get_header(); ?>
                 </section>
             <?php endwhile;
         endif; ?>
-
     </div>
 </div>
 <?php get_footer(); ?>

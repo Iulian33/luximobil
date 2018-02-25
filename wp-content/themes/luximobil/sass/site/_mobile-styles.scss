@@ -33,7 +33,8 @@
       width: 100%;
     }
     .mask-block {
-      h2 {
+      border-bottom: 10px solid $brand-primary;
+    h2 {
         line-height: 160px;
         position: relative;
         top: -30px;

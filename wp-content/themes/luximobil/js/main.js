@@ -289,7 +289,7 @@ $("[data-fancybox]").fancybox({});
 
 // Variabiles Calculator
 var pretImobil, primaRataProcent, primaRataNr, procentAnual,
-    rambursare, plataLunaraDOM, sumaFinantataDOM, sumaAnuala,
+    rambursare, plataLunaraDOM, sumaFinantataDOM, plataLunara,
     startPrice, startRateNumber;
 
 
@@ -314,6 +314,7 @@ function initCalculator() {
         startRateNumber = initialRateNumber();
         calculateRateNr();
         calculateNeededSum();
+        calculateMouthSum();
     }
 }
 
@@ -323,6 +324,7 @@ if (pretImobilDOM) {
     pretImobilDOM.addEventListener('focus', function () {
         this.select();
     });
+
     primaRataProcentDOM.addEventListener('focus', function () {
         if (primaRataProcent < 30) {
             primaRataProcentDOM.value = 30;
@@ -349,6 +351,10 @@ if (pretImobilDOM) {
         this.select();
     });
 
+    rambursareDOM.addEventListener('focus', function () {
+        this.select();
+    });
+
 
     // ------- On input change events ----------
 
@@ -371,6 +377,7 @@ if (pretImobilDOM) {
             calculateRateNr();
         }
         calculateNeededSum();
+        calculateMouthSum();
     });
 
 
@@ -387,6 +394,7 @@ if (pretImobilDOM) {
             this.select();
         }
         calculateNeededSum();
+        calculateMouthSum();
     });
 
 
@@ -419,11 +427,26 @@ if (pretImobilDOM) {
             this.select();
         }
         calculateNeededSum();
+        calculateMouthSum();
     });
 
-    // rambursare.addEventListener('keyup',function () {
-    //     alert('here');
-    // });
+    rambursareDOM.addEventListener('keyup', function () {
+        rambursare = rambursareDOM.value;
+        if (rambursare !== ''){
+            rambursare = parseInt(rambursareDOM.value);
+            if (rambursare === 0) {
+                this.select();
+                rambursareDOM.value = 1;
+            } else if (rambursare > 20) {
+                rambursareDOM.value = 20;
+            }
+            calculateMouthSum();
+        } else {
+            rambursareDOM.value = 1;
+            this.select();
+            calculateMouthSum();
+        }
+    });
 
 }
 
@@ -434,7 +457,10 @@ function initialRateNumber() {
 }
 
 function calculateMouthSum() {
-    // Plata lunara
+    var sumaFinantata = sumaFinantataDOM.textContent;
+    rambursare = parseInt(rambursareDOM.value);
+    plataLunara = (sumaFinantata * procentAnual + 100 * sumaFinantata) / (100 * rambursare * 12 );
+    plataLunaraDOM.textContent = Math.round(plataLunara);
 }
 
 function calculateNeededSum() {
